@@ -177,7 +177,7 @@
             <div class="auth-alt">Nog geen account? <a href="#" onclick="IH.toast('Registreren is nog niet beschikbaar in deze MVP');return false;">Registreer</a></div>
           </div>
         </div>
-        <div class="auth-footer">© 2026 Digicampus — demo-omgeving met voorbeelddata</div>
+        <div class="auth-footer">© 2026 Digicampus — demo met projectdata van digitaleoverheid.nl</div>
       </div>`;
     document.getElementById("pwToggle").onclick = () => {
       const pw = document.getElementById("pw");
@@ -211,7 +211,7 @@
             <button class="btn btn-primary" id="verder">Ga verder</button>
           </div>
         </div>
-        <div class="auth-footer">© 2026 Digicampus — demo-omgeving met voorbeelddata</div>
+        <div class="auth-footer">© 2026 Digicampus — demo met projectdata van digitaleoverheid.nl</div>
       </div>`;
 
     let expanded = false;
@@ -286,7 +286,7 @@
 
     shell("home", `
       <h1 class="page-title" style="margin-bottom:22px">Welkom ${esc(USER.voornaam)}</h1>
-      <div class="demo-banner">Demo-omgeving: alle projecten, personen en contactgegevens zijn fictieve voorbeelddata.</div>
+      <div class="demo-banner">Projectdata afkomstig van digitaleoverheid.nl (Innovatiebudget Digitale Overheid). Thema, labels, status en fase zijn redactioneel afgeleid uit de projectbeschrijvingen.</div>
 
       <div class="card dash-card">
         <div class="head">
@@ -368,18 +368,20 @@
 
   /* ---------- Innovaties (alle projecten) ---------- */
 
-  const innoState = { q: "", theme: "", org: "", fase: "", status: "", sort: "titel", view: "grid", filterOpen: false };
+  const innoState = { q: "", theme: "", org: "", fase: "", status: "", jaar: "", typeOrg: "", sort: "titel", view: "grid", filterOpen: false };
 
   function renderInnovaties() {
     const projs = allProjects();
     const orgs = [...new Set(projs.map(p => p.org))].sort();
     const fases = ["Idee", "Proof of concept", "Pilot", "Implementatie", "Opgeschaald"];
+    const jaren = [...new Set(projs.map(p => p.jaar).filter(Boolean))].sort().reverse();
+    const typesOrg = [...new Set(projs.map(p => p.typeOrganisatie).filter(Boolean))].sort();
 
     shell("innovaties", `
       <div class="page-head">
         <div>
           <h1 class="page-title">Innovatieprojecten</h1>
-          <div class="page-sub">Bekijk hier alle innovatieprojecten binnen de Generieke Digitale Infrastructuur (GDI)</div>
+          <div class="page-sub">Alle projecten die zijn uitgevoerd met het Innovatiebudget Digitale Overheid (bron: digitaleoverheid.nl)</div>
         </div>
       </div>
       <div class="toolbar">
@@ -398,6 +400,8 @@
         <div class="select-wrap"><select id="pOrg"><option value="">Alle organisaties</option>${orgs.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
         <div class="select-wrap"><select id="pFase"><option value="">Alle projectfases</option>${fases.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
         <div class="select-wrap"><select id="pStatus"><option value="">Alle statussen</option>${Object.keys(STATUS_COLORS).map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
+        <div class="select-wrap"><select id="pJaar"><option value="">Alle jaren</option>${jaren.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
+        <div class="select-wrap"><select id="pTypeOrg"><option value="">Alle organisatietypes</option>${typesOrg.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
       </div>
       <div class="result-bar">
         <span id="count"></span>
@@ -413,18 +417,21 @@
     $("sort").value = innoState.sort;
     $("pTheme").value = innoState.theme; $("pOrg").value = innoState.org;
     $("pFase").value = innoState.fase; $("pStatus").value = innoState.status;
+    $("pJaar").value = innoState.jaar; $("pTypeOrg").value = innoState.typeOrg;
 
     function update() {
       let list = projs.filter(p => {
-        const hay = [p.title, p.org, p.kort, p.theme, ...(p.labels || [])].join(" ").toLowerCase();
+        const hay = [p.title, p.org, p.kort, p.beschrijving, p.theme, p.jaar, p.typeOrganisatie, p.plaats, ...(p.partners || []), ...(p.labels || [])].join(" ").toLowerCase();
         return (!innoState.q || hay.includes(innoState.q.toLowerCase())) &&
           (!innoState.theme || p.theme === innoState.theme) &&
           (!innoState.org || p.org === innoState.org) &&
           (!innoState.fase || p.fase === innoState.fase) &&
-          (!innoState.status || p.status === innoState.status);
+          (!innoState.status || p.status === innoState.status) &&
+          (!innoState.jaar || p.jaar === innoState.jaar) &&
+          (!innoState.typeOrg || p.typeOrganisatie === innoState.typeOrg);
       });
       if (innoState.sort === "titel") list.sort((a, b) => a.title.localeCompare(b.title, "nl"));
-      if (innoState.sort === "nieuwste") list.sort((a, b) => parseDate(b.gepubliceerd) - parseDate(a.gepubliceerd));
+      if (innoState.sort === "nieuwste") list.sort((a, b) => (b.jaar || "").localeCompare(a.jaar || "") || parseDate(b.gepubliceerd) - parseDate(a.gepubliceerd));
       if (innoState.sort === "organisatie") list.sort((a, b) => a.org.localeCompare(b.org, "nl"));
 
       $("count").textContent = `${list.length} ${list.length === 1 ? "resultaat" : "resultaten"}`;
@@ -440,9 +447,9 @@
     $("q").oninput = e => { innoState.q = e.target.value; update(); };
     $("filterBtn").onclick = () => { innoState.filterOpen = !innoState.filterOpen; $("filterPanel").classList.toggle("open", innoState.filterOpen); };
     $("sort").onchange = e => { innoState.sort = e.target.value; update(); };
-    ["pTheme", "pOrg", "pFase", "pStatus"].forEach(id => {
+    ["pTheme", "pOrg", "pFase", "pStatus", "pJaar", "pTypeOrg"].forEach(id => {
       $(id).onchange = e => {
-        innoState[{ pTheme: "theme", pOrg: "org", pFase: "fase", pStatus: "status" }[id]] = e.target.value;
+        innoState[{ pTheme: "theme", pOrg: "org", pFase: "fase", pStatus: "status", pJaar: "jaar", pTypeOrg: "typeOrg" }[id]] = e.target.value;
         update();
       };
     });
@@ -478,7 +485,9 @@
           <div style="display:flex;flex-direction:column;gap:20px">
             <div class="card content-card">
               <h3>GDI-bouwblokken</h3>
-              <div>${p.gdi.map((g, i) => `<span class="gdi-chip" style="background:${["#fce7f3", "#dcfce7", "#e0e7ff", "#f1f5f9", "#fef3c7", "#e0f2fe"][i % 6]}">${esc(g)}</span>`).join("")}</div>
+              <div>${p.gdi && p.gdi.length
+                ? p.gdi.map((g, i) => `<span class="gdi-chip" style="background:${["#fce7f3", "#dcfce7", "#e0e7ff", "#f1f5f9", "#fef3c7", "#e0f2fe"][i % 6]}">${esc(g)}</span>`).join("")
+                : `<p style="font-size:13px;color:var(--text-muted)">Geen GDI-bouwblokken herkend in de projectbeschrijving.</p>`}</div>
             </div>
             <div class="card content-card">
               <h3>Labels</h3>
@@ -488,13 +497,13 @@
         </div>`,
       probleem: `
         <div class="two-col">
-          <div class="card content-card"><h3>Probleemstelling</h3><p>${esc(p.probleem)}</p></div>
-          <div class="card content-card"><h3>Doelstelling</h3><p>${esc(p.doel)}</p></div>
+          <div class="card content-card"><h3>Probleemstelling</h3><p>${esc(p.probleem) || `Er is geen aparte probleemstelling gepubliceerd op digitaleoverheid.nl. Zie de projectbeschrijving of de bronpagina.`}</p></div>
+          <div class="card content-card"><h3>Doelstelling</h3><p>${esc(p.doel) || `Er is geen aparte doelstelling gepubliceerd op digitaleoverheid.nl. Zie de projectbeschrijving of de bronpagina.`}</p></div>
         </div>`,
       lessen: `
         <div class="card content-card">
           <h3>Geleerde lessen</h3>
-          ${p.lessen && p.lessen.length ? `<ul>${p.lessen.map(l => `<li>${esc(l)}</li>`).join("")}</ul>` : `<p>Er zijn nog geen geleerde lessen vastgelegd voor dit project.</p>`}
+          ${p.lessen && p.lessen.length ? `<ul>${p.lessen.map(l => `<li>${esc(l)}</li>`).join("")}</ul>` : `<p>Er zijn geen geleerde lessen gepubliceerd voor dit project. Raadpleeg de bronpagina op digitaleoverheid.nl voor actuele informatie.</p>`}
         </div>`,
       contact: `
         <div class="contact-grid">
@@ -509,10 +518,11 @@
             </div>
           </div>
           <div class="card socials">
-            <h3>Socials</h3>
-            <div class="row"><span class="ic">${I.mail}</span><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></div>
-            <div class="row"><span class="ic">${I.phone}</span><span>${esc(c.tel)}</span></div>
-            <div class="row"><span class="ic">${I.linkedin}</span><a href="#" onclick="IH.toast('Externe links zijn uitgeschakeld in deze demo');return false;">${esc(c.naam)}</a></div>
+            <h3>Contact</h3>
+            ${c.email ? `<div class="row"><span class="ic">${I.mail}</span><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></div>` : ""}
+            ${c.tel ? `<div class="row"><span class="ic">${I.phone}</span><span>${esc(c.tel)}</span></div>` : ""}
+            ${p.bron ? `<div class="row"><span class="ic">${I.linkIc}</span><a href="${esc(p.bron)}" target="_blank" rel="noopener">Projectpagina op digitaleoverheid.nl</a></div>` : ""}
+            ${!c.email && !c.tel ? `<p style="font-size:12.5px;color:var(--text-muted);margin-top:8px">Er zijn geen persoonlijke contactgegevens gepubliceerd; neem contact op via de projectpagina of de regievoerende organisatie.</p>` : ""}
           </div>
         </div>`,
       bieb: `
@@ -521,9 +531,9 @@
             <div class="card file-row">
               ${f.type === "link" ? I.linkIc : I.file}
               <span class="fname">${esc(f.naam)}${f.type !== "link" ? ` (${esc(f.type)}, ${esc(f.grootte)}, ${esc(f.datum)})` : ` (${esc(f.datum)})`}</span>
-              <a href="#" onclick="IH.toast('Voorbeeldbestand — downloads zijn niet beschikbaar in deze demo');return false;">
-                ${f.actie === "download" ? I.download + " Download" : "Openen"}
-              </a>
+              ${f.url
+                ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">Openen</a>`
+                : `<a href="#" onclick="IH.toast('Voorbeeldbestand — downloads zijn niet beschikbaar in deze demo');return false;">${f.actie === "download" ? I.download + " Download" : "Openen"}</a>`}
             </div>`).join("")}
         </div>`,
       soortgelijk: similar.length
@@ -542,13 +552,13 @@
           <h1>${esc(p.title)}</h1>
           <div class="meta-grid">
             <div class="meta-item"><div class="k">Project status</div><div class="v">${statusDot(p.status)}${esc(p.status)}</div></div>
-            <div class="meta-item"><div class="k">Start datum</div><div class="v">${esc(p.start)}</div></div>
+            <div class="meta-item"><div class="k">Jaar innovatiebudget</div><div class="v">${esc(p.jaar || "-")}</div></div>
             <div class="meta-item"><div class="k">Projectfase</div><div class="v">${esc(p.fase)}</div></div>
-            <div class="meta-item"><div class="k">Eind datum</div><div class="v">${esc(p.eind)}</div></div>
-            <div class="meta-item"><div class="k">Organisatie</div><div class="v">${esc(p.org)}</div></div>
-            <div class="meta-item"><div class="k">Gepubliceerd</div><div class="v">${esc(p.gepubliceerd)}</div></div>
+            <div class="meta-item"><div class="k">Type organisatie</div><div class="v">${esc(p.typeOrganisatie || "-")}</div></div>
+            <div class="meta-item"><div class="k">Regievoerder</div><div class="v">${esc(p.org)}</div></div>
+            <div class="meta-item"><div class="k">Plaats</div><div class="v">${esc(p.plaats || "-")}</div></div>
             <div class="meta-item"><div class="k">Partnerorganisaties</div><div class="v">${esc((p.partners || []).join(", ") || "-")}</div></div>
-            <div class="meta-item"><div class="k">Laatst bijgewerkt</div><div class="v">${esc(p.bijgewerkt)}</div></div>
+            <div class="meta-item"><div class="k">Bron</div><div class="v">${p.bron ? `<a href="${esc(p.bron)}" target="_blank" rel="noopener">digitaleoverheid.nl</a>` : "-"}</div></div>
           </div>
         </div>
       </div>
@@ -830,7 +840,7 @@
       <div class="page-head">
         <div>
           <h1 class="page-title">Netwerk</h1>
-          <div class="page-sub">Vind de juiste mensen voor uw project en leg eenvoudig contact binnen en buiten uw organisatie</div>
+          <div class="page-sub">Vind de projectteams achter de innovatieprojecten en leg contact via de regievoerende organisatie</div>
         </div>
       </div>
       <div class="toolbar">
@@ -855,7 +865,7 @@
               ${p.expertise.slice(0, 3).map(x => `<span class="label-chip">${esc(x)}</span>`).join("")}
               ${p.expertise.length > 3 ? `<span class="meta">+${p.expertise.length - 3}</span>` : ""}
             </div>
-            <div style="margin-top:9px"><a href="mailto:${esc(p.email)}" style="font-size:12.5px">${esc(p.email)}</a></div>
+            <div style="margin-top:9px">${p.email ? `<a href="mailto:${esc(p.email)}" style="font-size:12.5px">${esc(p.email)}</a>` : `<span style="font-size:12.5px;color:var(--text-muted)">Betrokken bij: ${esc(p.betrokkenBij)}</span>`}</div>
           </div>
         </div>`).join("") : `<div class="empty">Geen personen gevonden.</div>`;
     }
