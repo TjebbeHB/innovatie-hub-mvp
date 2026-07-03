@@ -39,8 +39,10 @@ De data in [`js/data.js`](js/data.js) is op 03-07-2026 overgenomen van digitaleo
 - `status` — aanname: toekenningsjaar t/m 2024 = "Afgerond", 2025/2026 = "Lopend"
 - `fase` — afgeleid uit trefwoorden in de beschrijving (pilot, proof of concept, opschalen, …)
 - `gdi` — GDI-bouwblokken die letterlijk in de beschrijving voorkomen
+- `context`, `probleem`, `doel`, `lessen` — redactionele duiding voor ambtenaren, gebaseerd op de projectbeschrijving en online broncontext
+- aanvullende `files` — projectpagina, overzichtspagina, innovatiebudgetpagina en relevante contextbronnen
 
-**Niet beschikbaar in de bron** (leeg gelaten, met nette fallback in de app): probleem- en doelstelling als aparte velden, geleerde lessen, start- en einddatum, persoonlijke contactgegevens. Contact loopt via de bronpagina; het "Netwerk" toont generieke projectteams per regievoerder (geen persoonsgegevens).
+**Niet beschikbaar als letterlijk apart bronveld**: probleem- en doelstelling, geleerde lessen, start- en einddatum en persoonlijke contactgegevens. Probleem, doel en lessen zijn daarom redactioneel verrijkt; start- en einddatum blijven leeg wanneer die niet gepubliceerd zijn. Contact loopt via de bronpagina; het "Netwerk" toont generieke projectteams per regievoerder (geen persoonsgegevens).
 
 ## Lokaal draaien
 

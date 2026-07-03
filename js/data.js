@@ -171,7 +171,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -212,7 +211,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -252,7 +250,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -291,7 +288,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -331,7 +327,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -370,7 +365,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -409,7 +403,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -450,7 +443,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -490,7 +482,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -530,7 +521,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -571,7 +561,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -611,7 +600,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Cloudbeleid rijksoverheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/cloud" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -652,7 +640,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -692,7 +679,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -734,7 +720,6 @@ const PROJECTS = [
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -775,7 +760,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -814,7 +798,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -855,7 +838,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -896,7 +878,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -935,7 +916,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -976,7 +956,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1017,7 +996,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Gerelateerde webbron: 3dbag.nl", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.3dbag.nl" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1058,7 +1036,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1097,7 +1074,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1138,7 +1114,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "NORA Online", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.noraonline.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1177,7 +1152,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1218,7 +1192,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1257,7 +1230,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1299,7 +1271,6 @@ const PROJECTS = [
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1340,7 +1311,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1381,7 +1351,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1423,7 +1392,6 @@ const PROJECTS = [
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1464,7 +1432,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1503,7 +1470,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1545,7 +1511,6 @@ const PROJECTS = [
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1585,7 +1550,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1626,7 +1590,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1666,7 +1629,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1706,7 +1668,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1746,7 +1707,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1787,7 +1747,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1826,7 +1785,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1868,7 +1826,6 @@ const PROJECTS = [
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1910,7 +1867,6 @@ const PROJECTS = [
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1949,7 +1905,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -1990,7 +1945,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2031,7 +1985,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2073,7 +2026,6 @@ const PROJECTS = [
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2114,7 +2066,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2153,7 +2104,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2192,7 +2142,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Digitale weerbaarheid overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-weerbaarheid/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2232,7 +2181,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2273,7 +2221,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2314,7 +2261,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2354,7 +2300,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2394,7 +2339,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2433,7 +2377,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2472,7 +2415,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2512,7 +2454,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2551,7 +2492,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2591,7 +2531,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2632,7 +2571,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2671,7 +2609,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2710,7 +2647,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2751,7 +2687,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2791,7 +2726,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2831,7 +2765,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2872,7 +2805,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "NORA Online", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.noraonline.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2911,7 +2843,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Digitale vaardigheden en vakmanschap", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-vaardigheden/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2952,7 +2883,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -2991,7 +2921,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3030,7 +2959,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3071,7 +2999,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3113,7 +3040,6 @@ const PROJECTS = [
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "NL Design System", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.nldesignsystem.nl/" },
       { naam: "NORA Online", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.noraonline.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3152,7 +3078,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Digitale weerbaarheid overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-weerbaarheid/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3192,7 +3117,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Digitale weerbaarheid overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-weerbaarheid/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3233,7 +3157,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3273,7 +3196,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3312,7 +3234,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3352,7 +3273,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3393,7 +3313,6 @@ const PROJECTS = [
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3432,7 +3351,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3472,7 +3390,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3511,7 +3428,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3551,7 +3467,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3590,7 +3505,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3629,7 +3543,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3668,7 +3581,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3749,7 +3661,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3789,7 +3700,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3830,7 +3740,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3869,7 +3778,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3908,7 +3816,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3947,7 +3854,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -3987,7 +3893,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4027,7 +3932,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4066,7 +3970,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4107,7 +4010,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4148,7 +4050,6 @@ const PROJECTS = [
       { naam: "Digitale vaardigheden en vakmanschap", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-vaardigheden/" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "NL Design System", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.nldesignsystem.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4188,7 +4089,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4229,7 +4129,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4269,7 +4168,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4308,7 +4206,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4349,7 +4246,6 @@ const PROJECTS = [
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4390,7 +4286,6 @@ const PROJECTS = [
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
       { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4429,7 +4324,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4468,7 +4362,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4508,7 +4401,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4629,7 +4521,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4708,7 +4599,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
       { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4788,7 +4678,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4827,7 +4716,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4867,7 +4755,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
       { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4907,7 +4794,6 @@ const PROJECTS = [
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
       { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4946,7 +4832,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -4985,7 +4870,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -5024,7 +4908,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -5063,7 +4946,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -5102,7 +4984,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -5141,7 +5022,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -5180,7 +5060,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   },
   {
@@ -5219,7 +5098,6 @@ const PROJECTS = [
       { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
       { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
       { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
-      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
     ]
   }
 
