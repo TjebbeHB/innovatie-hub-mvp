@@ -481,6 +481,7 @@
           <div class="card content-card">
             <h3>Projectbeschrijving</h3>
             <p>${esc(p.beschrijving)}</p>
+            ${p.context ? `<h3>Broncontext</h3><p>${esc(p.context)}</p>` : ""}
           </div>
           <div style="display:flex;flex-direction:column;gap:20px">
             <div class="card content-card">

@@ -21,8 +21,9 @@
      contact – generiek projectteam per regievoerder (geen
                persoonsgegevens); contact loopt via de bronpagina.
 
-   Niet beschikbaar in de bron (leeg gelaten):
-     probleem, doel, lessen, start- en einddatum.
+   Redactioneel verrijkt op basis van de online broncontext:
+     context, probleem, doel, lessen en aanvullende bibliotheeklinks.
+     Start- en einddatum blijven leeg wanneer die niet gepubliceerd zijn.
    ============================================================ */
 
 const THEMES = ["Data", "AI", "Cloud", "Digitale weerbaarheid", "Digitaal vakmanschap", "Burgergericht"];
@@ -150,14 +151,28 @@ const PROJECTS = [
     partners: ["Geonovum, BIJ12"],
     kort: "Overheden staan voor grote ruimtelijke opgaven en hebben steeds meer behoefte aan eenduidige begrippen om data goed uit te wisselen en her te gebruiken. Het opstellen en onderhouden van begrippenkaders kost in de praktijk veel…",
     beschrijving: "Overheden staan voor grote ruimtelijke opgaven en hebben steeds meer behoefte aan eenduidige begrippen om data goed uit te wisselen en her te gebruiken. Het opstellen en onderhouden van begrippenkaders kost in de praktijk veel tijd en vraagt schaarse expertise. Tegelijkertijd is de Nederlandse Standaard voor het Beschrijven van Begrippen (NL-SBB) inhoudelijk rijk, maar niet altijd eenvoudig toe te passen. Dit kan leiden tot verschillen in definities, vertraging en hogere beheerkosten voor overheden en ketenpartners. Met AI-ondersteuning kunnen begrippenkaders sneller, consistenter en kwalitatief beter worden ontwikkeld en kunnen gebruikers eenvoudiger vragen stellen over NL-SBB. Dit vergroot de efficiëntie en samenwerking binnen de overheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Interprovinciaal Overleg (IPO) als regievoerder. Partnercontext: Geonovum, BIJ12. Voor ambtenaren is dit vooral relevant bij AI, Interoperabiliteit, Datadeling. Kern uit de bron: Overheden staan voor grote ruimtelijke opgaven en hebben steeds meer behoefte aan eenduidige begrippen om data goed uit te wisselen en her te gebruiken.",
+    probleem: "Aanleiding: Tegelijkertijd is de Nederlandse Standaard voor het Beschrijven van Begrippen (NL-SBB) inhoudelijk rijk, maar niet altijd eenvoudig toe te passen. Dit kan leiden tot verschillen in definities, vertraging en hogere beheerkosten voor overheden en ketenpartners.",
+    doel: "Doel: Tegelijkertijd is de Nederlandse Standaard voor het Beschrijven van Begrippen (NL-SBB) inhoudelijk rijk, maar niet altijd eenvoudig toe te passen. Met AI-ondersteuning kunnen begrippenkaders sneller, consistenter en kwalitatief beter worden ontwikkeld en kunnen gebruikers eenvoudiger vragen stellen over NL-SBB. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van AI-chatbot interbestuurlijke begrippenkaders naar meetbare succescriteria: Overheden staan voor grote ruimtelijke opgaven en hebben steeds meer behoefte aan eenduidige begrippen om data goed uit te wisselen en her te gebruiken.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Interoperabiliteit", "Datadeling"],
     contactId: "team-interprovinciaal-overleg-ipo",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/ai-chatbot-interbestuurlijke-begrippenkaders/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-chatbot-interbestuurlijke-begrippenkaders/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-chatbot-interbestuurlijke-begrippenkaders/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "ai-ready-standaarden-compliancepush",
@@ -176,14 +191,29 @@ const PROJECTS = [
     partners: ["Kadaster, BZK"],
     kort: "Met dit project verbeteren de innovatoren de implementatie en verhogen de adoptie van overheidsstandaarden. Dit doen ze op twee manieren.",
     beschrijving: "Met dit project verbeteren de innovatoren de implementatie en verhogen de adoptie van overheidsstandaarden. Dit doen ze door: De projectgroep introduceert in dit project een AI readiness assessment kader en ze maken voor een aantal pilotstandaarden verschillende AI-hulpmiddelen. Ze toetsen in hoeverre dit AI-modellen helpt om standaarden correct te gebruiken. Ook bouwen ze het CompliancePush systeem voor de proactieve doorvoering in software van wijzigingen in standaarden.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Geonovum als regievoerder. Partnercontext: Kadaster, BZK. Voor ambtenaren is dit vooral relevant bij Open standaarden, Compliance, AI. Kern uit de bron: Met dit project verbeteren de innovatoren de implementatie en verhogen de adoptie van overheidsstandaarden.",
+    probleem: "Aanleiding: Met dit project verbeteren de innovatoren de implementatie en verhogen de adoptie van overheidsstandaarden. Dit doen ze door: De projectgroep introduceert in dit project een AI readiness assessment kader en ze maken voor een aantal pilotstandaarden verschillende AI-hulpmiddelen.",
+    doel: "Doel: Met dit project verbeteren de innovatoren de implementatie en verhogen de adoptie van overheidsstandaarden. Dit doen ze door: De projectgroep introduceert in dit project een AI readiness assessment kader en ze maken voor een aantal pilotstandaarden verschillende AI-hulpmiddelen. Ze toetsen in hoeverre dit AI-modellen helpt om standaarden correct te gebruiken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van AI-Ready Standaarden & CompliancePush naar meetbare succescriteria: Met dit project verbeteren de innovatoren de implementatie en verhogen de adoptie van overheidsstandaarden.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Open standaarden", "Compliance", "AI"],
     contactId: "team-geonovum",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/ai-ready-standaarden-compliancepush/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-ready-standaarden-compliancepush/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-ready-standaarden-compliancepush/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "bouwblok-voor-veilig-zakelijk-gegevensverkeer",
@@ -202,14 +232,28 @@ const PROJECTS = [
     partners: ["Rijkdienst voor Ondernemend Nederland (RVO), Nederlandse Voedsel- en Warenautoriteit (NVWA), DICTU"],
     kort: "Ondernemers moeten nu vaak grote hoeveelheden papierwerk aanleveren voor vergunningen, subsidies of inspecties. Dit kost tijd, leidt tot fouten en vertraagt hun processen. De Business Wallet lost dit probleem op door bewijsstukken automatisch en veilig…",
     beschrijving: "Ondernemers moeten nu vaak grote hoeveelheden papierwerk aanleveren voor vergunningen, subsidies of inspecties. Dit kost tijd, leidt tot fouten en vertraagt hun processen. De Business Wallet lost dit probleem op door bewijsstukken automatisch en veilig uit de ondernemerskluis op te halen en direct te delen met overheden zoals RVO, NVWA en gemeenten. Deze zijn dan voorzien van een echtheidszegel van de bron, bijvoorbeeld KVK. Hierdoor hoeft de ondernemer niet langer documenten te verzamelen en te uploaden, en kunnen overheden hun processen efficiënter en betrouwbaarder uitvoeren. NVWA, RVO, KVK en DICTU bereiden zich voor om deze manier van werken mogelijk te maken. Het functioneel concept dat in traject wordt ontwikkeld leidt tot meer efficiëntie.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Kamer van Koophandel (KV) als regievoerder. Partnercontext: Rijkdienst voor Ondernemend Nederland (RVO), Nederlandse Voedsel- en Warenautoriteit (NVWA), DICTU. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Datadeling, Dienstverlening. Kern uit de bron: Ondernemers moeten nu vaak grote hoeveelheden papierwerk aanleveren voor vergunningen, subsidies of inspecties.",
+    probleem: "Aanleiding: De Business Wallet lost dit probleem op door bewijsstukken automatisch en veilig uit de ondernemerskluis op te halen en direct te delen met overheden zoals RVO, NVWA en gemeenten. Hierdoor hoeft de ondernemer niet langer documenten te verzamelen en te uploaden, en kunnen overheden hun processen efficiënter en betrouwbaarder uitvoeren.",
+    doel: "Doel: Het functioneel concept dat in traject wordt ontwikkeld leidt tot meer efficiëntie. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Bouwblok voor Veilig Zakelijk Gegevensverkeer naar meetbare succescriteria: Ondernemers moeten nu vaak grote hoeveelheden papierwerk aanleveren voor vergunningen, subsidies of inspecties.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale identiteit", "Datadeling", "Dienstverlening"],
     contactId: "team-kamer-van-koophandel-kv",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/bouwblok-voor-veilig-zakelijk-gegevensverkeer/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/bouwblok-voor-veilig-zakelijk-gegevensverkeer/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/bouwblok-voor-veilig-zakelijk-gegevensverkeer/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "d-omnitwin",
@@ -228,14 +272,27 @@ const PROJECTS = [
     partners: ["Gemeente Leeuwarden, gemeente Tytsjerksteradiel"],
     kort: "D-OmniTwin is een federatieve interactielaag waarmee gemeenten en inwoners integraal inzicht krijgen in de staat van buurten en wijken.",
     beschrijving: "Dit project realiseert de D-OmniTwin: een federatieve interactielaag waarmee gemeenten en inwoners integraal inzicht krijgen in de staat van buurten en wijken. Of het nu gaat om hittestress, energiearmoede of de nabijheid van voorzieningen; de D-OmniTwin ontsluit versnipperde data via een interactief ‘Kompas’. De voorziening bouwt voort op de Fryslân Data Space en sluit aan op het landelijke Federatief Datastelsel. Hierdoor blijft data bij de bron, maar wordt deze maximaal bruikbaar voor beleid en dialoog. Door de dataspace-agnostische opzet en het gebruik van AI ontstaat een schaalbare, open source oplossing voor datagedreven gebiedsontwikkeling in heel Nederland.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Gemeente Súdwest-Fryslân als regievoerder. Partnercontext: Gemeente Leeuwarden, gemeente Tytsjerksteradiel. Voor ambtenaren is dit vooral relevant bij Data, Burgergericht, Datadeling. Kern uit de bron: Dit project realiseert de D-OmniTwin: een federatieve interactielaag waarmee gemeenten en inwoners integraal inzicht krijgen in de staat van buurten en wijken.",
+    probleem: "Aanleiding: Of het nu gaat om hittestress, energiearmoede of de nabijheid van voorzieningen; de D-OmniTwin ontsluit versnipperde data via een interactief ‘Kompas’.",
+    doel: "Doel: Dit project realiseert de D-OmniTwin: een federatieve interactielaag waarmee gemeenten en inwoners integraal inzicht krijgen in de staat van buurten en wijken. Of het nu gaat om hittestress, energiearmoede of de nabijheid van voorzieningen; de D-OmniTwin ontsluit versnipperde data via een interactief ‘Kompas’. De voorziening bouwt voort op de Fryslân Data Space en sluit aan op het landelijke Federatief Datastelsel. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van D-OmniTwin naar meetbare succescriteria: Dit project realiseert de D-OmniTwin: een federatieve interactielaag waarmee gemeenten en inwoners integraal inzicht krijgen in de staat van buurten en wijken.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Burgergericht", "Datadeling"],
     contactId: "team-gemeente-s-dwest-frysl-n",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/d-omnitwin/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/d-omnitwin/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/d-omnitwin/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "een-landelijk-herkenbaar-ingangsontwerp",
@@ -254,14 +311,28 @@ const PROJECTS = [
     partners: ["Gemeente Altena, Apeldoorn, Bergen op Zoom, De Fryske Marren, Hof van Twente, Lingewaard, Maashorst, 's-Hertogenbosch, Veendam, Drimmelen, Goes, Gooise Meren, Nissewaard, Raalte, Waadhoeke, Hardinxveld-Giessendam, Meerssen, Midden-Delfland, Wageningen, de VNG en 1stroom (Duiven & Westervoort)"],
     kort: "De VNG en gemeenten komen tot de meest begrijpelijke ordening voor website, publiekshal en tot een hybride spreekplek waar AI medewerkers kan ondersteunen.",
     beschrijving: "Inwoners ervaren gemeentelijke dienstverlening vaak als een doolhof. Ze weten niet wat er voor hen beschikbaar is of vinden niet wat ze nodig hebben. Gemeenten zijn nu ieder voor zich bezig met een nieuwe website of een nieuw gemeentehuis en worstelen met de vraag: hoe ordenen we ons aanbod zodat mensen de diensten makkelijk vinden? Wat ontbreekt, is een bewezen standaard voor de ordening van diensten en naamgeving. De VNG en 21 gemeenten komen via co-creatie en gebruikersonderzoek tot de meest begrijpelijke ordening voor website, publiekshal én tot een hybride spreekplek waar AI en beeldbellen medewerkers beter ondersteunen. Het resultaat: een landelijk ingangsontwerp voor de 342 gemeenten, toepasbaar op alle startkanalen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Gemeente Heusden als regievoerder. Partnercontext: Gemeente Altena, Apeldoorn, Bergen op Zoom, De Fryske Marren, Hof van Twente, Lingewaard, Maashorst, 's-Hertogenbosch, Veendam, Drimmelen, Goes, Gooise Meren, Nissewaard, Raalte, Waadhoeke, Hardinxveld-Giessendam, Meerssen, Midden-Delfland, Wageningen, de VNG en 1stroom (Duiven & Westervoort). Voor ambtenaren is dit vooral relevant bij Dienstverlening, Gebruikerservaring, AI. Kern uit de bron: Inwoners ervaren gemeentelijke dienstverlening vaak als een doolhof.",
+    probleem: "Aanleiding: Ze weten niet wat er voor hen beschikbaar is of vinden niet wat ze nodig hebben. Wat ontbreekt, is een bewezen standaard voor de ordening van diensten en naamgeving.",
+    doel: "Doel: Ze weten niet wat er voor hen beschikbaar is of vinden niet wat ze nodig hebben. Wat ontbreekt, is een bewezen standaard voor de ordening van diensten en naamgeving. Het resultaat: een landelijk ingangsontwerp voor de 342 gemeenten, toepasbaar op alle startkanalen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Een landelijk herkenbaar ingangsontwerp naar meetbare succescriteria: Inwoners ervaren gemeentelijke dienstverlening vaak als een doolhof.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Gebruikerservaring", "AI"],
     contactId: "team-gemeente-heusden",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/een-landelijk-herkenbaar-ingangsontwerp/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/een-landelijk-herkenbaar-ingangsontwerp/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/een-landelijk-herkenbaar-ingangsontwerp/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "eenmalige-mutatieopsporing-meervoudig-gebruik",
@@ -280,14 +351,27 @@ const PROJECTS = [
     partners: ["Ministerie van Binnenlandse Zaken en Koninkrijksrelaties"],
     kort: "Vele overheidsorganisaties werken aan het verstevigen van het landelijke geo-datafundament. Bronhouders van basisregistraties BAG, BGT en BRT houden gegevens over de fysieke leefomgeving actueel. Waaronder gemeenten, Rijkswaterstaat, provincies,…",
     beschrijving: "Vele overheidsorganisaties werken aan het verstevigen van het landelijke geo-datafundament. Bronhouders van basisregistraties BAG, BGT en BRT houden gegevens over de fysieke leefomgeving actueel. Waaronder gemeenten, Rijkswaterstaat, provincies, waterschappen en het Kadaster. Dit is een arbeidsintensief, grotendeels handmatig proces. De beschikbaarheid van databronnen, zoals luchtfoto’s, satellietbeelden en hoogtedata is sterk toegenomen. GeoAI-technieken, zoals beeldanalyse en change detection, zijn volwassen geworden. Dit project onderzoekt hoe deze technieken praktisch toepasbaar gemaakt kunnen worden binnen het werkproces van de basisregistraties. Met als doel eenmalige (landelijke) mutatieopsporing en meervoudig gebruik.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Kadaster als regievoerder. Partnercontext: Ministerie van Binnenlandse Zaken en Koninkrijksrelaties. Voor ambtenaren is dit vooral relevant bij Data, Ketenpartners, Automatisering. Kern uit de bron: Vele overheidsorganisaties werken aan het verstevigen van het landelijke geo-datafundament.",
+    probleem: "Aanleiding: Dit is een arbeidsintensief, grotendeels handmatig proces.",
+    doel: "Doel: De beschikbaarheid van databronnen, zoals luchtfoto’s, satellietbeelden en hoogtedata is sterk toegenomen. Dit project onderzoekt hoe deze technieken praktisch toepasbaar gemaakt kunnen worden binnen het werkproces van de basisregistraties. Met als doel eenmalige (landelijke) mutatieopsporing en meervoudig gebruik. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Eenmalige mutatieopsporing, meervoudig gebruik naar meetbare succescriteria: Vele overheidsorganisaties werken aan het verstevigen van het landelijke geo-datafundament.",
+      "Gebruik de proof of concept om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Ketenpartners", "Automatisering"],
     contactId: "team-kadaster",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/eenmalige-mutatieopsporing-meervoudig-gebruik/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/eenmalige-mutatieopsporing-meervoudig-gebruik/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/eenmalige-mutatieopsporing-meervoudig-gebruik/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "een-overheidsbericht-voor-nabestaanden",
@@ -306,14 +390,27 @@ const PROJECTS = [
     partners: ["CAK"],
     kort: "Het project: 1 overheidsbericht voor nabestaanden realiseert een verschuiving van losse brieven naar een gepersonaliseerd totaaloverzicht.",
     beschrijving: "Het verlies van een partner is een emotionele gebeurtenis. In deze rouwperiode worden nabestaanden overspoeld met soms wel 70 brieven van diverse overheidsinstanties met verzoeken om lopende of openstaande zaken af te handelen. Deze brieven zijn niet afgestemd of gecoördineerd binnen de organisatie en daarom gefragmenteerd. Dit zorgt voor veel en onoverzichtelijke informatie met als gevolg grote onrust en onzekerheid, in een periode dat het ‘doenvermogen’ van nabestaanden onder druk staat. Met het project ‘één overheidsbericht voor nabestaanden–van chaos naar regie’ realiseert de projectgroep een fundamentele verschuiving. Van meerdere losse brieven naar één proactief, gepersonaliseerd totaaloverzicht gericht aan de nabestaande namens de hele overheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met ICTU als regievoerder. Partnercontext: CAK. Voor ambtenaren is dit vooral relevant bij Burgergericht, Dienstverlening, Ketenpartners. Kern uit de bron: Het verlies van een partner is een emotionele gebeurtenis.",
+    probleem: "Aanleiding: Deze brieven zijn niet afgestemd of gecoördineerd binnen de organisatie en daarom gefragmenteerd. Dit zorgt voor veel en onoverzichtelijke informatie met als gevolg grote onrust en onzekerheid, in een periode dat het ‘doenvermogen’ van nabestaanden onder druk staat.",
+    doel: "Doel: Met het project ‘één overheidsbericht voor nabestaanden–van chaos naar regie’ realiseert de projectgroep een fundamentele verschuiving. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Eén overheidsbericht voor nabestaanden naar meetbare succescriteria: Het verlies van een partner is een emotionele gebeurtenis.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Dienstverlening", "Ketenpartners"],
     contactId: "team-ictu",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/een-overheidsbericht-voor-nabestaanden/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/een-overheidsbericht-voor-nabestaanden/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/een-overheidsbericht-voor-nabestaanden/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "freewheelen-de-toegankelijke-routeplanner",
@@ -332,14 +429,29 @@ const PROJECTS = [
     partners: ["Gemeente Almere, NDW, VNG, Cliëntenbelang en VIP-groep"],
     kort: "Voor rolstoelgebruikers kan één obstakel betekenen dat ze ergens niet kunnen komen. Freewheelen verandert dit met een gepersonaliseerde routeplanner.",
     beschrijving: "Vrij bewegen door de stad is niet voor iedereen vanzelfsprekend. Voor rolstoelgebruikers kan één obstakel betekenen dat ze ergens niet kunnen komen. Freewheelen verandert dit met een routeplanner die routes personaliseert op basis van gebruikersvoorkeuren en ruwe kaartdata omzet in toegankelijke informatie. Samen met Cliëntenbelang en Europese Horizon-partners is een Minimum Viable Product (MVP) ontwikkeld en getest. De volgende stap is opschalen door de algoritmes open source te maken en toegankelijkheidsdata te standaardiseren met wegbeheerders. Zo bouwen gemeenten en ontwikkelaars direct voort zodat toegankelijkheid in de stad vanzelfsprekend wordt voor iedereen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Almere, NDW, VNG, Cliëntenbelang en VIP-groep. Voor ambtenaren is dit vooral relevant bij Toegankelijkheid, Inclusie, Burgergericht. Kern uit de bron: Vrij bewegen door de stad is niet voor iedereen vanzelfsprekend.",
+    probleem: "Aanleiding: Vrij bewegen door de stad is niet voor iedereen vanzelfsprekend. Voor rolstoelgebruikers kan één obstakel betekenen dat ze ergens niet kunnen komen.",
+    doel: "Doel: Samen met Cliëntenbelang en Europese Horizon-partners is een Minimum Viable Product (MVP) ontwikkeld en getest. De volgende stap is opschalen door de algoritmes open source te maken en toegankelijkheidsdata te standaardiseren met wegbeheerders. Zo bouwen gemeenten en ontwikkelaars direct voort zodat toegankelijkheid in de stad vanzelfsprekend wordt voor iedereen. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Freewheelen: de toegankelijke routeplanner naar meetbare succescriteria: Vrij bewegen door de stad is niet voor iedereen vanzelfsprekend.",
+      "Gebruik de implementatie om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Toegankelijkheid", "Inclusie", "Burgergericht"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/freewheelen-de-toegankelijke-routeplanner/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/freewheelen-de-toegankelijke-routeplanner/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/freewheelen-de-toegankelijke-routeplanner/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "gedeelde-patronenbibliotheek-voor-omc-modulair-en-herbruikbare-uitgaande-notificatie-en-communicatiepatronen",
@@ -358,14 +470,28 @@ const PROJECTS = [
     partners: ["Dimpact"],
     kort: "Gemeente Rotterdam, Den Haag, Nijmegen en Eindhoven gebruiken het open source Output Management Component (OMC) om berichten naar inwoners en ondernemers te sturen. Zoals de meldingen dat er een taak voor ze is of een…",
     beschrijving: "Gemeente Rotterdam, Den Haag, Nijmegen en Eindhoven gebruiken het open source Output Management Component (OMC) om berichten naar inwoners en ondernemers te sturen. Zoals de meldingen dat er een taak voor ze is of een vergunning is verleend. De logica hiervoor ligt vast in patronen: afspraken over wat er gebeurt bij een bepaalde situatie, bijvoorbeeld automatisch een bericht versturen bij een aanvraag of beslissing. Nu zitten deze patronen in het OMC zelf, waardoor aanpassingen traag zijn. In dit project wordt er een open patronenbibliotheek ontwikkeld. Dit maakt het eenvoudiger om patronen te maken, delen en hergebruiken. Zo kunnen gemeenten sneller, consistenter en proactief communiceren en inwoners beter informeren.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Gemeente Rotterdam als regievoerder. Partnercontext: Dimpact. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Samenwerking, Open standaarden. Kern uit de bron: Gemeente Rotterdam, Den Haag, Nijmegen en Eindhoven gebruiken het open source Output Management Component (OMC) om berichten naar inwoners en ondernemers te sturen.",
+    probleem: "Aanleiding: Gemeente Rotterdam, Den Haag, Nijmegen en Eindhoven gebruiken het open source Output Management Component (OMC) om berichten naar inwoners en ondernemers te sturen. Zoals de meldingen dat er een taak voor ze is of een vergunning is verleend.",
+    doel: "Doel: In dit project wordt er een open patronenbibliotheek ontwikkeld. Dit maakt het eenvoudiger om patronen te maken, delen en hergebruiken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Gedeelde patronenbibliotheek voor OMC naar meetbare succescriteria: Gemeente Rotterdam, Den Haag, Nijmegen en Eindhoven gebruiken het open source Output Management Component (OMC) om berichten naar inwoners en ondernemers te sturen.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Dienstverlening", "Samenwerking", "Open standaarden"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/gedeelde-patronenbibliotheek-voor-omc-modulair-en-herbruikbare-uitgaande-notificatie-en-communicatiepatronen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gedeelde-patronenbibliotheek-voor-omc-modulair-en-herbruikbare-uitgaande-notificatie-en-communicatiepatronen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gedeelde-patronenbibliotheek-voor-omc-modulair-en-herbruikbare-uitgaande-notificatie-en-communicatiepatronen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "leer-van-bezwaar",
@@ -384,14 +510,28 @@ const PROJECTS = [
     partners: ["Gemeente Utrecht, gemeente Zwolle, Vereniging Juridische Kwaliteitszorg (VJK)"],
     kort: "Leer van Bezwaar maakt bezwaren tot een structurele bron voor betere besluiten en dienstverlening. Het project ontwikkelt een herbruikbare, open‑source analysetool die bezwaren (vrije tekst) automatisch anonimiseert, labelt naar bezwaaronderwerpen en ‘rode…",
     beschrijving: "Leer van Bezwaar maakt bezwaren tot een structurele bron voor betere besluiten en dienstverlening. Het project ontwikkelt een herbruikbare, open‑source analysetool die bezwaren (vrije tekst) automatisch anonimiseert, labelt naar bezwaaronderwerpen en ‘rode draden’ zichtbaar maakt voor alle gemeentelijke zaakstromen. Denk aan vergunningen, handhaving en subsidies. Door middel van Business Analytics kan worden gestuurd op de meeste impactvolle interventies. Met LLM‑ondersteunde trendanalyse wordt op een gedetailleerder niveau inzichtelijk op welke onderdelen van besluiten verbeteringen nodig zijn. De inzichten voeden vaste leercirkels met ketenpartners, zodat verbeteringen meetbaar worden en door verbeterde dienstverlening vermijdbare bezwaren afnemen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Utrecht, gemeente Zwolle, Vereniging Juridische Kwaliteitszorg (VJK). Voor ambtenaren is dit vooral relevant bij AI, Dienstverlening, Transparantie. Kern uit de bron: Leer van Bezwaar maakt bezwaren tot een structurele bron voor betere besluiten en dienstverlening.",
+    probleem: "Aanleiding: Leer van Bezwaar maakt bezwaren tot een structurele bron voor betere besluiten en dienstverlening. Het project ontwikkelt een herbruikbare, open‑source analysetool die bezwaren (vrije tekst) automatisch anonimiseert, labelt naar bezwaaronderwerpen en ‘rode draden’ zichtbaar maakt voor alle gemeentelijke zaakstromen.",
+    doel: "Doel: Leer van Bezwaar maakt bezwaren tot een structurele bron voor betere besluiten en dienstverlening. Het project ontwikkelt een herbruikbare, open‑source analysetool die bezwaren (vrije tekst) automatisch anonimiseert, labelt naar bezwaaronderwerpen en ‘rode draden’ zichtbaar maakt voor alle gemeentelijke zaakstromen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Leer van Bezwaar naar meetbare succescriteria: Leer van Bezwaar maakt bezwaren tot een structurele bron voor betere besluiten en dienstverlening.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Dienstverlening", "Transparantie"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/leer-van-bezwaar/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/leer-van-bezwaar/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/leer-van-bezwaar/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "open-source-mapping-assistant",
@@ -410,14 +550,29 @@ const PROJECTS = [
     partners: ["Gemeenten Emmen, Enschede, Groningen, Rotterdam en Zwolle"],
     kort: "Gemeenten stappen over op Common Ground: gegevens staan dan in open, gestandaardiseerde registers in plaats van opgesloten in oude systemen. Maar het omzetten van die data (datamigratie) kost nu veel tijd en is foutgevoelig, vooral…",
     beschrijving: "Gemeenten stappen over op Common Ground: gegevens staan dan in open, gestandaardiseerde registers in plaats van opgesloten in oude systemen. Maar het omzetten van die data (datamigratie) kost nu veel tijd en is foutgevoelig, vooral door het handmatig maken van ‘mappings’ tussen verschillende datamodellen. In dit project wordt een open-source Mapping Assistant ontwikkeld, als uitbreiding op de DataMigratieTool (DMT). Met AI worden mappings gecontroleerd en worden onderbouwde suggesties gedaan, waarbij de informatiebeheerder altijd beslist. Zo kunnen gemeenten sneller en met meer kwaliteit migreren, met minder afhankelijkheid van leveranciers.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Dimpact als regievoerder. Partnercontext: Gemeenten Emmen, Enschede, Groningen, Rotterdam en Zwolle. Voor ambtenaren is dit vooral relevant bij AI, Data, Automatisering. Kern uit de bron: Gemeenten stappen over op Common Ground: gegevens staan dan in open, gestandaardiseerde registers in plaats van opgesloten in oude systemen.",
+    probleem: "Aanleiding: Maar het omzetten van die data (datamigratie) kost nu veel tijd en is foutgevoelig, vooral door het handmatig maken van ‘mappings’ tussen verschillende datamodellen. Zo kunnen gemeenten sneller en met meer kwaliteit migreren, met minder afhankelijkheid van leveranciers.",
+    doel: "Doel: Gemeenten stappen over op Common Ground: gegevens staan dan in open, gestandaardiseerde registers in plaats van opgesloten in oude systemen. In dit project wordt een open-source Mapping Assistant ontwikkeld, als uitbreiding op de DataMigratieTool (DMT). De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Open source Mapping Assistant naar meetbare succescriteria: Gemeenten stappen over op Common Ground: gegevens staan dan in open, gestandaardiseerde registers in plaats van opgesloten in oude systemen.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["AI", "Data", "Automatisering"],
     contactId: "team-dimpact",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/open-source-mapping-assistant/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/open-source-mapping-assistant/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/open-source-mapping-assistant/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "overheidsbreed-codeplatform",
@@ -436,14 +591,28 @@ const PROJECTS = [
     partners: ["Ministerie van Volksgezondheid, Welzijn en Sport (VWS), Logius, Vereniging van Nederlandse Gemeenten (VNG), Kadaster, Rijkswaterstaat, developer.overheid.nl"],
     kort: "Overheidsorganisaties slaan hun broncode op bij GitHub, een commercieel platform van Microsoft buiten de EU. Dit betekent dat de overheid afhankelijk is van een buitenlandse techgigant voor haar werkprocessen, veelal via individueel beheerde accounts. Dit…",
     beschrijving: "Overheidsorganisaties slaan hun broncode op bij GitHub, een commercieel platform van Microsoft buiten de EU. Dit betekent dat de overheid afhankelijk is van een buitenlandse techgigant voor haar werkprocessen, veelal via individueel beheerde accounts. Dit project test of dat anders kan. Er wordt onderzocht of Forgejo, een open source alternatief, ingezet kan worden als gedeeld platform voor overheidsorganisaties, draaiend op soevereine overheidsinfrastructuur. Het project test een werkende pilotomgeving, met echte gebruikers, en onderzoeken hoe deze te schalen naar een overheidsbrede GDI-voorziening. De pilot begint met een kleine groep deelnemers en breidt gaandeweg uit. Resultaten worden openbaar gedeeld.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) als regievoerder. Partnercontext: Ministerie van Volksgezondheid, Welzijn en Sport (VWS), Logius, Vereniging van Nederlandse Gemeenten (VNG), Kadaster, Rijkswaterstaat, developer.overheid.nl. Voor ambtenaren is dit vooral relevant bij Autonomie, Open standaarden, Digitaal vakmanschap. Kern uit de bron: Overheidsorganisaties slaan hun broncode op bij GitHub, een commercieel platform van Microsoft buiten de EU.",
+    probleem: "Aanleiding: Dit betekent dat de overheid afhankelijk is van een buitenlandse techgigant voor haar werkprocessen, veelal via individueel beheerde accounts.",
+    doel: "Doel: Dit project test of dat anders kan. Het project test een werkende pilotomgeving, met echte gebruikers, en onderzoeken hoe deze te schalen naar een overheidsbrede GDI-voorziening. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Overheidsbreed Codeplatform naar meetbare succescriteria: Overheidsorganisaties slaan hun broncode op bij GitHub, een commercieel platform van Microsoft buiten de EU.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Leg vroeg vast welke keuzes nodig zijn voor digitale soevereiniteit, exitstrategie, beheer, continuïteit en kostenbeheersing.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden", "Developer.overheid.nl"],
     labels: ["Autonomie", "Open standaarden", "Digitaal vakmanschap"],
     contactId: "team-ministerie-van-binnenlandse-zaken-en-kon",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/overheidsbreed-codeplatform/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/overheidsbreed-codeplatform/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/overheidsbreed-codeplatform/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Cloudbeleid rijksoverheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/cloud" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "persoonlijke-assistent",
@@ -462,14 +631,29 @@ const PROJECTS = [
     partners: ["UWV"],
     kort: "De persoonlijke assistent (PA) is een interactieve oplossing die burgers proactief duidelijkheid biedt over hun individuele situatie.",
     beschrijving: "Voor burgers zijn hun rechten en plichten complex. De persoonlijke assistent (PA) is een interactieve oplossing die burgers proactief duidelijkheid biedt over hun individuele situatie. Daarmee leggen we complexiteit waar die hoort: bij de overheid en niet bij de burger. Als voorbeeld nemen we pensionering. Na pensioen bestaat het inkomen vaak uit meerdere bronnen waarop regels niet altijd goed worden toegepast. Daardoor krijgen mensen achteraf soms onverwacht naheffingen. De PA combineert in één toegankelijke app eerdere innovaties zoals een wallet, gecertificeerde rekenregels en een AI agent. Deze app, lokaal op de telefoon, geeft zo vooraf duidelijkheid en desgewenst handelingsperspectief aan de burger.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Belastingdienst als regievoerder. Partnercontext: UWV. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Burgergericht, AI. Kern uit de bron: Voor burgers zijn hun rechten en plichten complex.",
+    probleem: "Aanleiding: Voor burgers zijn hun rechten en plichten complex. Daarmee leggen we complexiteit waar die hoort: bij de overheid en niet bij de burger. Na pensioen bestaat het inkomen vaak uit meerdere bronnen waarop regels niet altijd goed worden toegepast.",
+    doel: "Doel: De PA combineert in één toegankelijke app eerdere innovaties zoals een wallet, gecertificeerde rekenregels en een AI agent. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Persoonlijke Assistent naar meetbare succescriteria: Voor burgers zijn hun rechten en plichten complex.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Burgergericht", "AI"],
     contactId: "team-belastingdienst",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/persoonlijke-assistent/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/persoonlijke-assistent/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/persoonlijke-assistent/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "titaan",
@@ -488,14 +672,28 @@ const PROJECTS = [
     partners: ["RVO, RWS, STOWA, NEVSAT"],
     kort: "TITAAN ontwikkelt een GeoAI Foundation Model: een open AI-systeem getraind op luchtfoto’s, hoogtekaarten en satellietbeelden dat veranderingen herkent.",
     beschrijving: "Overheden moeten dagelijks bijhouden wat er verandert in de buitenruimte. Groeien watergangen dicht, verandert een perceel, verschijnt er een obstakel langs een vaarweg? Nu gebeurt dat handmatig en te laat. TITAAN ontwikkelt een GeoAI Foundation Model: een open AI-systeem getraind op Nederlandse luchtfoto’s, hoogtekaarten en satellietbeelden dat veranderingen automatisch herkent. Het eerste publieke model van dit type in Nederland. Voor de burger: minder controles, een overheid die ingrijpt vóórdat problemen escaleren. Voor agrariërs: snellere subsidiebesluiten. Voor bedrijven: beter voorspelbaar beheer. Kleine gemeenten en natuurorganisaties zoals Natuurmonumenten profiteren mee, zonder zelf een GeoAI model te bouwen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Het Waterschapshuis als regievoerder. Partnercontext: RVO, RWS, STOWA, NEVSAT. Voor ambtenaren is dit vooral relevant bij AI, Data, Duurzaamheid. Kern uit de bron: Overheden moeten dagelijks bijhouden wat er verandert in de buitenruimte.",
+    probleem: "Aanleiding: Nu gebeurt dat handmatig en te laat.",
+    doel: "Doel: TITAAN ontwikkelt een GeoAI Foundation Model: een open AI-systeem getraind op Nederlandse luchtfoto’s, hoogtekaarten en satellietbeelden dat veranderingen automatisch herkent. Kleine gemeenten en natuurorganisaties zoals Natuurmonumenten profiteren mee, zonder zelf een GeoAI model te bouwen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van TITAAN naar meetbare succescriteria: Overheden moeten dagelijks bijhouden wat er verandert in de buitenruimte.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Data", "Duurzaamheid"],
     contactId: "team-het-waterschapshuis",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/titaan/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/titaan/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/titaan/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "toegankelijk-klantcontact",
@@ -514,14 +712,30 @@ const PROJECTS = [
     partners: ["Gemeente Den Haag, Openbaar Lichaam Bonaire (OLB)"],
     kort: "Rijksdienst Caribisch Nederland (RCN) wil samen met de gemeente Den Haag en het Openbaar Lichaam Bonaire (OLB) een koppelvlak realiseren op basis van open standaarden tussen het Klantinteractie Servicesysteem (KISS) en Mitel. Op deze manier…",
     beschrijving: "Rijksdienst Caribisch Nederland (RCN) wil samen met de gemeente Den Haag en het Openbaar Lichaam Bonaire (OLB) een koppelvlak realiseren op basis van open standaarden tussen het Klantinteractie Servicesysteem (KISS) en Mitel. Op deze manier wordt de samenwerking tussen Caribisch Nederland en Europees Nederland versterkt. Het resultaat hiervan is dat inwoners van Bonaire, Sint Eustatius en Saba (de BES-eilanden) dezelfde telefoniedienstverlening krijgen als in Europees Nederland. Door de integratie tussen een klantcontactregistratie en de telefooncentrale kan een medewerker een gesprek direct in KISS aannemen. Het project voegt daar veilige meertalige transcriptie aan toe in Nederlands, Engels, Spaans en Papiamentu. Zo hoeven inwoners hun verhaal minder vaak te herhalen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2026 met Rijksdienst Caribisch Nederland (RCN) als regievoerder. Partnercontext: Gemeente Den Haag, Openbaar Lichaam Bonaire (OLB). Voor ambtenaren is dit vooral relevant bij Dienstverlening, Toegankelijkheid, Open standaarden. Kern uit de bron: Rijksdienst Caribisch Nederland (RCN) wil samen met de gemeente Den Haag en het Openbaar Lichaam Bonaire (OLB) een koppelvlak realiseren op basis van open standaarden tussen het Klantinteractie Servicesysteem (KISS) en Mitel.",
+    probleem: "Aanleiding: Zo hoeven inwoners hun verhaal minder vaak te herhalen.",
+    doel: "Doel: Rijksdienst Caribisch Nederland (RCN) wil samen met de gemeente Den Haag en het Openbaar Lichaam Bonaire (OLB) een koppelvlak realiseren op basis van open standaarden tussen het Klantinteractie Servicesysteem (KISS) en Mitel. Het resultaat hiervan is dat inwoners van Bonaire, Sint Eustatius en Saba (de BES-eilanden) dezelfde telefoniedienstverlening krijgen als in Europees Nederland. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Toegankelijk klantcontact naar meetbare succescriteria: Rijksdienst Caribisch Nederland (RCN) wil samen met de gemeente Den Haag en het Openbaar Lichaam Bonaire (OLB) een koppelvlak realiseren op basis van open standaarden tussen het Klantinteractie Servicesysteem (KISS) en Mitel.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: ["Open Standaarden"],
     labels: ["Dienstverlening", "Toegankelijkheid", "Open standaarden"],
     contactId: "team-rijksdienst-caribisch-nederland-rcn",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/toegankelijk-klantcontact/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/toegankelijk-klantcontact/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2026", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/toegankelijk-klantcontact/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "anonimiseren-bij-de-bron",
@@ -540,14 +754,29 @@ const PROJECTS = [
     partners: ["De Bedrijfsvoeringspartner en Conduction"],
     kort: "'Anonimiseren bij de bron' zet een volgende stap: het opschalen naar een breed inzetbaar en gebruiksvriendelijk product dat overheden echt kunnen gebruiken.",
     beschrijving: "Het project ‘Anonimiseren bij de bron’ viert het succes van het eerdere innovatieproject ‘Anonimiseren met LLM’. Het project zet een grote volgende stap: het opschalen naar een breed inzetbaar en gebruiksvriendelijk product dat overheden écht kunnen gebruiken. We maken de oplossing beschikbaar in de Nextcloud App Store, zodat deze zonder technische kennis te installeren is. Met nieuwe functionaliteiten zoals WCAG-check en taalniveau toetsing, sluit dit project aan bij de Nederlandse Digitalisering Strategie en bij de behoefte aan een veilige, inclusieve en transparante overheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Gemeente Hoeksche Waard als regievoerder. Partnercontext: De Bedrijfsvoeringspartner en Conduction. Voor ambtenaren is dit vooral relevant bij AI, Privacy, Transparantie. Kern uit de bron: Het project ‘Anonimiseren bij de bron’ viert het succes van het eerdere innovatieproject ‘Anonimiseren met LLM’.",
+    probleem: "Aanleiding: Het project ‘Anonimiseren bij de bron’ viert het succes van het eerdere innovatieproject ‘Anonimiseren met LLM’. Het project zet een grote volgende stap: het opschalen naar een breed inzetbaar en gebruiksvriendelijk product dat overheden écht kunnen gebruiken.",
+    doel: "Doel: Het project zet een grote volgende stap: het opschalen naar een breed inzetbaar en gebruiksvriendelijk product dat overheden écht kunnen gebruiken. We maken de oplossing beschikbaar in de Nextcloud App Store, zodat deze zonder technische kennis te installeren is. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Anonimiseren bij de bron naar meetbare succescriteria: Het project ‘Anonimiseren bij de bron’ viert het succes van het eerdere innovatieproject ‘Anonimiseren met LLM’.",
+      "Gebruik de implementatie om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Privacy", "Transparantie"],
     contactId: "team-gemeente-hoeksche-waard",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/anonimiseren-bij-de-bron/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/anonimiseren-bij-de-bron/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/anonimiseren-bij-de-bron/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "brede-welvaartscan",
@@ -566,14 +795,27 @@ const PROJECTS = [
     partners: ["Gemeente Rotterdam"],
     kort: "De gemeenten Amsterdam en Rotterdam ontwikkelen een digitale tool om beleidskeuzes beter te onderbouwen met het concept brede welvaart.",
     beschrijving: "De gemeenten Amsterdam en Rotterdam ontwikkelen een digitale tool om beleidskeuzes beter te onderbouwen met het concept brede welvaart. Brede welvaart gaat over meer dan economische groei; het gaat om een samenleving waarin waarden centraal staan als geluk, gezondheid, sociale verbinding, veiligheid, klimaat en biodiversiteit. De tool helpt beleidsmakers door AI-gestuurde suggesties te geven op basis van eerdere onderzoeken en beleidsstukken. Zo wordt brede welvaart beter meegenomen in besluitvorming en wordt transparantie over beleidskeuzes vergroot voor burgers, ondernemers en maatschappelijke organisaties. De tool wordt open source ontwikkeld zodat andere gemeentes en geïnteresseerde organisaties er ook gebruik van kunnen maken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Rotterdam. Voor ambtenaren is dit vooral relevant bij Data, Publieke waarden. Kern uit de bron: De gemeenten Amsterdam en Rotterdam ontwikkelen een digitale tool om beleidskeuzes beter te onderbouwen met het concept brede welvaart.",
+    probleem: "Aanleiding: De gemeenten Amsterdam en Rotterdam ontwikkelen een digitale tool om beleidskeuzes beter te onderbouwen met het concept brede welvaart. Brede welvaart gaat over meer dan economische groei; het gaat om een samenleving waarin waarden centraal staan als geluk, gezondheid, sociale verbinding, veiligheid, klimaat en biodiversiteit.",
+    doel: "Doel: De gemeenten Amsterdam en Rotterdam ontwikkelen een digitale tool om beleidskeuzes beter te onderbouwen met het concept brede welvaart. De tool helpt beleidsmakers door AI-gestuurde suggesties te geven op basis van eerdere onderzoeken en beleidsstukken. De tool wordt open source ontwikkeld zodat andere gemeentes en geïnteresseerde organisaties er ook gebruik van kunnen maken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Brede Welvaart Scan naar meetbare succescriteria: De gemeenten Amsterdam en Rotterdam ontwikkelen een digitale tool om beleidskeuzes beter te onderbouwen met het concept brede welvaart.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Publieke waarden"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/brede-welvaartscan/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/brede-welvaartscan/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/brede-welvaartscan/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "bronconnect",
@@ -592,14 +834,29 @@ const PROJECTS = [
     partners: ["Gemeente Rijswijk, Gemeente Rotterdam, Federatief datastelsel, EnableU, Cleverbase en RINIS"],
     kort: "In dit project wordt een voorstel voor een uniforme wijze van ontsluiten van gegevens ontwikkeld en beproefd.",
     beschrijving: "Digitale dienstverlening van de overheid aan burgers en ondernemers staat of valt met beschikbaarheid van betrouwbare gegevens over die persoon. Het uitgangspunt, ook in Europa, is dat personen in regie zijn bij het delen van diens gegevens uit de bron. Veel van de authentieke bronnen met relevante gegevens voor het maatschappelijk verkeer worden beheerd door overheidsorganisaties, waaronder gemeenten. Om te voorkomen dat de bron voor het delen van gegevens via verschillende kanalen steeds aparte oplossingen moet implementeren, wordt in dit project een voorstel voor een uniforme wijze van ontsluiten van gegevens ontwikkeld en beproefd. Op basis van bestaande open standaarden en voorzieningen ontstaat hiermee dé manier om bronnen te bevragen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met VNG als regievoerder. Partnercontext: Gemeente Rijswijk, Gemeente Rotterdam, Federatief datastelsel, EnableU, Cleverbase en RINIS. Voor ambtenaren is dit vooral relevant bij Datadeling, API's, Interoperabiliteit. Kern uit de bron: Digitale dienstverlening van de overheid aan burgers en ondernemers staat of valt met beschikbaarheid van betrouwbare gegevens over die persoon.",
+    probleem: "Aanleiding: Digitale dienstverlening van de overheid aan burgers en ondernemers staat of valt met beschikbaarheid van betrouwbare gegevens over die persoon. Het uitgangspunt, ook in Europa, is dat personen in regie zijn bij het delen van diens gegevens uit de bron.",
+    doel: "Doel: Digitale dienstverlening van de overheid aan burgers en ondernemers staat of valt met beschikbaarheid van betrouwbare gegevens over die persoon. Om te voorkomen dat de bron voor het delen van gegevens via verschillende kanalen steeds aparte oplossingen moet implementeren, wordt in dit project een voorstel voor een uniforme wijze van ontsluiten van gegevens ontwikkeld en beproefd. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van BronConnect naar meetbare succescriteria: Digitale dienstverlening van de overheid aan burgers en ondernemers staat of valt met beschikbaarheid van betrouwbare gegevens over die persoon.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: ["Open Standaarden"],
     labels: ["Datadeling", "API's", "Interoperabiliteit"],
     contactId: "team-vng",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/bronconnect/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/bronconnect/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/bronconnect/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "data-spaces-voor-ruimtelijke-data",
@@ -618,14 +875,29 @@ const PROJECTS = [
     partners: ["RIVM en GeoCat"],
     kort: "Rijkswaterstaat en RIVM gaan open source applicaties door ontwikkelen om data te ontsluiten voor de eigen organisatie, overheid, marktpartijen en burgers.",
     beschrijving: "Rijkswaterstaat en het RIVM maken gebruik van verschillende open source applicaties om data te ontsluiten voor de eigen organisatie, overheid, marktpartijen en burgers. De applicaties worden breed ingezet binnen de overheid in Nederland en daarbuiten. Nieuwe ontwikkelingen in Nederland en de EU vragen om nieuwe functionaliteit in genoemde componenten. Het gaat hier om ontwikkelingen binnen de zogenaamde Data Spaces. En ook de implementatie van nieuwe OGC API standaarden speelt een rol. Met name de OGC API Records standaard voor catalogi is hierbij relevant. Omdat een aanzienlijk deel van de Nederlandse overheidsinstanties gebruik maakt van deze open source componenten, is de potentiële impact groot.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Rijkswaterstaat als regievoerder. Partnercontext: RIVM en GeoCat. Voor ambtenaren is dit vooral relevant bij Datadeling, Open standaarden, Data. Kern uit de bron: Rijkswaterstaat en het RIVM maken gebruik van verschillende open source applicaties om data te ontsluiten voor de eigen organisatie, overheid, marktpartijen en burgers.",
+    probleem: "Aanleiding: Rijkswaterstaat en het RIVM maken gebruik van verschillende open source applicaties om data te ontsluiten voor de eigen organisatie, overheid, marktpartijen en burgers. De applicaties worden breed ingezet binnen de overheid in Nederland en daarbuiten.",
+    doel: "Doel: Nieuwe ontwikkelingen in Nederland en de EU vragen om nieuwe functionaliteit in genoemde componenten. Het gaat hier om ontwikkelingen binnen de zogenaamde Data Spaces. En ook de implementatie van nieuwe OGC API standaarden speelt een rol. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Data spaces voor ruimtelijke data naar meetbare succescriteria: Rijkswaterstaat en het RIVM maken gebruik van verschillende open source applicaties om data te ontsluiten voor de eigen organisatie, overheid, marktpartijen en burgers.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Datadeling", "Open standaarden", "Data"],
     contactId: "team-rijkswaterstaat",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/data-spaces-voor-ruimtelijke-data/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/data-spaces-voor-ruimtelijke-data/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/data-spaces-voor-ruimtelijke-data/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "datapro112",
@@ -644,14 +916,27 @@ const PROJECTS = [
     partners: ["NIPV, VNOG, VRGZ, VGGM, VR IJsselland, VRT en VRAA."],
     kort: "Incidenten waarvoor een 112 melding wordt gedaan zijn voor betrokken burgers en ondernemers impactvolle gebeurtenissen. Datagedreven innovaties kunnen de effectiviteit van incidentbestrijding verhogen en zo veel leed en schade voorkomen c.q. beperken. Tot…",
     beschrijving: "Incidenten waarvoor een 112 melding wordt gedaan zijn voor betrokken burgers en ondernemers impactvolle gebeurtenissen. Datagedreven innovaties kunnen de effectiviteit van incidentbestrijding verhogen en zo veel leed en schade voorkomen c.q. beperken. Tot nu toe is er echter geen volledig landelijk inzicht in de data van het incidentafhandelingsproces. In dit project brengen we data van zeven veiligheidsregio’s samen. Met data-analyse genereren we nieuwe inzichten. We onderzoeken datascience toepassingen die het incidentafhandelingsproces optimaliseren, waardoor incidentbestrijding effectiever wordt. En we doen aanbevelingen voor landelijke datastandaardisatie om in de toekomst ook landelijk te profiteren van deze datagedreven innovaties.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Veiligheidsregio Midden- en West-Brabant (VRMWB) als regievoerder. Partnercontext: NIPV, VNOG, VRGZ, VGGM, VR IJsselland, VRT en VRAA.. Voor ambtenaren is dit vooral relevant bij Data, Datadeling, Samenwerking. Kern uit de bron: Incidenten waarvoor een 112 melding wordt gedaan zijn voor betrokken burgers en ondernemers impactvolle gebeurtenissen.",
+    probleem: "Aanleiding: Tot nu toe is er echter geen volledig landelijk inzicht in de data van het incidentafhandelingsproces.",
+    doel: "Doel: Datagedreven innovaties kunnen de effectiviteit van incidentbestrijding verhogen en zo veel leed en schade voorkomen c.q. beperken. En we doen aanbevelingen voor landelijke datastandaardisatie om in de toekomst ook landelijk te profiteren van deze datagedreven innovaties. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Datapro112 naar meetbare succescriteria: Incidenten waarvoor een 112 melding wordt gedaan zijn voor betrokken burgers en ondernemers impactvolle gebeurtenissen.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Datadeling", "Samenwerking"],
     contactId: "team-veiligheidsregio-midden-en-west-brabant-",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/datapro112/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/datapro112/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/datapro112/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "de-virtuele-ai-assistent",
@@ -670,14 +955,29 @@ const PROJECTS = [
     partners: ["Gemeente Bronckhorst en CiviQs"],
     kort: "Het doel is om de Virtuele AI-assistent uit te laten groeien tot een landelijke standaard die overheidsdienstverlening fundamenteel verbetert.",
     beschrijving: "De eerste versie van de chatbot van Montferland bewijst nu al de waarde van virtuele assistenten. Verlichting van werkdruk bij medewerkers en betere dienstverlening voor burgers en bedrijven. Zij krijgen vaak snellere en betere antwoorden, ook buiten kantoortijden. Dit innovatieproject transformeert de lokale chatbot naar een volwaardige virtuele AI-assistent die door alle overheden gebruikt kan worden. Met meer dan 100 geïnteresseerde overheidsorganisaties is de vraag enorm. Het doel is om de Virtuele AI-assistent uit te laten groeien tot een landelijke standaard die overheidsdienstverlening fundamenteel verbetert en de werkdruk verlaagt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Gemeente Montferland als regievoerder. Partnercontext: Gemeente Bronckhorst en CiviQs. Voor ambtenaren is dit vooral relevant bij AI, Dienstverlening, Opschalen. Kern uit de bron: De eerste versie van de chatbot van Montferland bewijst nu al de waarde van virtuele assistenten.",
+    probleem: "Aanleiding: Verlichting van werkdruk bij medewerkers en betere dienstverlening voor burgers en bedrijven. Het doel is om de Virtuele AI-assistent uit te laten groeien tot een landelijke standaard die overheidsdienstverlening fundamenteel verbetert en de werkdruk verlaagt.",
+    doel: "Het doel is om de Virtuele AI-assistent uit te laten groeien tot een landelijke standaard die overheidsdienstverlening fundamenteel verbetert en de werkdruk verlaagt. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van De Virtuele AI-assistent naar meetbare succescriteria: De eerste versie van de chatbot van Montferland bewijst nu al de waarde van virtuele assistenten.",
+      "Gebruik de implementatie om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Dienstverlening", "Opschalen"],
     contactId: "team-gemeente-montferland",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/de-virtuele-ai-assistent/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/de-virtuele-ai-assistent/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/de-virtuele-ai-assistent/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "innovatieve-algoritmes-voor-3d-modellen-in-de-3dbag",
@@ -696,14 +996,29 @@ const PROJECTS = [
     partners: ["ICTU, Gemeente Utrecht, Gemeente Amsterdam, RIVM, Waterschapshuis, Kadaster, RVO, TU Delft"],
     kort: "Dit project ontwikkelt innovatieve algoritmen om juist deze gebouwen, veelvoorkomend in stedelijk gebied, beter te modelleren.",
     beschrijving: "De 3DBAG (www.3dbag.nl) is een landelijke open dataset van 3D gebouwmodellen, die automatisch wordt gegenereerd uit open geodata van de overheid. De dataset is onmisbaar geworden voor gemeenten, bedrijven en kennisinstellingen die werken aan digitale innovaties. Denk aan geluids- en stikstofsimulaties, de energietransitie en stadsvisualisaties voor duurzaamheids- en andere stedenbouwkundige vraagstukken. Momenteel worden complexe gebouwen zoals met onderdoorgangen, ingewikkelde dakstructuren, luifels of gebouwen op pilaren echter niet goed meegenomen. Dit project ontwikkelt innovatieve algoritmen om juist deze gebouwen, veelvoorkomend in stedelijk gebied, beter te modelleren. Zo wordt de 3DBAG nog betrouwbaarder en breder inzetbaar voor iedereen. Lees een interview met de projectleiders van dit innovatieproject.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Geonovum als regievoerder. Partnercontext: ICTU, Gemeente Utrecht, Gemeente Amsterdam, RIVM, Waterschapshuis, Kadaster, RVO, TU Delft. Voor ambtenaren is dit vooral relevant bij Algoritmes, Data. Kern uit de bron: De 3DBAG (www.3dbag.nl) is een landelijke open dataset van 3D gebouwmodellen, die automatisch wordt gegenereerd uit open geodata van de overheid.",
+    probleem: "Aanleiding: Momenteel worden complexe gebouwen zoals met onderdoorgangen, ingewikkelde dakstructuren, luifels of gebouwen op pilaren echter niet goed meegenomen.",
+    doel: "Doel: Momenteel worden complexe gebouwen zoals met onderdoorgangen, ingewikkelde dakstructuren, luifels of gebouwen op pilaren echter niet goed meegenomen. Dit project ontwikkelt innovatieve algoritmen om juist deze gebouwen, veelvoorkomend in stedelijk gebied, beter te modelleren. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Innovatieve algoritmes voor 3D-modellen in de 3DBAG naar meetbare succescriteria: De 3DBAG (www.3dbag.nl) is een landelijke open dataset van 3D gebouwmodellen, die automatisch wordt gegenereerd uit open geodata van de overheid.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Algoritmes", "Data"],
     contactId: "team-geonovum",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/innovatieve-algoritmes-voor-3d-modellen-in-de-3dbag/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/innovatieve-algoritmes-voor-3d-modellen-in-de-3dbag/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/innovatieve-algoritmes-voor-3d-modellen-in-de-3dbag/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: 3dbag.nl", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.3dbag.nl" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "integraal-klantbeeld",
@@ -722,14 +1037,29 @@ const PROJECTS = [
     partners: ["Gemeente Utrecht en Gemeente Rotterdam"],
     kort: "Met het innovatiebudget gaat de projectgroep informatie uit de datalaag van verschillende applicaties die zijn aangesloten op Common Ground, integraal tonen.",
     beschrijving: "Als burger of ondernemer van de gemeente, wil ik mijn verhaal maar 1 keer vertellen. Daardoor hoeven burgers niet telkens hun situatie te herhalen in geval van een nieuwe aanvraag. Als gemeente wil ik een zo compleet mogelijk overzicht van alle lopende zaken en contacten tussen klant en gemeente. Daardoor kan de gemeente pro-actieve, integrale en klantgerichte dienstverlening aanbieden. Met het innovatiebudget Digitale Overheid gaat de projectgroep de informatie uit de datalaag van verschillende applicaties die zijn aangesloten op Common Ground, integraal tonen. Dit uiteraard onder de voorwaarde dat de behandelaar ook recht op deze informatie heeft.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Gemeente Den Haag als regievoerder. Partnercontext: Gemeente Utrecht en Gemeente Rotterdam. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Data, API's. Kern uit de bron: Als burger of ondernemer van de gemeente, wil ik mijn verhaal maar 1 keer vertellen.",
+    probleem: "Aanleiding: Daardoor hoeven burgers niet telkens hun situatie te herhalen in geval van een nieuwe aanvraag.",
+    doel: "Doel: Daardoor hoeven burgers niet telkens hun situatie te herhalen in geval van een nieuwe aanvraag. Als gemeente wil ik een zo compleet mogelijk overzicht van alle lopende zaken en contacten tussen klant en gemeente. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Integraal klantbeeld naar meetbare succescriteria: Als burger of ondernemer van de gemeente, wil ik mijn verhaal maar 1 keer vertellen.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Dienstverlening", "Data", "API's"],
     contactId: "team-gemeente-den-haag",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/integraal-klantbeeld/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/integraal-klantbeeld/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/integraal-klantbeeld/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "minder-burgers-in-de-knel",
@@ -748,14 +1078,27 @@ const PROJECTS = [
     partners: ["Ministerie van Binnenlandse Zaken"],
     kort: "Met dit project maken de VNG en het ministerie van BZK een analysetool om wetsvoorstellen snel te toetsen op uitvoerbaarheid in samenhang met andere wetten.",
     beschrijving: "Door stapeling van wet- en regelgeving worden wetten onuitvoerbaar. Met het gevolg dat beleidsdoelen niet worden behaald. Inwoners en ondernemers zijn hiervan de dupe omdat ze niet de dienstverlening krijgen die de wetgever beoogt. Met dit project maken de VNG en het ministerie van BZK een analysetool om wetsvoorstellen snel en eenvoudig te toetsen op uitvoerbaarheid in samenhang met andere wetten. Een belangrijk element hierin is dat ze wetgeving vertalen naar een machineleesbaar formaat. Op deze manier kunnen ze de uitvoeringsconsequenties van nieuwe wetgeving sneller in kaart brengen en concrete suggesties doen voor verbetering van (voorgenomen) wetgeving. Zo voorkomt het project problemen voor inwoners en de uitvoeringspraktijk.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met VNG als regievoerder. Partnercontext: Ministerie van Binnenlandse Zaken. Voor ambtenaren is dit vooral relevant bij Publieke waarden, Burgergericht, Compliance. Kern uit de bron: Door stapeling van wet- en regelgeving worden wetten onuitvoerbaar.",
+    probleem: "Aanleiding: Met het gevolg dat beleidsdoelen niet worden behaald. Inwoners en ondernemers zijn hiervan de dupe omdat ze niet de dienstverlening krijgen die de wetgever beoogt.",
+    doel: "Doel: Met het gevolg dat beleidsdoelen niet worden behaald. Op deze manier kunnen ze de uitvoeringsconsequenties van nieuwe wetgeving sneller in kaart brengen en concrete suggesties doen voor verbetering van (voorgenomen) wetgeving. Zo voorkomt het project problemen voor inwoners en de uitvoeringspraktijk. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Minder burgers in de knel naar meetbare succescriteria: Door stapeling van wet- en regelgeving worden wetten onuitvoerbaar.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Publieke waarden", "Burgergericht", "Compliance"],
     contactId: "team-vng",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/minder-burgers-in-de-knel/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/minder-burgers-in-de-knel/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/minder-burgers-in-de-knel/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "modern-rekenhart-als-bouwsteen-voor-de-hele-overheid",
@@ -774,14 +1117,29 @@ const PROJECTS = [
     partners: ["Bureau Architectuur Nederlandse Overheid / BZK"],
     kort: "Samen werkt het projectteam aan het beschikbaar stellen van deze bouwstenen voor een modern rekenhart dat ook bruikbaar is voor andere overheden.",
     beschrijving: "Bij de uitvoering van complexe regelingen voor burgers en ondernemers is het vaak nodig om de juiste hoogte te kunnen berekenen. Dit gebeurt op basis van de grondslagen die in de desbetreffende wetgeving staan. Dit wordt in een zogenaamd ‘rekenhart’ gedaan. Een rekenhart moet aan veel eisen voldoen: schaalbaarheid, data-minimalisatie, auditeerbaarheid, uitlegbaarheid en archivering. Bureau Architectuur Nederlandse Overheid (BANO), vanuit BZK, neemt standaardisatie van de regelspecificatie voor haar rekening. Dit is nodig om een goede vertaling van de wet- en regelgeving naar code te kunnen garanderen. Samen werken ze aan het beschikbaar stellen van deze bouwstenen aan andere overheden, zodat niemand het wiel een tweede keer hoeft uit te vinden.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Dienst Toeslagen als regievoerder. Partnercontext: Bureau Architectuur Nederlandse Overheid / BZK. Voor ambtenaren is dit vooral relevant bij Automatisering, Procesinnovatie, Open standaarden. Kern uit de bron: Bij de uitvoering van complexe regelingen voor burgers en ondernemers is het vaak nodig om de juiste hoogte te kunnen berekenen.",
+    probleem: "Aanleiding: Bij de uitvoering van complexe regelingen voor burgers en ondernemers is het vaak nodig om de juiste hoogte te kunnen berekenen.",
+    doel: "Doel: Bureau Architectuur Nederlandse Overheid (BANO), vanuit BZK, neemt standaardisatie van de regelspecificatie voor haar rekening. Samen werken ze aan het beschikbaar stellen van deze bouwstenen aan andere overheden, zodat niemand het wiel een tweede keer hoeft uit te vinden. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Modern rekenhart als bouwsteen voor de hele overheid naar meetbare succescriteria: Bij de uitvoering van complexe regelingen voor burgers en ondernemers is het vaak nodig om de juiste hoogte te kunnen berekenen.",
+      "Gebruik de proof of concept om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Automatisering", "Procesinnovatie", "Open standaarden"],
     contactId: "team-dienst-toeslagen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/modern-rekenhart-als-bouwsteen-voor-de-hele-overheid/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/modern-rekenhart-als-bouwsteen-voor-de-hele-overheid/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/modern-rekenhart-als-bouwsteen-voor-de-hele-overheid/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "NORA Online", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.noraonline.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "start-lokale-impact-multiplier-slim",
@@ -800,14 +1158,27 @@ const PROJECTS = [
     partners: ["Gemeente Heerlen, Centric, Stichting STRO"],
     kort: "Binnen dit project werkt men aan een slimme manier om gemeentelijke inkoop en subsidies meer impact te geven in de lokale economie.",
     beschrijving: "Vergroot de impact van inkoop en subsidies voor de lokale economie door financiële en economische innovatie Binnen dit project werkt men aan een slimme manier om gemeentelijke inkoop en subsidies meer impact te geven in de lokale economie. Momenteel profiteert lokaal kleinbedrijf te weinig van deze geldstromen. Zij vissen vaak achter het net van gevestigde bedrijven of complexe processen. Door ondernemers een lokale rekening aan te bieden, kan het verdiende geld vaker rondgaan en de economische impact en werkgelegenheid structureel verbeteren. Daarom bouwt het projectteam aan een infrastructuur die gemeenten eenvoudig kunnen inzetten, en handvatten geeft om lokale geldcirculatie te versterken. Dit project focust op het inclusief ontwerpen van deze infrastructuur samen met de doelgroep, zodat het toegepast kan worden in Nieuw-West en repliceerbaar is voor andere gemeenten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Heerlen, Centric, Stichting STRO. Voor ambtenaren is dit vooral relevant bij Data, Publieke waarden. Kern uit de bron: Vergroot de impact van inkoop en subsidies voor de lokale economie door financiële en economische innovatie Binnen dit project werkt men aan een slimme manier om gemeentelijke inkoop en subsidies meer impact te geven in de lokale economie.",
+    probleem: "Aanleiding: Momenteel profiteert lokaal kleinbedrijf te weinig van deze geldstromen. Zij vissen vaak achter het net van gevestigde bedrijven of complexe processen.",
+    doel: "Doel: Door ondernemers een lokale rekening aan te bieden, kan het verdiende geld vaker rondgaan en de economische impact en werkgelegenheid structureel verbeteren. Daarom bouwt het projectteam aan een infrastructuur die gemeenten eenvoudig kunnen inzetten, en handvatten geeft om lokale geldcirculatie te versterken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Start Lokale Impact Multiplier (SLIM) naar meetbare succescriteria: Vergroot de impact van inkoop en subsidies voor de lokale economie door financiële en economische innovatie Binnen dit project werkt men aan een slimme manier om gemeentelijke inkoop en subsidies meer impact te geven in de lokale economie.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Publieke waarden"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/start-lokale-impact-multiplier-slim/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/start-lokale-impact-multiplier-slim/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/start-lokale-impact-multiplier-slim/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "tina-betrouwbare-transcriptie-voor-publieke-organisaties",
@@ -826,14 +1197,29 @@ const PROJECTS = [
     partners: ["Gemeente Montferland en NHL Stenden"],
     kort: "TINA is een AI-tool die vertrouwelijke gesprekken, zoals keukentafelgesprekken en hoorzittingen, automatisch omzet in geschreven tekst.",
     beschrijving: "TINA is een AI-tool die vertrouwelijke gesprekken, zoals keukentafelgesprekken en hoorzittingen, automatisch omzet in geschreven tekst. Dit bespaart publieke organisaties veel tijd en aandacht. Dit innovatieproject richt zich op de doorontwikkeling van TINA, met verbeterde privacybescherming, herkenning van dialect, functionaliteit, betrouwbaarheid en gebruiksvriendelijkheid. De tool wordt ontwikkeld door en voor publieke organisaties. TINA wordt opensource beschikbaar gesteld. Door TINA helpen we publieke organisaties efficiënter, transparanter en veiliger te werken met een lokale AI-oplossing die voldoet aan alle wet- en regelgeving. Een belangrijke stap richting digitale soevereiniteit.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Gemeente Leeuwarden als regievoerder. Partnercontext: Gemeente Montferland en NHL Stenden. Voor ambtenaren is dit vooral relevant bij AI, Privacy, Autonomie. Kern uit de bron: TINA is een AI-tool die vertrouwelijke gesprekken, zoals keukentafelgesprekken en hoorzittingen, automatisch omzet in geschreven tekst.",
+    probleem: "Aanleiding: TINA is een AI-tool die vertrouwelijke gesprekken, zoals keukentafelgesprekken en hoorzittingen, automatisch omzet in geschreven tekst. Dit bespaart publieke organisaties veel tijd en aandacht.",
+    doel: "Doel: Dit innovatieproject richt zich op de doorontwikkeling van TINA, met verbeterde privacybescherming, herkenning van dialect, functionaliteit, betrouwbaarheid en gebruiksvriendelijkheid. De tool wordt ontwikkeld door en voor publieke organisaties. TINA wordt opensource beschikbaar gesteld. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van TINA – Betrouwbare Transcriptie voor Publieke Organisaties naar meetbare succescriteria: TINA is een AI-tool die vertrouwelijke gesprekken, zoals keukentafelgesprekken en hoorzittingen, automatisch omzet in geschreven tekst.",
+      "Gebruik de implementatie om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Privacy", "Autonomie"],
     contactId: "team-gemeente-leeuwarden",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/tina-betrouwbare-transcriptie-voor-publieke-organisaties/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/tina-betrouwbare-transcriptie-voor-publieke-organisaties/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/tina-betrouwbare-transcriptie-voor-publieke-organisaties/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "tot-uw-dienst-duidelijkheid-in-15-minuten",
@@ -852,14 +1238,27 @@ const PROJECTS = [
     partners: ["Gemeente Nijmegen en Stimulansz"],
     kort: "Tot uw dienst verzendt in 15 minuten de aanvragen met bronvermelding naar alle instanties. Alleen registratie, controle en bevestiging is dan nog nodig.",
     beschrijving: "Hoogheemraadschap Hollands Noorderkwartier en gemeente Nijmegen geven met Bereken Je Recht en de (Yivi)Wallet de burger gemak, grip en regie. Elke burgers kan zelf zijn gegevens ophalen en bekijken welke voorzieningen hij bij gemeente en waterschap kan aanvragen. Met het project “Tot uw dienst” vragen burgers zonder het invullen van afzonderlijke formulieren in één keer alle voorzieningen aan. Zij zien meteen welke kans ze hebben op toewijzing. Bij geen recht geeft “Tot uw dienst” advies. Tot uw dienst verzendt in 15 minuten de aanvragen met bronvermelding naar alle instanties. Alleen registratie, controle en bevestiging is dan nog nodig. Voor de burger is Tot uw dienst snel en duidelijk en voor de overheid bespaart het heel veel tijd en kosten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Hoogheemraadschap Hollands Noorderkwartier als regievoerder. Partnercontext: Gemeente Nijmegen en Stimulansz. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Automatisering. Kern uit de bron: Hoogheemraadschap Hollands Noorderkwartier en gemeente Nijmegen geven met Bereken Je Recht en de (Yivi)Wallet de burger gemak, grip en regie.",
+    probleem: "Aanleiding: Bij geen recht geeft “Tot uw dienst” advies.",
+    doel: "Doel: Elke burgers kan zelf zijn gegevens ophalen en bekijken welke voorzieningen hij bij gemeente en waterschap kan aanvragen. Met het project “Tot uw dienst” vragen burgers zonder het invullen van afzonderlijke formulieren in één keer alle voorzieningen aan. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Tot uw dienst: duidelijkheid in 15 minuten naar meetbare succescriteria: Hoogheemraadschap Hollands Noorderkwartier en gemeente Nijmegen geven met Bereken Je Recht en de (Yivi)Wallet de burger gemak, grip en regie.",
+      "Gebruik de pilot om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Automatisering"],
     contactId: "team-hoogheemraadschap-hollands-noorderkwarti",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/tot-uw-dienst-duidelijkheid-in-15-minuten/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/tot-uw-dienst-duidelijkheid-in-15-minuten/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/tot-uw-dienst-duidelijkheid-in-15-minuten/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "transparantieapp",
@@ -878,14 +1277,30 @@ const PROJECTS = [
     partners: ["Geonovum"],
     kort: "Met deze app krijg je eenvoudig inzicht in welke gegevens de overheid gebruikt en hoe beslissingen tot stand komen.",
     beschrijving: "Wil je weten welke gegevens de overheid heeft gebruikt bij een besluit dat jou raakt? Bijvoorbeeld waarom jouw aanvraag voor een kapvergunning is afgewezen? Of ben je gewoon benieuwd hoe de overheid jouw gegevens verwerkt en gebruikt? Daarvoor ontwikkelt dit projectteam een Proof of Concept voor een TransparantieApp! Met deze app krijg je eenvoudig inzicht in welke gegevens de overheid gebruikt en hoe beslissingen tot stand komen. Of je nu een burger of bedrijf bent, je krijgt transparante, gepersonaliseerde en toegankelijke informatie over dataverwerking en besluitvorming. Bovendien werkt onze app op basis van open standaarden, en we breiden deze waar nodig uit om transparantie, gebruiksgemak en passende (burger)privacy te garanderen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2025 met Ministerie van Binnenlandse Zaken als regievoerder. Partnercontext: Geonovum. Voor ambtenaren is dit vooral relevant bij Transparantie, Privacy, Open standaarden. Kern uit de bron: Wil je weten welke gegevens de overheid heeft gebruikt bij een besluit dat jou raakt?",
+    probleem: "Aanleiding: Wil je weten welke gegevens de overheid heeft gebruikt bij een besluit dat jou raakt? Bijvoorbeeld waarom jouw aanvraag voor een kapvergunning is afgewezen?",
+    doel: "Doel: Daarvoor ontwikkelt dit projectteam een Proof of Concept voor een TransparantieApp! Bovendien werkt onze app op basis van open standaarden, en we breiden deze waar nodig uit om transparantie, gebruiksgemak en passende (burger)privacy te garanderen. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Transparantieapp naar meetbare succescriteria: Wil je weten welke gegevens de overheid heeft gebruikt bij een besluit dat jou raakt?",
+      "Gebruik de proof of concept om aannames hard te maken: welke doelgroep, ketenpartner of beheerorganisatie moet bewijs leveren voordat opschaling logisch is?",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: ["Open Standaarden"],
     labels: ["Transparantie", "Privacy", "Open standaarden"],
     contactId: "team-ministerie-van-binnenlandse-zaken",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/transparantieapp/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/transparantieapp/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2025", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/transparantieapp/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "ai-validatie",
@@ -904,14 +1319,29 @@ const PROJECTS = [
     partners: ["DUO, Algorithm Audit"],
     kort: "Dit project bouwt voort op de samenwerking tussen DUO, Min. BZK en Stichting Algorithm Audit om te leren hoe we algoritmes verantwoord kunnen gebruiken.",
     beschrijving: "Er is dringend behoefte aan publieke kennis over de ethische problemen bij het ontwerpen en controleren van algoritmes. Omdat deze problemen ethische keuzes omvatten, is het belangrijk dat belanghebbenden hierover overleggen. Dit project bouwt voort op de samenwerking tussen DUO, het Ministerie van Binnenlandse Zaken en Stichting Algorithm Audit om gezamenlijk te leren hoe we algoritmes verantwoord kunnen gebruiken. Twee open-source tools worden verder ontwikkeld om vooroordelen in algoritmes op te sporen. Daarnaast wordt een methode (algoprudentie genoemd) onderzocht om samen met belanghebbenden ethische vragen over verantwoord gebruik van algoritmes te bespreken en oplossen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Ministerie van BZK als regievoerder. Partnercontext: DUO, Algorithm Audit. Voor ambtenaren is dit vooral relevant bij Responsible AI, Algoritmes, Transparantie. Kern uit de bron: Er is dringend behoefte aan publieke kennis over de ethische problemen bij het ontwerpen en controleren van algoritmes.",
+    probleem: "Aanleiding: Er is dringend behoefte aan publieke kennis over de ethische problemen bij het ontwerpen en controleren van algoritmes. Omdat deze problemen ethische keuzes omvatten, is het belangrijk dat belanghebbenden hierover overleggen.",
+    doel: "Doel: Dit project bouwt voort op de samenwerking tussen DUO, het Ministerie van Binnenlandse Zaken en Stichting Algorithm Audit om gezamenlijk te leren hoe we algoritmes verantwoord kunnen gebruiken. Twee open-source tools worden verder ontwikkeld om vooroordelen in algoritmes op te sporen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van AI Validatie naar meetbare succescriteria: Er is dringend behoefte aan publieke kennis over de ethische problemen bij het ontwerpen en controleren van algoritmes.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Responsible AI", "Algoritmes", "Transparantie"],
     contactId: "team-ministerie-van-bzk",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/ai-validatie/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-validatie/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-validatie/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "ai-virtuele-assistent-gem",
@@ -930,14 +1360,29 @@ const PROJECTS = [
     partners: [],
     kort: "Er gaat een pilot starten om te onderzoeken hoe Generatieve AI de prestaties van Gem in klantcontacten kan verbeteren.",
     beschrijving: "Gemeenten werken samen aan de virtuele assistent Gem, omdat inwoners vaak dezelfde vragen hebben. Gem is nu getraind op verschillende onderwerpen en de dialogen worden samen ontwikkeld. Er gaat nu een pilot starten om te onderzoeken hoe Generatieve AI de prestaties van Gem in klantcontacten kan verbeteren. Hierbij willen we ook vragen beantwoorden waar Gem nu nog geen antwoord op heeft, door gebruik te maken van informatie op de website van de gemeente. We doen dit doen binnen de richtlijnen die de overheid heeft opgesteld voor het gebruik van generatieve AI.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Verschillende grote en kleine gemeenten als regievoerder. Voor ambtenaren is dit vooral relevant bij AI, Dienstverlening, Burgergericht. Kern uit de bron: Gemeenten werken samen aan de virtuele assistent Gem, omdat inwoners vaak dezelfde vragen hebben.",
+    probleem: "Aanleiding: Hierbij willen we ook vragen beantwoorden waar Gem nu nog geen antwoord op heeft, door gebruik te maken van informatie op de website van de gemeente.",
+    doel: "Doel: Gem is nu getraind op verschillende onderwerpen en de dialogen worden samen ontwikkeld. Er gaat nu een pilot starten om te onderzoeken hoe Generatieve AI de prestaties van Gem in klantcontacten kan verbeteren. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van AI virtuele assistent GEM naar meetbare succescriteria: Gemeenten werken samen aan de virtuele assistent Gem, omdat inwoners vaak dezelfde vragen hebben.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Betrek vroeg een beheer- en opschalingspartij, zodat de opbrengst na de proef niet afhankelijk blijft van één tijdelijk projectteam."
+    ],
     gdi: [],
     labels: ["AI", "Dienstverlening", "Burgergericht"],
     contactId: "team-verschillende-grote-en-kleine-gemeenten",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/ai-virtuele-assistent-gem/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-virtuele-assistent-gem/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ai-virtuele-assistent-gem/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "anonimiseren-met-llm",
@@ -956,14 +1401,30 @@ const PROJECTS = [
     partners: ["De Bedrijfsvoeringspartner (namens gemeente Barendrecht, Ridderkerk en Albrandswaard) Gemeente Buren, Gemeente Krimpen aan den IJsel"],
     kort: "Het anonimiseren van overheidsdocumenten, nodig voor de WOO, is moeilijk. Dit project wil deze taak automatiseren met bestaande software en zelflerende algoritmes.",
     beschrijving: "Het anonimiseren van overheidsdocumenten, nodig voor de WOO, is moeilijk. De huidige software maakt zwarte balken die niet werken met schermlezers voor bijvoorbeeld visueel beperkten. Dit past niet bij de verplichting en ambitie van gemeenten om digitale toegankelijkheid te bieden. Handmatig controleren van documenten kost veel tijd en is duur. Hierdoor hebben gemeentemedewerkers minder tijd om inwoners te helpen. Dit innovatieproject wil deze taak automatiseren met bestaande open source software en zelflerende algoritmes. Dit maakt het werk makkelijker, sneller en het resultaat toegankelijk voor iedereen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Hoeksche Waard als regievoerder. Partnercontext: De Bedrijfsvoeringspartner (namens gemeente Barendrecht, Ridderkerk en Albrandswaard) Gemeente Buren, Gemeente Krimpen aan den IJsel. Voor ambtenaren is dit vooral relevant bij AI, Privacy, Transparantie. Kern uit de bron: Het anonimiseren van overheidsdocumenten, nodig voor de WOO, is moeilijk.",
+    probleem: "Aanleiding: Het anonimiseren van overheidsdocumenten, nodig voor de WOO, is moeilijk. De huidige software maakt zwarte balken die niet werken met schermlezers voor bijvoorbeeld visueel beperkten. Dit past niet bij de verplichting en ambitie van gemeenten om digitale toegankelijkheid te bieden.",
+    doel: "Doel: De huidige software maakt zwarte balken die niet werken met schermlezers voor bijvoorbeeld visueel beperkten. Dit maakt het werk makkelijker, sneller en het resultaat toegankelijk voor iedereen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Anonimiseren met LLM naar meetbare succescriteria: Het anonimiseren van overheidsdocumenten, nodig voor de WOO, is moeilijk.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Privacy", "Transparantie"],
     contactId: "team-gemeente-hoeksche-waard",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/anonimiseren-met-llm/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/anonimiseren-met-llm/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/anonimiseren-met-llm/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "federatieve-zoekvraag-voor-het-woo-platform",
@@ -982,14 +1443,29 @@ const PROJECTS = [
     partners: ["Gemeente Noordwijk"],
     kort: "Binnen dit project wil men het WOO-platform uitbreiden met de OpenWoo.app, zodat het verbanden kan leggen tussen de verschillende overheden.",
     beschrijving: "De Wet open overheid (WOO) verplicht gemeenten en andere overheden om bepaalde documenten zelf actief te publiceren. Het huidige WOO-platform is vaak alleen gekoppeld aan één overheid, terwijl er binnen een regio vaak meerdere overheden actief zijn. Denk aan waterschappen, omgevingsdiensten en belastingdiensten. Binnen dit project wil men het WOO-platform uitbreiden met de OpenWoo.app, zodat het verbanden kan leggen tussen de verschillende overheden. Zo hoeft de gebruiker niet te bedenken welke overheid de informatie heeft gepubliceerd. Dit is een grote stap om de overheid beter te laten samenwerken. Kortom, na deze innovatie wordt het WOO-platform nog aantrekkelijker voor iedereen die informatie zoekt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Gouda als regievoerder. Partnercontext: Gemeente Noordwijk. Voor ambtenaren is dit vooral relevant bij Transparantie, Datadeling, Open standaarden. Kern uit de bron: De Wet open overheid (WOO) verplicht gemeenten en andere overheden om bepaalde documenten zelf actief te publiceren.",
+    probleem: "Aanleiding: Zo hoeft de gebruiker niet te bedenken welke overheid de informatie heeft gepubliceerd.",
+    doel: "Doel: Het huidige WOO-platform is vaak alleen gekoppeld aan één overheid, terwijl er binnen een regio vaak meerdere overheden actief zijn. Denk aan waterschappen, omgevingsdiensten en belastingdiensten. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Federatieve zoekvraag voor het Woo-platform naar meetbare succescriteria: De Wet open overheid (WOO) verplicht gemeenten en andere overheden om bepaalde documenten zelf actief te publiceren.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Transparantie", "Datadeling", "Open standaarden"],
     contactId: "team-gemeente-gouda",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/federatieve-zoekvraag-voor-het-woo-platform/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/federatieve-zoekvraag-voor-het-woo-platform/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/federatieve-zoekvraag-voor-het-woo-platform/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "gezonde-gebiedsontwikkeling-in-een-digital-twin",
@@ -1008,14 +1484,27 @@ const PROJECTS = [
     partners: ["Provincie Utrecht, Urban Sync, Tygron"],
     kort: "Dit innovatieproject zorgt ervoor dat het instrument in de toekomst beter gebruikt kan worden voor gezonde ontwikkelingen van gebieden in steden en dorpen.",
     beschrijving: "In dit project werken de gemeente Amersfoort, provincie Utrecht, Urban Sync en Tygron samen om de Gezonde Gebieds Ontwikkeling (GGO)-methodiek makkelijker toe te passen. Door gebruik te maken van een digitale tweeling kunnen ze bekijken wat de effecten zijn van veranderingen in de leefomgeving. De GGO-methodiek helpt organisaties te analyseren of ontwikkelingen voldoen aan beleidsdoelen. Met dit instrument kunnen ze zien hoe verschillende scenario’s of ontwikkelingsplannen van invloed zijn op verschillende onderwerpen. Hierdoor wordt het makkelijker om gesprekken te voeren met interne en externe belanghebbenden. Dit innovatieproject zorgt ervoor dat het instrument in de toekomst beter gebruikt kan worden voor gezonde ontwikkelingen van gebieden in steden en dorpen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Amersfoort als regievoerder. Partnercontext: Provincie Utrecht, Urban Sync, Tygron. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid. Kern uit de bron: In dit project werken de gemeente Amersfoort, provincie Utrecht, Urban Sync en Tygron samen om de Gezonde Gebieds Ontwikkeling (GGO)-methodiek makkelijker toe te passen.",
+    probleem: "Aanleiding: In dit project werken de gemeente Amersfoort, provincie Utrecht, Urban Sync en Tygron samen om de Gezonde Gebieds Ontwikkeling (GGO)-methodiek makkelijker toe te passen. Door gebruik te maken van een digitale tweeling kunnen ze bekijken wat de effecten zijn van veranderingen in de leefomgeving.",
+    doel: "Doel: In dit project werken de gemeente Amersfoort, provincie Utrecht, Urban Sync en Tygron samen om de Gezonde Gebieds Ontwikkeling (GGO)-methodiek makkelijker toe te passen. De GGO-methodiek helpt organisaties te analyseren of ontwikkelingen voldoen aan beleidsdoelen. Met dit instrument kunnen ze zien hoe verschillende scenario’s of ontwikkelingsplannen van invloed zijn op verschillende onderwerpen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Gezonde Gebiedsontwikkeling in een Digital Twin naar meetbare succescriteria: In dit project werken de gemeente Amersfoort, provincie Utrecht, Urban Sync en Tygron samen om de Gezonde Gebieds Ontwikkeling (GGO)-methodiek makkelijker toe te passen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid"],
     contactId: "team-gemeente-amersfoort",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/gezonde-gebiedsontwikkeling-in-een-digital-twin/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gezonde-gebiedsontwikkeling-in-een-digital-twin/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gezonde-gebiedsontwikkeling-in-een-digital-twin/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "kadaster-open-api-feature",
@@ -1034,14 +1523,30 @@ const PROJECTS = [
     partners: ["Verschillende ministeries, RVO, CBS, RWS, RiVM, Rioned, Provincies, HWH, IHW, KvK, LVNL, RCE, Prorail, TNO en stichtingen"],
     kort: "PDOK wil een manier invoeren om datasets toegankelijker te maken. Zo wordt het makkelijker voor mensen zonder kennis van geografische standaarden om deze data te gebruiken.",
     beschrijving: "Publieke Dienstverlening Op de Kaart (PDOK) is een Nederlands platform dat belangrijke geografische data van de overheid beschikbaar maakt. Je kunt op PDOK meer dan 200 datasets en geografische gegevens vinden. Deze data voldoen aan Nederlandse en Europese regels en gebruiken nationale en internationale standaarden. PDOK wil een nieuwe manier invoeren om al deze datasets toegankelijker te maken via OGC API Features (OAF). Dit systeem werkt met moderne REST API’s, waardoor het makkelijker wordt voor mensen zonder kennis van geografische standaarden om deze overheidsdata te gebruiken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Kadaster als regievoerder. Partnercontext: Verschillende ministeries, RVO, CBS, RWS, RiVM, Rioned, Provincies, HWH, IHW, KvK, LVNL, RCE, Prorail, TNO en stichtingen. Voor ambtenaren is dit vooral relevant bij API's, Open standaarden, Data. Kern uit de bron: Publieke Dienstverlening Op de Kaart (PDOK) is een Nederlands platform dat belangrijke geografische data van de overheid beschikbaar maakt.",
+    probleem: "Aanleiding: Publieke Dienstverlening Op de Kaart (PDOK) is een Nederlands platform dat belangrijke geografische data van de overheid beschikbaar maakt. Je kunt op PDOK meer dan 200 datasets en geografische gegevens vinden.",
+    doel: "Doel: Publieke Dienstverlening Op de Kaart (PDOK) is een Nederlands platform dat belangrijke geografische data van de overheid beschikbaar maakt. Deze data voldoen aan Nederlandse en Europese regels en gebruiken nationale en internationale standaarden. Dit systeem werkt met moderne REST API’s, waardoor het makkelijker wordt voor mensen zonder kennis van geografische standaarden om deze overheidsdata te gebruiken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Kadaster Open API Feature naar meetbare succescriteria: Publieke Dienstverlening Op de Kaart (PDOK) is een Nederlands platform dat belangrijke geografische data van de overheid beschikbaar maakt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["API's", "Open standaarden", "Data"],
     contactId: "team-kadaster",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/kadaster-open-api-feature/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/kadaster-open-api-feature/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/kadaster-open-api-feature/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "keuzehulp-taalmodel-linnaeus",
@@ -1060,14 +1565,28 @@ const PROJECTS = [
     partners: ["SVB"],
     kort: "Grote taalmodellen kunnen de overheid helpen om de dienstverlening te verbeteren. Maar welke moet je kiezen en hoe gebruik je ze het beste?",
     beschrijving: "Grote taalmodellen kunnen de overheid helpen om de dienstverlening te verbeteren. Maar welke moet je kiezen en hoe gebruik je ze het beste? Dat is een moeilijke vraag, want er komt elke week een nieuw model uit en de mogelijkheden lijken eindeloos. Alles uitproberen is te veel werk en te duur. Maar door samen te werken, kunnen we een manier vinden om nu en in de toekomst de juiste keuzes te maken. Zo krijgen we snel het beste resultaat.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met UWV als regievoerder. Partnercontext: SVB. Voor ambtenaren is dit vooral relevant bij AI, Digitaal vakmanschap. Kern uit de bron: Grote taalmodellen kunnen de overheid helpen om de dienstverlening te verbeteren.",
+    probleem: "Aanleiding: Dat is een moeilijke vraag, want er komt elke week een nieuw model uit en de mogelijkheden lijken eindeloos.",
+    doel: "Doel: Grote taalmodellen kunnen de overheid helpen om de dienstverlening te verbeteren. Zo krijgen we snel het beste resultaat. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Keuzehulp Taalmodel Linnaeus naar meetbare succescriteria: Grote taalmodellen kunnen de overheid helpen om de dienstverlening te verbeteren.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Publiceer code, documentatie en beheerafspraken waar mogelijk open source, inclusief licentie en overdrachtsinformatie.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Digitaal vakmanschap"],
     contactId: "team-uwv",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/keuzehulp-taalmodel-linnaeus/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/keuzehulp-taalmodel-linnaeus/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/keuzehulp-taalmodel-linnaeus/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "leesplank-taalmodellen",
@@ -1086,14 +1605,29 @@ const PROJECTS = [
     partners: ["SVB"],
     kort: "Leesplank gaat teksten maken en verzamelen. Het projectteam wil laten zien wat er nodig is om taalmodellen voor de overheid te maken.",
     beschrijving: "Je bent wat je eet. Veel AI programma’s zoals ChatGPT zijn gevoed met teksten van het internet. En niet alles wat op internet staat is waar of taalkundig juist. AI tekst programma’s hebben erg veel tekst nodig om groot te kunnen worden. De makers kunnen niet al te kieskeurig zijn met betrekking tot de input voor het AI programma. Maar de Nederlandse overheid wil wel dat burgers die vragen stellen een juist antwoord krijgen in begrijpelijke taal. Leesplank gaat teksten maken en verzamelen. Het projectteam wil laten zien wat er nodig is om taalmodellen voor de overheid te maken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met UWV als regievoerder. Partnercontext: SVB. Voor ambtenaren is dit vooral relevant bij AI, Data, Digitaal vakmanschap. Kern uit de bron: Je bent wat je eet.",
+    probleem: "Aanleiding: En niet alles wat op internet staat is waar of taalkundig juist. De makers kunnen niet al te kieskeurig zijn met betrekking tot de input voor het AI programma.",
+    doel: "Doel: Veel AI programma’s zoals ChatGPT zijn gevoed met teksten van het internet. En niet alles wat op internet staat is waar of taalkundig juist. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Leesplank taalmodellen naar meetbare succescriteria: Je bent wat je eet.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Publiceer code, documentatie en beheerafspraken waar mogelijk open source, inclusief licentie en overdrachtsinformatie.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Data", "Digitaal vakmanschap"],
     contactId: "team-uwv",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/leesplank-taalmodellen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/leesplank-taalmodellen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/leesplank-taalmodellen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "multai-in-crisisorganisaties",
@@ -1112,14 +1646,28 @@ const PROJECTS = [
     partners: ["Veiligheidsregio Amsterdam-Amstelland (VRAA), Nederlands Instituut Publieke Veiligheid (NIPV), Centrum Wiskunde & Informatica (CWI), Vrije Universiteit Amsterdam (VU)"],
     kort: "Dit project onderzoekt, adviseert en demonstreert de interactie tussen verschillende soorten AI en hun toegevoegde waarde.",
     beschrijving: "Binnen het veiligheidsdomein worden verschillende tools gebruikt waarin AI een rol speelt. Denk aan de Regionale Risicomonitor, de Operationele Risicomonitor en de Virtuele Assistent. Deze tools helpen door sneller en beter risico’s en incidenten te voorspellen en erop te reageren. Hoewel de resultaten veelbelovend zijn, is de meerwaarde van operationele toepassing nog beperkt. Generatieve AI levert goede resultaten, maar kan soms fouten maken. Aan de andere kant vereisen rule-based modellen veel onderhoud en beheer. Dit project onderzoekt, adviseert en demonstreert de interactie tussen verschillende soorten AI en hun toegevoegde waarde. Het eindproduct van dit project is een onderzoeksrapport en een demonstratiemodel.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Veiligheidsregio Midden- en West-Brabant als regievoerder. Partnercontext: Veiligheidsregio Amsterdam-Amstelland (VRAA), Nederlands Instituut Publieke Veiligheid (NIPV), Centrum Wiskunde & Informatica (CWI), Vrije Universiteit Amsterdam (VU). Voor ambtenaren is dit vooral relevant bij AI, Digitale weerbaarheid. Kern uit de bron: Binnen het veiligheidsdomein worden verschillende tools gebruikt waarin AI een rol speelt.",
+    probleem: "Aanleiding: Denk aan de Regionale Risicomonitor, de Operationele Risicomonitor en de Virtuele Assistent. Deze tools helpen door sneller en beter risico’s en incidenten te voorspellen en erop te reageren.",
+    doel: "Doel: Dit project onderzoekt, adviseert en demonstreert de interactie tussen verschillende soorten AI en hun toegevoegde waarde. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van MultAI in crisisorganisaties naar meetbare succescriteria: Binnen het veiligheidsdomein worden verschillende tools gebruikt waarin AI een rol speelt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Digitale weerbaarheid"],
     contactId: "team-veiligheidsregio-midden-en-west-brabant",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/multai-in-crisisorganisaties/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/multai-in-crisisorganisaties/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/multai-in-crisisorganisaties/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "ondernemers-centraal",
@@ -1138,14 +1686,28 @@ const PROJECTS = [
     partners: ["Ureca, Solvid Ondernemen, Dok030, Power by Peers, IMK, Geldfit Zakelijk, GetOn, Ondernemersklankbord, Catching, Over Rood, Hogekamp Agrarische Coaching, Lockefeer innovatie en realisatie, Cultuur+Ondernemen, Stevelink Bedrijfsadvies, Content Kitchen, De Utrechtse Ondernemers Zaak (DUOZ), Certa Advocaten, Sociaal Raadslieden, WebActueel, Regionaal Mobiliteitsteam, Zuidweg & Partners, FIMA schuldhulp voor bedrijven, Qredits"],
     kort: "Ondernemer Centraal maakt het mogelijk dat de (lokale) overheid alle plaatselijke ondernemers persoonlijk, dichtbij en op maat kan ontzorgen.",
     beschrijving: "Ondernemer Centraal maakt het mogelijk dat de (lokale) overheid alle plaatselijke ondernemers persoonlijk, dichtbij en op maat kan ontzorgen. Waar nodig met duizenden tegelijk. Het doel is ondernemers hiermee te ondersteunen op weg naar inkomens-, bestaans- & toekomstzekerheid. Onderzoek toont aan dat de uitvoeringskosten van Ondernemer Centraal lager liggen in vergelijking met andere, gelijkwaardige initiatieven. Ook wordt elke euro binnen Ondernemer Centraal gericht en verantwoord geïnvesteerd. Het gehele traject is van in- tot uitstroom tot in detail meetbaar.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Verschillende gemeenten als regievoerder. Partnercontext: Ureca, Solvid Ondernemen, Dok030, Power by Peers, IMK, Geldfit Zakelijk, GetOn, Ondernemersklankbord, Catching, Over Rood, Hogekamp Agrarische Coaching, Lockefeer innovatie en realisatie, Cultuur+Ondernemen, Stevelink Bedrijfsadvies, Content Kitchen, De Utrechtse Ondernemers Zaak (DUOZ), Certa Advocaten, Sociaal Raadslieden, WebActueel, Regionaal Mobiliteitsteam, Zuidweg & Partners, FIMA schuldhulp voor bedrijven, Qredits. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Burgergericht. Kern uit de bron: Ondernemer Centraal maakt het mogelijk dat de (lokale) overheid alle plaatselijke ondernemers persoonlijk, dichtbij en op maat kan ontzorgen.",
+    probleem: "Aanleiding: Ondernemer Centraal maakt het mogelijk dat de (lokale) overheid alle plaatselijke ondernemers persoonlijk, dichtbij en op maat kan ontzorgen. Waar nodig met duizenden tegelijk.",
+    doel: "Doel: Ondernemer Centraal maakt het mogelijk dat de (lokale) overheid alle plaatselijke ondernemers persoonlijk, dichtbij en op maat kan ontzorgen. Het doel is ondernemers hiermee te ondersteunen op weg naar inkomens-, bestaans- & toekomstzekerheid. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Ondernemers centraal naar meetbare succescriteria: Ondernemer Centraal maakt het mogelijk dat de (lokale) overheid alle plaatselijke ondernemers persoonlijk, dichtbij en op maat kan ontzorgen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Burgergericht"],
     contactId: "team-verschillende-gemeenten",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/ondernemers-centraal/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ondernemers-centraal/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ondernemers-centraal/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "onderzoek-id-wallet",
@@ -1164,14 +1726,28 @@ const PROJECTS = [
     partners: ["Divosa, KVK, Ver.ID, InnoValor Advies, Ink Social Design"],
     kort: "Met een digitale identiteit (ID-wallet of -kluis) regel je alles makkelijk en veilig online met één app op je telefoon.",
     beschrijving: "Online zaken regelen met een gemeente gaat vaak samen met het aanleveren van persoonlijke of zakelijke gegevens en bewijsstukken, zoals kopie paspoort, bankafschriften of een uittreksel KVK. Wat een gedoe! Ben je bewindvoerder en doe je online zaken namens iemand anders dan is het helemaal lastig. Met een digitale identiteit (ID-wallet of -kluis) regel je alles makkelijk en veilig online met één app op je telefoon. Daarnaast heb je meer controle over je eigen gegevens. Wij gaan nog verder en verwachten dat het gebruik van een ID-wallet de digitale transformatie bij overheden echt in gang zet. In een proeftuin onderzoekt het team de impact van het gebruik van een ID-wallet of ID-kluis op de inwoner, de ondernemer en de gemeenten inclusief ketenpartners in het sociale domein.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Nijmegen als regievoerder. Partnercontext: Divosa, KVK, Ver.ID, InnoValor Advies, Ink Social Design. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Privacy. Kern uit de bron: Online zaken regelen met een gemeente gaat vaak samen met het aanleveren van persoonlijke of zakelijke gegevens en bewijsstukken, zoals kopie paspoort, bankafschriften of een uittreksel KVK.",
+    probleem: "Aanleiding: Ben je bewindvoerder en doe je online zaken namens iemand anders dan is het helemaal lastig.",
+    doel: "Doel: In een proeftuin onderzoekt het team de impact van het gebruik van een ID-wallet of ID-kluis op de inwoner, de ondernemer en de gemeenten inclusief ketenpartners in het sociale domein. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Onderzoek ID Wallet naar meetbare succescriteria: Online zaken regelen met een gemeente gaat vaak samen met het aanleveren van persoonlijke of zakelijke gegevens en bewijsstukken, zoals kopie paspoort, bankafschriften of een uittreksel KVK.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale identiteit", "Privacy"],
     contactId: "team-gemeente-nijmegen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/onderzoek-id-wallet/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/onderzoek-id-wallet/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/onderzoek-id-wallet/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "opencatalogi",
@@ -1190,14 +1766,29 @@ const PROJECTS = [
     partners: ["ICTU, Dimpact, Common Ground (VNG)"],
     kort: "Samen met andere gemeenten en het landelijke programma Common Ground wil de gemeente Rotterdam OpenCatalogi verder ontwikkelen en breder inzetten.",
     beschrijving: "Gemeenten hebben Common Ground omarmd als hun visie voor digitalisering. Dit zorgt voor moderne en flexibele dienstverlening aan inwoners en bedrijven. Er zijn al veel (deel-)oplossingen gerealiseerd, maar het overzicht ontbreekt vaak. De gemeente Rotterdam heeft een eerste versie van OpenCatalogi ontwikkeld, een instrument dat overzicht biedt van zowel bestaande oplossingen als nieuwe initiatieven. Samen met andere gemeenten en het landelijke programma Common Ground wil de gemeente Rotterdam dit instrument verder ontwikkelen en breder inzetten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Verschillende gemeenten als regievoerder. Partnercontext: ICTU, Dimpact, Common Ground (VNG). Voor ambtenaren is dit vooral relevant bij Open standaarden, Samenwerking, Transparantie. Kern uit de bron: Gemeenten hebben Common Ground omarmd als hun visie voor digitalisering.",
+    probleem: "Aanleiding: Er zijn al veel (deel-)oplossingen gerealiseerd, maar het overzicht ontbreekt vaak.",
+    doel: "Doel: Er zijn al veel (deel-)oplossingen gerealiseerd, maar het overzicht ontbreekt vaak. De gemeente Rotterdam heeft een eerste versie van OpenCatalogi ontwikkeld, een instrument dat overzicht biedt van zowel bestaande oplossingen als nieuwe initiatieven. Samen met andere gemeenten en het landelijke programma Common Ground wil de gemeente Rotterdam dit instrument verder ontwikkelen en breder inzetten. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van OpenCatalogi naar meetbare succescriteria: Gemeenten hebben Common Ground omarmd als hun visie voor digitalisering.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden", "Common Ground"],
     labels: ["Open standaarden", "Samenwerking", "Transparantie"],
     contactId: "team-verschillende-gemeenten",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/opencatalogi/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/opencatalogi/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/opencatalogi/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "pol-is",
@@ -1216,14 +1807,27 @@ const PROJECTS = [
     partners: ["Provincie Groningen"],
     kort: "Het project Pol.is bestaat uit een speciale website waar iedereen zijn mening kan geven en kan zien wat anderen denken.",
     beschrijving: "Veel mensen vinden het moeilijk om mee te praten over wat de overheid doet. Het project Pol.is wil dit makkelijker maken. Het is een speciale website waar iedereen zijn mening kan geven en kan zien wat anderen denken. Het projectteam gaat proberen dit nog beter te maken. Ze gaan goed luisteren naar wat mensen nodig hebben, mooiere afbeeldingen maken om meningen te laten zien en iedereen duidelijk uitleggen hoe Pol.is werkt. Zo zorgen ze dat meer mensen kunnen meedoen en dat de overheid beter weet wat iedereen wil. Dit helpt ons allemaal omdat de overheid dan beter besluiten kan nemen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Provincie Zuid-Holland als regievoerder. Partnercontext: Provincie Groningen. Voor ambtenaren is dit vooral relevant bij Burgergericht, Transparantie. Kern uit de bron: Veel mensen vinden het moeilijk om mee te praten over wat de overheid doet.",
+    probleem: "Aanleiding: Veel mensen vinden het moeilijk om mee te praten over wat de overheid doet.",
+    doel: "Doel: Dit helpt ons allemaal omdat de overheid dan beter besluiten kan nemen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Pol.is naar meetbare succescriteria: Veel mensen vinden het moeilijk om mee te praten over wat de overheid doet.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Transparantie"],
     contactId: "team-provincie-zuid-holland",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/pol-is/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/pol-is/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/pol-is/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "pro-actief-armoede-bestrijden",
@@ -1242,14 +1846,30 @@ const PROJECTS = [
     partners: ["Gemeente Amersfoort, belastingdienst, UWV, Programma Common Ground VNG, BZK, programma proactieve dienstverlening"],
     kort: "Door de informatie van de overheid op een verantwoorde manier te gebruiken kunnen mensen die recht hebben op een regeling actief benaderd worden.",
     beschrijving: "Ongeveer 1 op de 3 mensen die financieel onder het bestaansminimum zit, krijgt niet de hulp waar ze recht op hebben. Dit komt vaak omdat ze niet weten dat ze recht hebben op die ondersteuning, of omdat het aanvraagproces te ingewikkeld is. Voor elke regeling moeten de juiste documenten bij het juiste ‘loket’ worden ingediend. Dit hoge percentage niet-gebruik is dramatisch voor de inwoners in kwestie en is ook een groot maatschappelijk probleem. Door de informatie van de overheid op een verantwoorde manier te gebruiken kunnen mensen die recht hebben op een regeling actief benaderd worden. Zo kunnen zij in gesprek en de mogelijkheden voor (financiële) ondersteuning bespreken. Gerichte aandacht voor de juridische noodzaak om tot een wetsaanpassing te komen om proactieve dienstverlening mogelijk te maken. Ook is het resultaat dat zichtbaar is gemaakt in o.a. fieldlabs, dat een verantwoorde bevraging van data gerealiseerd kan worden om te toetsen of iemand rechthebbend is op een voorziening, zonder dat data daadwerkelijk gedeeld worden. Technisch is het probleem van gegevensdeling of gegevensoverdracht hiermee opgelost. In de praktijk mag dit nog niet helpen tot proactieve dienstverlening op het gebied van inkomensondersteuning. Dit komt doordat de juridische grondslag nog niet geregeld is. In eerste instantie had de projectgroep de focus op het bepalen van de benodigde dataset. Daarnaast werd beoordeeld of de dataset voldoende betrouwbaar was om mensen op grond hiervan te benaderen voor een gesprek. Al snel bleek dat de juridische basis ontbrak. De projectleider is langs gegaan bij verschillende gremia om een pilot te starten voor dit project. Dat heeft wel een duw in de rug gegeven voor de (voorgenomen) wet proactieve dienstverlening. Helaas heeft dit in de looptijd van het project niet tot de benodigde juridische ruimte geleid om de pilot ook daadwerkelijk uit te voeren. In een fieldlab setting is aangetoond dat er met API’s en zónder het verplaatsen of kopiëren van data verschillende vormen van proactieve dienstverlening mogelijk maken. Daarbij waren veel uitvoeringsorganisaties betrokken. De bottleneck zit uitsluitend in de wetgeving. Ik kan niet meetbaar maken wat de effort heeft opgeleverd om te komen tot nieuwe wetgeving/juridische ruimte voor proactieve dienstverlening, maar ik hoop dat het een bijdrage heeft geleverd. Het gebruik van bestaande data om niet gebruik van regelingen terug te dringen tot het bewust gekozen niet-gebruik is op verantwoorde manier mogelijk. Daarmee kan de overheid haar aanzien/reputatie bijstellen van vaak vooral ‘handhaver’ naar ‘wij zijn van en voor iedereen”. Ik denk dat ik eerder had moeten bijsturen op het juridische obstakel en daar wellicht meer expertise op moeten mobiliseren. Na het invoeren en hopelijk verbreden van de wet proactieve dienstverlening zal in het programma Common Ground een voor alle gemeenten bruikbare blok ‘rekenregels’ worden gemaakt waarmee een ook zonder aanvraag kan vaststellen of iemand rechthebbend is op een door de gemeente verstrekte regeling.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Utrecht als regievoerder. Partnercontext: Gemeente Amersfoort, belastingdienst, UWV, Programma Common Ground VNG, BZK, programma proactieve dienstverlening. Voor ambtenaren is dit vooral relevant bij Inclusie, Data, Privacy. Kern uit de bron: Ongeveer 1 op de 3 mensen die financieel onder het bestaansminimum zit, krijgt niet de hulp waar ze recht op hebben.",
+    probleem: "Aanleiding: Ongeveer 1 op de 3 mensen die financieel onder het bestaansminimum zit, krijgt niet de hulp waar ze recht op hebben. Dit komt vaak omdat ze niet weten dat ze recht hebben op die ondersteuning, of omdat het aanvraagproces te ingewikkeld is. Dit hoge percentage niet-gebruik is dramatisch voor de inwoners in kwestie en is ook een groot maatschappelijk probleem.",
+    doel: "Doel: Ook is het resultaat dat zichtbaar is gemaakt in o.a. fieldlabs, dat een verantwoorde bevraging van data gerealiseerd kan worden om te toetsen of iemand rechthebbend is op een voorziening, zonder dat data daadwerkelijk gedeeld worden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Pro-actief armoede bestrijden naar meetbare succescriteria: Ongeveer 1 op de 3 mensen die financieel onder het bestaansminimum zit, krijgt niet de hulp waar ze recht op hebben.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Inclusie", "Data", "Privacy"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/pro-actief-armoede-bestrijden/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/pro-actief-armoede-bestrijden/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/pro-actief-armoede-bestrijden/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "standaard-voor-transparantie-besluitvorming",
@@ -1268,14 +1888,30 @@ const PROJECTS = [
     partners: ["Stichting Geonovum"],
     kort: "Er wordt gewerkt aan een standaard om de verwerking van persoonsgegevens vast te leggen en te verantwoorden. Dit project heeft als doel deze standaard uit te breiden.",
     beschrijving: "Het is belangrijk dat de overheid verantwoording en transparantie biedt aan burgers en bedrijven over haar handelen. Burgers en bedrijven moeten weten welke gegevens worden gebruikt en hoe beslissingen worden genomen. Hierbij worden niet alleen persoonsgegevens, maar ook data over objecten in de fysieke leefomgeving gebruikt. Er wordt gewerkt aan een standaard om de verwerking van persoonsgegevens vast te leggen en te verantwoorden. Dit project heeft als doel deze standaard uit te breiden zodat hij ook kan worden toegepast in de fysieke leefomgeving. Zo kan de hele overheid op een uniforme, consistente en gemakkelijk te implementeren manier verantwoording afleggen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Ministerie van BZK als regievoerder. Partnercontext: Stichting Geonovum. Voor ambtenaren is dit vooral relevant bij Transparantie, Open standaarden, Privacy. Kern uit de bron: Het is belangrijk dat de overheid verantwoording en transparantie biedt aan burgers en bedrijven over haar handelen.",
+    probleem: "Aanleiding: Hierbij worden niet alleen persoonsgegevens, maar ook data over objecten in de fysieke leefomgeving gebruikt.",
+    doel: "Doel: Er wordt gewerkt aan een standaard om de verwerking van persoonsgegevens vast te leggen en te verantwoorden. Dit project heeft als doel deze standaard uit te breiden zodat hij ook kan worden toegepast in de fysieke leefomgeving. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Standaard voor transparantie besluitvorming naar meetbare succescriteria: Het is belangrijk dat de overheid verantwoording en transparantie biedt aan burgers en bedrijven over haar handelen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Transparantie", "Open standaarden", "Privacy"],
     contactId: "team-ministerie-van-bzk",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/standaard-voor-transparantie-besluitvorming/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/standaard-voor-transparantie-besluitvorming/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/standaard-voor-transparantie-besluitvorming/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "wallet-studenten-caribisch-gebied",
@@ -1294,14 +1930,27 @@ const PROJECTS = [
     partners: ["DUO, RvIG, ICTU, Bonaire, Saba, Ministerie van BZK, Ministerie van OCW, Zorgverzekeraars"],
     kort: "Jaarlijks ervaren veel studenten uit het Caribisch gebied hindernissen bij hun overstap naar het Nederlandse onderwijssysteem. Dit komt door ingewikkelde processen.",
     beschrijving: "Jaarlijks ervaren zo’n 1600 studenten uit het Caribische deel van het Koninkrijk grote hindernissen bij hun overstap naar het Nederlandse onderwijssysteem. Dit komt mede door ingewikkelde bureaucratische processen. Dit project richt zich op het vereenvoudigen van deze stappen via een geavanceerde digitale infrastructuur. Het digitaliseert essentiële processen zoals het verkrijgen van een BSN en de inschrijving bij onderwijsinstellingen. Met veilige digitale gegevensuitwisseling en een digitale ID-wallet kunnen studenten voor hun aankomst in Nederland al veel regelen. Dit vermindert de administratieve last en stelt hen in staat zich volledig op hun studie en ontwikkeling te richten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Rotterdam als regievoerder. Partnercontext: DUO, RvIG, ICTU, Bonaire, Saba, Ministerie van BZK, Ministerie van OCW, Zorgverzekeraars. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Inclusie. Kern uit de bron: Jaarlijks ervaren zo’n 1600 studenten uit het Caribische deel van het Koninkrijk grote hindernissen bij hun overstap naar het Nederlandse onderwijssysteem.",
+    probleem: "Aanleiding: Jaarlijks ervaren zo’n 1600 studenten uit het Caribische deel van het Koninkrijk grote hindernissen bij hun overstap naar het Nederlandse onderwijssysteem. Dit komt mede door ingewikkelde bureaucratische processen.",
+    doel: "Doel: Dit project richt zich op het vereenvoudigen van deze stappen via een geavanceerde digitale infrastructuur. Dit vermindert de administratieve last en stelt hen in staat zich volledig op hun studie en ontwikkeling te richten. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Wallet studenten Caribisch gebied naar meetbare succescriteria: Jaarlijks ervaren zo’n 1600 studenten uit het Caribische deel van het Koninkrijk grote hindernissen bij hun overstap naar het Nederlandse onderwijssysteem.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale identiteit", "Inclusie"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/wallet-studenten-caribisch-gebied/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/wallet-studenten-caribisch-gebied/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/wallet-studenten-caribisch-gebied/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "wetgpt",
@@ -1320,14 +1969,29 @@ const PROJECTS = [
     partners: ["VNG, Open Overheid, Ministerie van BZK, directies DO en DS|Doc-Direkt, KOOP, ICTU, Y.digital, Hooghiemstra en partners"],
     kort: "In het nieuwe project WetGPT wordt onderzocht hoe AI kan helpen bij het correct interpreteren van wetten.",
     beschrijving: "De overheid moet ervoor zorgen dat alle informatie goed wordt beheerd en dat ze voldoet aan wetten zoals de Wet open overheid, AVG en Archiefwet. Deze wetten zijn behoorlijk ingewikkeld, zowel voor burgers als voor mensen die bij de overheid werken. Daarom wordt er veel uitleg gegeven op overheidswebsites en in werkinstructies. Maar dit kost veel tijd en niet iedereen begrijpt het altijd goed. Tegelijkertijd zien we dat AI, zoals ChatGPT, snel groeit. ChatGPT kan gemakkelijk vragen beantwoorden over allerlei onderwerpen. Niet altijd helemaal correct, maar er wordt steeds beter begrepen hoe deze vorm van AI samen met andere technieken kan worden gebruikt om wél goede antwoorden te geven. We willen deze inzichten gebruiken in een nieuw project genaamd WetGPT, waarin we willen onderzoeken hoe AI kan helpen bij het correct interpreteren van wetten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Bureau Regeringscommissaris Informatiehuishouding als regievoerder. Partnercontext: VNG, Open Overheid, Ministerie van BZK, directies DO en DS|Doc-Direkt, KOOP, ICTU, Y.digital, Hooghiemstra en partners. Voor ambtenaren is dit vooral relevant bij AI, Compliance, Transparantie. Kern uit de bron: De overheid moet ervoor zorgen dat alle informatie goed wordt beheerd en dat ze voldoet aan wetten zoals de Wet open overheid, AVG en Archiefwet.",
+    probleem: "Aanleiding: Maar dit kost veel tijd en niet iedereen begrijpt het altijd goed. Niet altijd helemaal correct, maar er wordt steeds beter begrepen hoe deze vorm van AI samen met andere technieken kan worden gebruikt om wél goede antwoorden te geven.",
+    doel: "Doel: Deze wetten zijn behoorlijk ingewikkeld, zowel voor burgers als voor mensen die bij de overheid werken. Daarom wordt er veel uitleg gegeven op overheidswebsites en in werkinstructies. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van WetGPT naar meetbare succescriteria: De overheid moet ervoor zorgen dat alle informatie goed wordt beheerd en dat ze voldoet aan wetten zoals de Wet open overheid, AVG en Archiefwet.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Compliance", "Transparantie"],
     contactId: "team-bureau-regeringscommissaris-informatiehu",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/wetgpt/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/wetgpt/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/wetgpt/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "wetwijzer-bedrijven",
@@ -1346,14 +2010,29 @@ const PROJECTS = [
     partners: ["KOOP, Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties, Ministerie van EZK, KvK, RVO"],
     kort: "De WetWijzer Bedrijven is een experiment dat bestaat uit het ontwerpen, ontwikkelen, testen en evalueren van een prototype.",
     beschrijving: "De WetWijzer Bedrijven is een experiment dat bestaat uit het ontwerpen, ontwikkelen, testen en evalueren van een prototype. Dit prototype helpt ondernemers snel inzicht te krijgen in de wet- en regelgeving die voor hun specifieke situatie geldt. Ondernemers kunnen interactief vragen stellen en antwoorden krijgen over wet- en regelgeving, dankzij een combinatie van slimme zoektechnologie en generatieve AI. Het doel is om ondernemers meer duidelijkheid te geven over de voor hen relevante wet- en regelgeving.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Logius als regievoerder. Partnercontext: KOOP, Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties, Ministerie van EZK, KvK, RVO. Voor ambtenaren is dit vooral relevant bij AI, Dienstverlening. Kern uit de bron: De WetWijzer Bedrijven is een experiment dat bestaat uit het ontwerpen, ontwikkelen, testen en evalueren van een prototype.",
+    probleem: "Aanleiding: De WetWijzer Bedrijven is een experiment dat bestaat uit het ontwerpen, ontwikkelen, testen en evalueren van een prototype. Dit prototype helpt ondernemers snel inzicht te krijgen in de wet- en regelgeving die voor hun specifieke situatie geldt.",
+    doel: "Doel: De WetWijzer Bedrijven is een experiment dat bestaat uit het ontwerpen, ontwikkelen, testen en evalueren van een prototype. Dit prototype helpt ondernemers snel inzicht te krijgen in de wet- en regelgeving die voor hun specifieke situatie geldt. Het doel is om ondernemers meer duidelijkheid te geven over de voor hen relevante wet- en regelgeving. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van WetWijzer Bedrijven naar meetbare succescriteria: De WetWijzer Bedrijven is een experiment dat bestaat uit het ontwerpen, ontwikkelen, testen en evalueren van een prototype.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Dienstverlening"],
     contactId: "team-logius",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/wetwijzer-bedrijven/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/wetwijzer-bedrijven/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/wetwijzer-bedrijven/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "woo-publicatie-voorziening",
@@ -1372,14 +2051,30 @@ const PROJECTS = [
     partners: ["Gemeente Den Haag, Acato digital Agency"],
     kort: "Gemeenten Tilburg en Den Haag willen een open-source webplatform ontwikkelen dat overheidsinformatie voor iedereen toegankelijk maakt.",
     beschrijving: "De Wet open overheid (WOO) heeft als doel om overheidsinformatie voor iedereen toegankelijk te maken. Inwoners, journalisten en anderen willen dat deze informatie duidelijk, voor iedereen begrijpelijk en makkelijk te vinden is. Gemeenten Tilburg en Den Haag willen een open-source webplatform ontwikkelen dat dit mogelijk maakt. Door regelmatig de doelgroep te betrekken, willen ze ervoor zorgen dat ze een webinterface ontwikkelen die echt nuttig is en mensen goed informeert. Ze maken maximaal gebruik van eerder onderzoek naar gebruiksvriendelijkheid, ontwerpen en code-onderdelen. Hierdoor creëren ze een publicatieplatform dat niet alleen door hen, maar ook door anderen gebruikt kan worden. Zowel voor de WOO als voor andere klantgerichte toepassingen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Tilburg als regievoerder. Partnercontext: Gemeente Den Haag, Acato digital Agency. Voor ambtenaren is dit vooral relevant bij Transparantie, Open standaarden. Kern uit de bron: De Wet open overheid (WOO) heeft als doel om overheidsinformatie voor iedereen toegankelijk te maken.",
+    probleem: "Aanleiding: Hierdoor creëren ze een publicatieplatform dat niet alleen door hen, maar ook door anderen gebruikt kan worden.",
+    doel: "Doel: De Wet open overheid (WOO) heeft als doel om overheidsinformatie voor iedereen toegankelijk te maken. Gemeenten Tilburg en Den Haag willen een open-source webplatform ontwikkelen dat dit mogelijk maakt. Door regelmatig de doelgroep te betrekken, willen ze ervoor zorgen dat ze een webinterface ontwikkelen die echt nuttig is en mensen goed informeert. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van WOO publicatie voorziening naar meetbare succescriteria: De Wet open overheid (WOO) heeft als doel om overheidsinformatie voor iedereen toegankelijk te maken.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Transparantie", "Open standaarden"],
     contactId: "team-gemeente-tilburg",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/woo-publicatie-voorziening/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/woo-publicatie-voorziening/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/woo-publicatie-voorziening/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "zgw-api-gebruiken-bij-data-migraties",
@@ -1398,14 +2093,29 @@ const PROJECTS = [
     partners: ["Súdwest-Fryslân"],
     kort: "Deze innovatie zet een volgende stap: onderzoeken of de ZGW-API kan helpen om gemakkelijk van zaaksysteem te wisselen.",
     beschrijving: "Minder afhankelijk zijn van leveranciers, standaardisatie en zelf eigenaar zijn van data zijn allemaal doelen die Common Ground nastreeft. Een product van Common Ground is de ZGW-API. De gemeenten die samenwerken in het Open Webconcept, waaronder de gemeente Gouda, hebben de afgelopen jaren ervaring opgedaan met de ZGW-API. Deze innovatie zet een volgende stap: onderzoeken of de ZGW-API kan helpen om gemakkelijk van zaaksysteem te wisselen. Op die manier zijn dure data migraties van applicatie A naar applicatie B niet meer nodig. Je kunt de ZGW-API zien als een stekker die je kunt gebruiken om naar een ander zaaksysteem over te stappen, terwijl de data behouden blijft. Een extra voordeel is dat de ZGW-API hierdoor meer bekendheid en acceptatie krijgt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2024 met Gemeente Gouda als regievoerder. Partnercontext: Súdwest-Fryslân. Voor ambtenaren is dit vooral relevant bij API's, Data, Procesinnovatie. Kern uit de bron: Minder afhankelijk zijn van leveranciers, standaardisatie en zelf eigenaar zijn van data zijn allemaal doelen die Common Ground nastreeft.",
+    probleem: "Aanleiding: Minder afhankelijk zijn van leveranciers, standaardisatie en zelf eigenaar zijn van data zijn allemaal doelen die Common Ground nastreeft. Op die manier zijn dure data migraties van applicatie A naar applicatie B niet meer nodig.",
+    doel: "Doel: Minder afhankelijk zijn van leveranciers, standaardisatie en zelf eigenaar zijn van data zijn allemaal doelen die Common Ground nastreeft. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van ZGW-API gebruiken bij data migraties naar meetbare succescriteria: Minder afhankelijk zijn van leveranciers, standaardisatie en zelf eigenaar zijn van data zijn allemaal doelen die Common Ground nastreeft.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground", "ZGW API"],
     labels: ["API's", "Data", "Procesinnovatie"],
     contactId: "team-gemeente-gouda",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/zgw-api-gebruiken-bij-data-migraties/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zgw-api-gebruiken-bij-data-migraties/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2024", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zgw-api-gebruiken-bij-data-migraties/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "circulaw",
@@ -1424,14 +2134,27 @@ const PROJECTS = [
     partners: ["Gemeente Rotterdam en Dark Matter Labs"],
     kort: "Nederland heeft als doel om in 2050 circulair te zijn. De circulaire transitie komt echter nog niet voldoende van de grond. CircuLaw brengt hier verandering in. Het kennisplatform onderzoekt welke mogelijkheden er zijn binnen bestaande wetten en stelt deze…",
     beschrijving: "Nederland heeft als doel om in 2050 circulair te zijn. De circulaire transitie komt echter nog niet voldoende van de grond. In de praktijk blijkt circulair ondernemen nog erg vrijblijvend. Daarom is het belangrijk dat overheden meer eisen gaan stellen, door bijvoorbeeld milieuvervuilende materialen in de bouw te verbieden. Uit onderzoek blijkt echter dat dit slechts in 1% van de gevallen gebeurt. Dit komt doordat ambtenaren niet weten welke juridische instrumenten voorhanden zijn en het moeilijk vinden ze toe te passen. CircuLaw brengt hier verandering in. Het kennisplatform onderzoekt welke mogelijkheden er zijn binnen bestaande wetten en stelt deze gratis online beschikbaar. Zo kunnen alle gemeenten en provincies hier gebruik van maken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Rotterdam en Dark Matter Labs. Voor ambtenaren is dit vooral relevant bij Duurzaamheid, Transparantie. Kern uit de bron: Nederland heeft als doel om in 2050 circulair te zijn.",
+    probleem: "Aanleiding: De circulaire transitie komt echter nog niet voldoende van de grond. Dit komt doordat ambtenaren niet weten welke juridische instrumenten voorhanden zijn en het moeilijk vinden ze toe te passen.",
+    doel: "Doel: Nederland heeft als doel om in 2050 circulair te zijn. Het kennisplatform onderzoekt welke mogelijkheden er zijn binnen bestaande wetten en stelt deze gratis online beschikbaar. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Circulaw naar meetbare succescriteria: Nederland heeft als doel om in 2050 circulair te zijn.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Duurzaamheid", "Transparantie"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/circulaw/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/circulaw/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/circulaw/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "cyberweerbaar-maken-mkb",
@@ -1450,14 +2173,27 @@ const PROJECTS = [
     partners: ["Gemeenten Leeuwarden en Meppel (OOV en EZ), provincies Groningen, Friesland, Drenthe, Politie, Platvorm Veilig Ondernemen (PVO), Centrum voor criminaliteitspreventie en veiligheid (CCV)."],
     kort: "Vanwege de dreiging van cybercriminelen is het belangrijk om de cyberweerbaarheid van organisaties te verhogen. Er leeft onder ondernemers echter nog te weinig risicobesef. Met de cybersafescan worden MKB-bedrijven getest op hun digitale weerbaarheid.",
     beschrijving: "Vanwege de dreiging van cybercriminelen is het belangrijk om de cyberweerbaarheid van organisaties te verhogen. Er leeft onder ondernemers echter nog te weinig risicobesef. Met de cybersafescan worden MKB-bedrijven getest op hun digitale weerbaarheid. Vervolgens krijgt de ondernemer een rapport met aanbevelingen om de cyberweerbaarheid te verhogen. De scan wordt aangeboden op een online platform waar de ondernemer inzicht krijgt in de voortgang en waar handvatten worden aangeboden om de digitale weerbaarheid te verhogen. Het platform wordt gekoppeld aan een certificeringsschema. Middels certificering zijn bedrijven aantoonbaar digitaal veilig. Zo maakt de projectgroep het gemakkelijker voor ondernemers om aan hun digitale weerbaarheid te werken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Groningen als regievoerder. Partnercontext: Gemeenten Leeuwarden en Meppel (OOV en EZ), provincies Groningen, Friesland, Drenthe, Politie, Platvorm Veilig Ondernemen (PVO), Centrum voor criminaliteitspreventie en veiligheid (CCV).. Voor ambtenaren is dit vooral relevant bij Cybersecurity, Digitale weerbaarheid. Kern uit de bron: Vanwege de dreiging van cybercriminelen is het belangrijk om de cyberweerbaarheid van organisaties te verhogen.",
+    probleem: "Aanleiding: Er leeft onder ondernemers echter nog te weinig risicobesef.",
+    doel: "Doel: Met de cybersafescan worden MKB-bedrijven getest op hun digitale weerbaarheid. Zo maakt de projectgroep het gemakkelijker voor ondernemers om aan hun digitale weerbaarheid te werken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Cyberweerbaar maken MKB naar meetbare succescriteria: Vanwege de dreiging van cybercriminelen is het belangrijk om de cyberweerbaarheid van organisaties te verhogen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Behandel beveiliging, misbruikscenario’s, monitoring en incidentrespons als ontwerpcriteria, niet als laatste controle.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Cybersecurity", "Digitale weerbaarheid"],
     contactId: "team-gemeente-groningen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/cyberweerbaar-maken-mkb/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/cyberweerbaar-maken-mkb/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/cyberweerbaar-maken-mkb/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale weerbaarheid overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-weerbaarheid/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "huishoudboekje-en-virtueel-inkomstenloket",
@@ -1476,14 +2212,28 @@ const PROJECTS = [
     partners: ["Gemeenten Amersfoort, Amsterdam, Nijmegen. In samenwerking met Programma Innovatie Gegevensuitwisseling Sociale Zaken (IGS), Nederlandse Vereniging voor Sociale Innovatie (NVSI) en VNG Realisatie."],
     kort: "Het Huishoudboekje en Virtueel Inkomstenloket hebben twee doelen: mensen financieel stabiel maken en zorgen dat je krijgt waar je recht op hebt! Zowel het Huishoudboekje als het Virtueel Inkomstenloket worden open source ontwikkeld.",
     beschrijving: "Het Huishoudboekje en Virtueel Inkomstenloket hebben twee doelen: mensen financieel stabiel maken en zorgen dat je krijgt waar je recht op hebt! Zowel het Huishoudboekje als het Virtueel Inkomstenloket worden open source ontwikkeld. De projecten zitten momenteel in de fase van opschaling en doorontwikkeling. Er wordt een communitymanager ingezet voor de inrichting van een community en opschaling. Zodat het Huishoudboekje door meer inwoners van meer gemeenten gebruikt kan worden. Een product owner werkt aan de functionele doorontwikkeling van het Huishoudboekje en het Virtueel inkomstenloket volgens de common ground principes.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Utrecht als regievoerder. Partnercontext: Gemeenten Amersfoort, Amsterdam, Nijmegen. In samenwerking met Programma Innovatie Gegevensuitwisseling Sociale Zaken (IGS), Nederlandse Vereniging voor Sociale Innovatie (NVSI) en VNG Realisatie.. Voor ambtenaren is dit vooral relevant bij Burgergericht, Inclusie, Dienstverlening. Kern uit de bron: Het Huishoudboekje en Virtueel Inkomstenloket hebben twee doelen: mensen financieel stabiel maken en zorgen dat je krijgt waar je recht op hebt!",
+    probleem: "Aanleiding: Het Huishoudboekje en Virtueel Inkomstenloket hebben twee doelen: mensen financieel stabiel maken en zorgen dat je krijgt waar je recht op hebt! Zowel het Huishoudboekje als het Virtueel Inkomstenloket worden open source ontwikkeld.",
+    doel: "Doel: Het Huishoudboekje en Virtueel Inkomstenloket hebben twee doelen: mensen financieel stabiel maken en zorgen dat je krijgt waar je recht op hebt! Zowel het Huishoudboekje als het Virtueel Inkomstenloket worden open source ontwikkeld. De projecten zitten momenteel in de fase van opschaling en doorontwikkeling. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Huishoudboekje en Virtueel Inkomstenloket naar meetbare succescriteria: Het Huishoudboekje en Virtueel Inkomstenloket hebben twee doelen: mensen financieel stabiel maken en zorgen dat je krijgt waar je recht op hebt!",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Burgergericht", "Inclusie", "Dienstverlening"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/huishoudboekje-en-virtueel-inkomstenloket/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/huishoudboekje-en-virtueel-inkomstenloket/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/huishoudboekje-en-virtueel-inkomstenloket/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "interactieve-bereikbaarheidskaart-en-api-met-voertuig-beperkingen",
@@ -1502,14 +2252,29 @@ const PROJECTS = [
     partners: ["Gemeente Utrecht, Provincie Noord Holland en Provincie Utrecht"],
     kort: "Deze projectgroep wil burgers en ondernemers digitale overheidsdienstverlening op maat aanbieden. De projectgroep streeft ernaar om informatie over bereikbaarheid en vergunning via 1 loket digitaal beschikbaar te stellen aan gebruikers over…",
     beschrijving: "In Nederland hebben we 189.411 kilometer aan wegen. Niet al deze wegen zijn toegankelijk voor alle voertuigen. Er zijn ongeveer 40 verkeersborden met verboden voor verschillende voertuigen met beperkingen rondom gewicht, lengte, breedte of hoogte. Stel je hebt een vrachtwagen met een specifieke, hoogte, breedte, lengte, gewicht of last, waar in Nederland mag je rijden? Deze projectgroep wil burgers en ondernemers digitale overheidsdienstverlening op maat aanbieden. De gemeente Utrecht heeft de afgelopen tijd de bereikbaarheidskaart ontwikkeld die exact datgene doet. Mobiliteit eindigt niet bij de gemeentegrens. De projectgroep streeft ernaar om informatie over bereikbaarheid en vergunning via 1 loket digitaal beschikbaar te stellen aan gebruikers over provinciegrenzen heen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Utrecht, Provincie Noord Holland en Provincie Utrecht. Voor ambtenaren is dit vooral relevant bij Data, API's, Toegankelijkheid. Kern uit de bron: In Nederland hebben we 189.411 kilometer aan wegen.",
+    probleem: "Aanleiding: Niet al deze wegen zijn toegankelijk voor alle voertuigen. Mobiliteit eindigt niet bij de gemeentegrens.",
+    doel: "Doel: De gemeente Utrecht heeft de afgelopen tijd de bereikbaarheidskaart ontwikkeld die exact datgene doet. De projectgroep streeft ernaar om informatie over bereikbaarheid en vergunning via 1 loket digitaal beschikbaar te stellen aan gebruikers over provinciegrenzen heen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Interactieve bereikbaarheidskaart en API met voertuig beperkingen naar meetbare succescriteria: In Nederland hebben we 189.411 kilometer aan wegen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "API's", "Toegankelijkheid"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/interactieve-bereikbaarheidskaart-en-api-met-voertuig-beperkingen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/interactieve-bereikbaarheidskaart-en-api-met-voertuig-beperkingen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/interactieve-bereikbaarheidskaart-en-api-met-voertuig-beperkingen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "inzet-digitale-identiteit-wallet-ter-voorkoming-van-woondiscriminatie",
@@ -1528,14 +2293,29 @@ const PROJECTS = [
     partners: ["RvIG, Belastingdienst, Woonstad Rotterdam en Hogeschool Rotterdam"],
     kort: "Gemeente Rotterdam wil samen met de Rijksdienst voor Identiteitsgegevens, de Belastingdienst, Woonstad Rotterdam, de Hogeschool Rotterdam, burgers en diverse leveranciers een praktisch inzetbaar instrument ontwikkelen. Een digitale identiteit wallet…",
     beschrijving: "Gemeente Rotterdam wil samen met de Rijksdienst voor Identiteitsgegevens, de Belastingdienst, Woonstad Rotterdam, de Hogeschool Rotterdam, burgers en diverse leveranciers een praktisch inzetbaar instrument ontwikkelen. Een digitale identiteit wallet waarmee je identiteit de sleutel wordt tot een passende sociale huurwoning. Het project richt zich op de meest kwetsbare groepen in de samenleving. Het doel is om burgers van Rotterdam een tool te bieden waarmee ze alleen gegevens delen die benodigd zijn. De tool toetst of de burgers in aanmerking komen voor een sociale huurwoning. Dit voorkomt woondiscriminatie.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Rotterdam als regievoerder. Partnercontext: RvIG, Belastingdienst, Woonstad Rotterdam en Hogeschool Rotterdam. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Privacy, Inclusie. Kern uit de bron: Gemeente Rotterdam wil samen met de Rijksdienst voor Identiteitsgegevens, de Belastingdienst, Woonstad Rotterdam, de Hogeschool Rotterdam, burgers en diverse leveranciers een praktisch inzetbaar instrument ontwikkelen.",
+    probleem: "Aanleiding: Gemeente Rotterdam wil samen met de Rijksdienst voor Identiteitsgegevens, de Belastingdienst, Woonstad Rotterdam, de Hogeschool Rotterdam, burgers en diverse leveranciers een praktisch inzetbaar instrument ontwikkelen. Een digitale identiteit wallet waarmee je identiteit de sleutel wordt tot een passende sociale huurwoning.",
+    doel: "Doel: Gemeente Rotterdam wil samen met de Rijksdienst voor Identiteitsgegevens, de Belastingdienst, Woonstad Rotterdam, de Hogeschool Rotterdam, burgers en diverse leveranciers een praktisch inzetbaar instrument ontwikkelen. Het project richt zich op de meest kwetsbare groepen in de samenleving. Het doel is om burgers van Rotterdam een tool te bieden waarmee ze alleen gegevens delen die benodigd zijn. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Inzet Digitale Identiteit Wallet ter voorkoming van woondiscriminatie naar meetbare succescriteria: Gemeente Rotterdam wil samen met de Rijksdienst voor Identiteitsgegevens, de Belastingdienst, Woonstad Rotterdam, de Hogeschool Rotterdam, burgers en diverse leveranciers een praktisch inzetbaar instrument ontwikkelen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale identiteit", "Privacy", "Inclusie"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/inzet-digitale-identiteit-wallet-ter-voorkoming-van-woondiscriminatie/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/inzet-digitale-identiteit-wallet-ter-voorkoming-van-woondiscriminatie/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/inzet-digitale-identiteit-wallet-ter-voorkoming-van-woondiscriminatie/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "naar-een-merkbaar-en-meetbaar-verschil",
@@ -1554,14 +2334,28 @@ const PROJECTS = [
     partners: ["Gemeente Westerkwartier, Forus en Janita Top"],
     kort: "In de gemeenten Westerkwartier en Eemsdelta leven in verhouding veel inwoners met een laag inkomen en met grote geldzorgen. Dat vraag om meer dan een goed armoede- en schuldenbeleid. Tussen de vele regelingen raken veel mensen het overzicht kwijt. Met…",
     beschrijving: "Het bestrijden van armoede is geen sinecure. In de gemeenten Westerkwartier en Eemsdelta leven in verhouding veel inwoners met een laag inkomen en met grote geldzorgen. Dat vraag om meer dan een goed armoede- en schuldenbeleid. Er zijn diverse landelijke en gemeentelijke regelingen en voorzieningen van fondsen en stichtingen. Tussen de vele regelingen raken veel mensen het overzicht kwijt. Met stress en onnodig niet-gebruik tot gevolg. Westerkwartier en Eemsdelta vinden dat dit anders kan. Daarom zijn zij gestart met de ontwikkeling van een digitaal platform waarin zoveel mogelijk voorzieningen overzichtelijk, gebruiksvriendelijk en toegankelijk zijn ondergebracht.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Eemsdelta als regievoerder. Partnercontext: Gemeente Westerkwartier, Forus en Janita Top. Voor ambtenaren is dit vooral relevant bij Inclusie, Burgergericht, Data. Kern uit de bron: Het bestrijden van armoede is geen sinecure.",
+    probleem: "Aanleiding: Het bestrijden van armoede is geen sinecure.",
+    doel: "Doel: Daarom zijn zij gestart met de ontwikkeling van een digitaal platform waarin zoveel mogelijk voorzieningen overzichtelijk, gebruiksvriendelijk en toegankelijk zijn ondergebracht. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Naar een merkbaar en meetbaar verschil! naar meetbare succescriteria: Het bestrijden van armoede is geen sinecure.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Inclusie", "Burgergericht", "Data"],
     contactId: "team-gemeente-eemsdelta",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/naar-een-merkbaar-en-meetbaar-verschil/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/naar-een-merkbaar-en-meetbaar-verschil/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/naar-een-merkbaar-en-meetbaar-verschil/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "nederland-inclusief-toegankelijk-met-de-binnenstad-bereikbaar-applicatie-bba",
@@ -1580,14 +2374,28 @@ const PROJECTS = [
     partners: ["Gemeenten ‘s-Hertogenbosch, Eindhoven, Tilburg, ePublic Solutions, projectleiding en software development en Localyse, lokatiediensten"],
     kort: "De BBA levert een belangrijke bijdrage aan toegankelijkheid van gemeenten door relevante en actuele informatie van de stad te geven die afgestemd is op de gebruiker en evenementen. De basis is een digitale, interactieve kaart waarin data uit diverse…",
     beschrijving: "Voor bewoners en bezoekers is het belangrijk om over actuele informatie te beschikken bij een bezoek aan de stad, zeker bij veranderingen tijdens evenementen. Voor mensen met een beperking is dit bepalend bij de afweging of het tot een bezoek komt. De BBA levert een belangrijke bijdrage aan toegankelijkheid van gemeenten door relevante en actuele informatie van de stad te geven die afgestemd is op de gebruiker en evenementen. De basis is een digitale, interactieve kaart waarin data uit diverse bronnen centraal samenkomen. Het gebruik van de BBA levert de gemeente inzichten op over gebruik van faciliteiten en ondersteunt data gestuurd werken. Er is al een succesvolle pilot met hulp van ervaringsdeskundigen en evenementorganisaties uitgevoerd.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Breda als regievoerder. Partnercontext: Gemeenten ‘s-Hertogenbosch, Eindhoven, Tilburg, ePublic Solutions, projectleiding en software development en Localyse, lokatiediensten. Voor ambtenaren is dit vooral relevant bij Toegankelijkheid, Inclusie, Data. Kern uit de bron: Voor bewoners en bezoekers is het belangrijk om over actuele informatie te beschikken bij een bezoek aan de stad, zeker bij veranderingen tijdens evenementen.",
+    probleem: "Aanleiding: Voor bewoners en bezoekers is het belangrijk om over actuele informatie te beschikken bij een bezoek aan de stad, zeker bij veranderingen tijdens evenementen. Voor mensen met een beperking is dit bepalend bij de afweging of het tot een bezoek komt.",
+    doel: "Doel: Voor mensen met een beperking is dit bepalend bij de afweging of het tot een bezoek komt. De BBA levert een belangrijke bijdrage aan toegankelijkheid van gemeenten door relevante en actuele informatie van de stad te geven die afgestemd is op de gebruiker en evenementen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Nederland inclusief toegankelijk met de Binnenstad Bereikbaar Applicatie (BBA) naar meetbare succescriteria: Voor bewoners en bezoekers is het belangrijk om over actuele informatie te beschikken bij een bezoek aan de stad, zeker bij veranderingen tijdens evenementen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Toegankelijkheid", "Inclusie", "Data"],
     contactId: "team-gemeente-breda",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/nederland-inclusief-toegankelijk-met-de-binnenstad-bereikbaar-applicatie-bba/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/nederland-inclusief-toegankelijk-met-de-binnenstad-bereikbaar-applicatie-bba/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/nederland-inclusief-toegankelijk-met-de-binnenstad-bereikbaar-applicatie-bba/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "openbaar-digitaal-samenlevingsplatform",
@@ -1606,14 +2414,27 @@ const PROJECTS = [
     partners: ["Regio Alkmaar, Dijk & Waard, Bergen, Uitgeest, Heiloo, Castricum, Hoogheemraadschap Noord Hollands Noorderkwartier, Vrije Universiteit Amsterdam, Analyze, Bridgestone, Cyclomedia en JuniorIOT."],
     kort: "De digitale tweeling is het kernproduct van de Alkmaarse digitale samenleving. Het biedt als digitaal platform veel flexibiliteit in het ontwikkelen van nieuwe ideeën en het samenbrengen van vraagstukken.",
     beschrijving: "De digitale tweeling is het kernproduct van de Alkmaarse digitale samenleving. Het biedt als digitaal platform veel flexibiliteit in het ontwikkelen van nieuwe ideeën en het samenbrengen van vraagstukken. De projectgroep wil de digitale tweeling aanpak via een open source omgeving beschikbaar stellen aan andere organisaties. Daarmee kunnen zij zonder grote investeringen ook aan de slag met het digitaliseren van samenlevingsvraagstukken. Deze open samenwerking wil het projectteam opstellen en testen met vijf omliggende gemeenten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Alkmaar als regievoerder. Partnercontext: Regio Alkmaar, Dijk & Waard, Bergen, Uitgeest, Heiloo, Castricum, Hoogheemraadschap Noord Hollands Noorderkwartier, Vrije Universiteit Amsterdam, Analyze, Bridgestone, Cyclomedia en JuniorIOT.. Voor ambtenaren is dit vooral relevant bij Data, Burgergericht, Samenwerking. Kern uit de bron: De digitale tweeling is het kernproduct van de Alkmaarse digitale samenleving.",
+    probleem: "Aanleiding: De digitale tweeling is het kernproduct van de Alkmaarse digitale samenleving. Het biedt als digitaal platform veel flexibiliteit in het ontwikkelen van nieuwe ideeën en het samenbrengen van vraagstukken.",
+    doel: "Doel: Het biedt als digitaal platform veel flexibiliteit in het ontwikkelen van nieuwe ideeën en het samenbrengen van vraagstukken. De projectgroep wil de digitale tweeling aanpak via een open source omgeving beschikbaar stellen aan andere organisaties. Deze open samenwerking wil het projectteam opstellen en testen met vijf omliggende gemeenten. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Openbaar digitaal samenlevingsplatform naar meetbare succescriteria: De digitale tweeling is het kernproduct van de Alkmaarse digitale samenleving.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Burgergericht", "Samenwerking"],
     contactId: "team-gemeente-alkmaar",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/openbaar-digitaal-samenlevingsplatform/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/openbaar-digitaal-samenlevingsplatform/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/openbaar-digitaal-samenlevingsplatform/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "openstad",
@@ -1632,14 +2453,27 @@ const PROJECTS = [
     partners: ["Gemeente Amsterdam"],
     kort: "Stel je eens voor dat je op de website van je gemeente, waterschap, provincie of Rijksoverheid voor alles terecht kunt. Communicatie, dienstverlening en participatie onder één dak. Digitale participatie wordt nu altijd als platform naast de reguliere…",
     beschrijving: "Stel je eens voor dat je op de website van je gemeente, waterschap, provincie of Rijksoverheid voor alles terecht kunt. Communicatie, dienstverlening en participatie onder één dak. Digitale participatie wordt nu altijd als platform naast de reguliere website aangeboden. De participatietools van het platform OpenStad zijn inpasbaar voor iedere website of webapplicatie. Zo kunnen inwoners op een overheidswebsite direct participeren in beleid en projecten. Dit project draagt bij aan een herkenbare en betrouwbare gebruikerservaring voor inwoners en eenvoudiger beheer.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Den Haag als regievoerder. Partnercontext: Gemeente Amsterdam. Voor ambtenaren is dit vooral relevant bij Burgergericht, Samenwerking, Dienstverlening. Kern uit de bron: Stel je eens voor dat je op de website van je gemeente, waterschap, provincie of Rijksoverheid voor alles terecht kunt.",
+    probleem: "Aanleiding: Stel je eens voor dat je op de website van je gemeente, waterschap, provincie of Rijksoverheid voor alles terecht kunt. Communicatie, dienstverlening en participatie onder één dak.",
+    doel: "Doel: Communicatie, dienstverlening en participatie onder één dak. Digitale participatie wordt nu altijd als platform naast de reguliere website aangeboden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van OpenStad naar meetbare succescriteria: Stel je eens voor dat je op de website van je gemeente, waterschap, provincie of Rijksoverheid voor alles terecht kunt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Samenwerking", "Dienstverlening"],
     contactId: "team-gemeente-den-haag",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/openstad/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/openstad/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/openstad/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "proeftuin-digitale-inclusie-westerkwartier",
@@ -1658,14 +2492,28 @@ const PROJECTS = [
     partners: ["Biblionet, Provincie Groningen, 48percent.org, Freedom Internet, Alliantie Digitaal Samenleven, Allemaal Digitaal, Humanitas Westerkwartier, De Schans, Digicampus."],
     kort: "In Nederland kunnen ruim 4 miljoen mensen digitaal onvoldoende meedoen. En dat terwijl de wereld in hoog tempo digitaliseert. Digitale inclusie staat op de eerste plaats in de Werkagenda Waardengedreven Digitaliseren. Er is in Nederland nog geen integrale…",
     beschrijving: "In Nederland kunnen ruim 4 miljoen mensen digitaal onvoldoende meedoen. 1,2 miljoen daarvan heeft nog nooit internet gebruikt. En dat terwijl de wereld in hoog tempo digitaliseert. Er is in Nederland nog geen integrale aanpak die de verschillende elementen van digitale inclusie combineert. Daar wil deze projectgroep verandering in brengen. Samen met partners in de keten van digitale inclusie en met de doelgroep gaan ze een integrale aanpak ontwikkelen en beproeven. 50 huishoudens in een wijk krijgen een aanbod: betaalbaar internet, een device inclusief training en ondersteuning in de wijk. De resultaten bundelt de projectgroep in een handreiking voor Nederlandse gemeenten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Westerkwartier als regievoerder. Partnercontext: Biblionet, Provincie Groningen, 48percent.org, Freedom Internet, Alliantie Digitaal Samenleven, Allemaal Digitaal, Humanitas Westerkwartier, De Schans, Digicampus.. Voor ambtenaren is dit vooral relevant bij Inclusie, Toegankelijkheid. Kern uit de bron: In Nederland kunnen ruim 4 miljoen mensen digitaal onvoldoende meedoen.",
+    probleem: "Aanleiding: In Nederland kunnen ruim 4 miljoen mensen digitaal onvoldoende meedoen. Er is in Nederland nog geen integrale aanpak die de verschillende elementen van digitale inclusie combineert.",
+    doel: "Doel: Er is in Nederland nog geen integrale aanpak die de verschillende elementen van digitale inclusie combineert. Samen met partners in de keten van digitale inclusie en met de doelgroep gaan ze een integrale aanpak ontwikkelen en beproeven. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Proeftuin Digitale Inclusie Westerkwartier naar meetbare succescriteria: In Nederland kunnen ruim 4 miljoen mensen digitaal onvoldoende meedoen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Inclusie", "Toegankelijkheid"],
     contactId: "team-gemeente-westerkwartier",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/proeftuin-digitale-inclusie-westerkwartier/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/proeftuin-digitale-inclusie-westerkwartier/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/proeftuin-digitale-inclusie-westerkwartier/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "professionals-buiten-dienst",
@@ -1684,14 +2532,27 @@ const PROJECTS = [
     partners: ["Politie Nederland, Veiligheidsregio Drenthe en Meldkamer Noord Nederland"],
     kort: "In Nederland ontvangt de meldkamer honderden 112 telefoontjes per dag. Achter elk gesprek verschuilt een noodsituatie waarin iedere seconde telt. Elke dag zetten hulpverleners van de Politie, Brandweer en Ambulance zich in om zo snel mogelijk de juiste…",
     beschrijving: "In Nederland ontvangt de meldkamer honderden 112 telefoontjes per dag. Achter elk gesprek verschuilt een noodsituatie waarin iedere seconde telt. Elke dag zetten hulpverleners van de Politie, Brandweer en Ambulance zich in om zo snel mogelijk de juiste hulp te bieden. In Nederland kennen wij ook een grote groep mensen die graag een bijdrage leveren in noodsituaties. Denk aan programma’s zoals opsporing verzocht en het succesvol gebruik van applicaties zoals Burgernet en HartslagNu. Dit project betrekt de juiste persoon, met de juiste kennis, op het juiste moment bij een incident. Of het nu gaat over een specialist, professional of burger.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Politie, Landelijke Meldkamer Samenwerking als regievoerder. Partnercontext: Politie Nederland, Veiligheidsregio Drenthe en Meldkamer Noord Nederland. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Procesinnovatie. Kern uit de bron: In Nederland ontvangt de meldkamer honderden 112 telefoontjes per dag.",
+    probleem: "Aanleiding: In Nederland ontvangt de meldkamer honderden 112 telefoontjes per dag. Achter elk gesprek verschuilt een noodsituatie waarin iedere seconde telt.",
+    doel: "Doel: Achter elk gesprek verschuilt een noodsituatie waarin iedere seconde telt. Elke dag zetten hulpverleners van de Politie, Brandweer en Ambulance zich in om zo snel mogelijk de juiste hulp te bieden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Professionals Buiten Dienst naar meetbare succescriteria: In Nederland ontvangt de meldkamer honderden 112 telefoontjes per dag.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Procesinnovatie"],
     contactId: "team-politie-landelijke-meldkamer-samenwerkin",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/professionals-buiten-dienst/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/professionals-buiten-dienst/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/professionals-buiten-dienst/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "samen-continu-verbeteren-vanuit-klantsignalen",
@@ -1710,14 +2571,28 @@ const PROJECTS = [
     partners: ["Gemeente Utrecht, Gemeente Tilburg, Belastingdienst en ORR (Ombudsman Rotterdam-Rijnmond)"],
     kort: "De gemeente Rotterdam ontwikkelde een innovatief model en dashboard om al klantsignalen te ordenen en te gebruiken voor verbeteringen. Ze willen het model verbeteren en opschalen naar andere gemeentes. Met als uiteindelijke doel een nationaal toepasbaar…",
     beschrijving: "Burgers en ondernemers vertellen dagelijks wat er goed gaat en wat er beter kan in de (digitale) overheidsdienstverlening. De gemeente Rotterdam ontwikkelde een innovatief model en dashboard om al deze klantsignalen te ordenen en te gebruiken voor verbeteringen. Zo zorgen ze voor hoogwaardige, toegankelijke en proactieve dienstverlening. De ambitie is groot: ze willen het model verbeteren en opschalen naar andere gemeentes. Utrecht is al gestart met een Proof of Concept. Ook wil het projectteam verbreden naar andere overheden & uitvoeringsorganisaties. Met als uiteindelijke doel een nationaal toepasbaar model voor klantsignalen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Rotterdam als regievoerder. Partnercontext: Gemeente Utrecht, Gemeente Tilburg, Belastingdienst en ORR (Ombudsman Rotterdam-Rijnmond). Voor ambtenaren is dit vooral relevant bij Gebruikerservaring, Data, Dienstverlening. Kern uit de bron: Burgers en ondernemers vertellen dagelijks wat er goed gaat en wat er beter kan in de (digitale) overheidsdienstverlening.",
+    probleem: "Aanleiding: Burgers en ondernemers vertellen dagelijks wat er goed gaat en wat er beter kan in de (digitale) overheidsdienstverlening. De gemeente Rotterdam ontwikkelde een innovatief model en dashboard om al deze klantsignalen te ordenen en te gebruiken voor verbeteringen.",
+    doel: "Doel: De gemeente Rotterdam ontwikkelde een innovatief model en dashboard om al deze klantsignalen te ordenen en te gebruiken voor verbeteringen. De ambitie is groot: ze willen het model verbeteren en opschalen naar andere gemeentes. Met als uiteindelijke doel een nationaal toepasbaar model voor klantsignalen. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Samen continu verbeteren vanuit klantsignalen naar meetbare succescriteria: Burgers en ondernemers vertellen dagelijks wat er goed gaat en wat er beter kan in de (digitale) overheidsdienstverlening.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Gebruikerservaring", "Data", "Dienstverlening"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/samen-continu-verbeteren-vanuit-klantsignalen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/samen-continu-verbeteren-vanuit-klantsignalen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/samen-continu-verbeteren-vanuit-klantsignalen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "synthetische-data-een-gelukkig-huwelijk-tussen-dataopenheid-en-dataprivacy",
@@ -1736,14 +2611,29 @@ const PROJECTS = [
     partners: ["Belastingdienst, Centraal Justitieel Incassobureau (CJIB) en Centraal Bureau voor de Statistiek (CBS), Ministerie van Justitie en Veiligheid (Min J&V) en Uitvoeringsinstituut Werknemersverzekeringen (UWV)"],
     kort: "DUO werkt samen met de Belastingdienst, CBS, CJIB, Min J&V en UWV aan het versterken en verbreden van de implementatie van synthetische data. Met het Innovatiebudget wordt een kennisnetwerk opgezet en een toolbox met synthetische data gepubliceerd. Hierin…",
     beschrijving: "De Nederlandse overheid wil een open (digitale) overheid zijn en tegelijkertijd privacy voor iedere burger waarborgen. Dit kan botsen als het om data beschikbaar stellen gaat. Synthetische data met nepindividuen kan hier een oplossing voor zijn. DUO werkt samen met de Belastingdienst, CBS, CJIB, Min J&V en UWV aan het versterken en verbreden van de implementatie van synthetische data. Met het Innovatiebudget wordt een kennisnetwerk opgezet en een toolbox met synthetische data gepubliceerd. Hierin vinden geïnteresseerden een referentiegids, een juridisch en ethisch voorbeeldbeleid voor synthetische data en een openbare codebase.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Dienst Uitvoering Onderwijs als regievoerder. Partnercontext: Belastingdienst, Centraal Justitieel Incassobureau (CJIB) en Centraal Bureau voor de Statistiek (CBS), Ministerie van Justitie en Veiligheid (Min J&V) en Uitvoeringsinstituut Werknemersverzekeringen (UWV). Voor ambtenaren is dit vooral relevant bij Data, Privacy, AI. Kern uit de bron: De Nederlandse overheid wil een open (digitale) overheid zijn en tegelijkertijd privacy voor iedere burger waarborgen.",
+    probleem: "Aanleiding: De Nederlandse overheid wil een open (digitale) overheid zijn en tegelijkertijd privacy voor iedere burger waarborgen. Dit kan botsen als het om data beschikbaar stellen gaat.",
+    doel: "Doel: Dit kan botsen als het om data beschikbaar stellen gaat. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Synthetische Data: een gelukkig huwelijk tussen dataopenheid en dataprivacy naar meetbare succescriteria: De Nederlandse overheid wil een open (digitale) overheid zijn en tegelijkertijd privacy voor iedere burger waarborgen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Privacy", "AI"],
     contactId: "team-dienst-uitvoering-onderwijs",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/synthetische-data-een-gelukkig-huwelijk-tussen-dataopenheid-en-dataprivacy/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/synthetische-data-een-gelukkig-huwelijk-tussen-dataopenheid-en-dataprivacy/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/synthetische-data-een-gelukkig-huwelijk-tussen-dataopenheid-en-dataprivacy/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "varifocus-op-de-ondergrond",
@@ -1762,14 +2652,27 @@ const PROJECTS = [
     partners: ["Provincie Zuid-Holland en Ministerie van BZK"],
     kort: "De gemeente Rotterdam werkt aan een kernregistratie van ondergrondse objecten, waaruit data kan worden verstrekt over de ondergrond van de stad. Samen met de informatie uit de landelijke basisregistratie Ondergrond ontstaat daarmee een rijke bron aan…",
     beschrijving: "De provincie Zuid-Holland staat voor de opgave om voor 2030 zo’n 235.000 woningen te bouwen. Tegelijkertijd heeft het een klimaatonderlegger ontwikkeld die inzicht geeft in de uitdagingen die water, bodem en klimaat meegeven voor onder meer bebouwing. Dit stelt hoge eisen aan inzicht in de ondergrond. Waar kan wel en waar niet gebouwd worden? De gemeente Rotterdam werkt aan een kernregistratie van ondergrondse objecten, waaruit data wordt verstrekt over de ondergrond van de stad. Samen met de informatie uit de landelijke basisregistratie Ondergrond ontstaat daarmee een rijke bron aan informatie. Provincie en gemeente willen samen werken aan verbetering van de informatiepositie voor de ondergrond. Dit verbetert de besluitvorming in de ruimtelijke ordening kwalitatief.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2023 met Gemeente Rotterdam als regievoerder. Partnercontext: Provincie Zuid-Holland en Ministerie van BZK. Voor ambtenaren is dit vooral relevant bij Data. Kern uit de bron: De provincie Zuid-Holland staat voor de opgave om voor 2030 zo’n 235.000 woningen te bouwen.",
+    probleem: "Aanleiding: Waar kan wel en waar niet gebouwd worden?",
+    doel: "Doel: De provincie Zuid-Holland staat voor de opgave om voor 2030 zo’n 235.000 woningen te bouwen. Tegelijkertijd heeft het een klimaatonderlegger ontwikkeld die inzicht geeft in de uitdagingen die water, bodem en klimaat meegeven voor onder meer bebouwing. Samen met de informatie uit de landelijke basisregistratie Ondergrond ontstaat daarmee een rijke bron aan informatie. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Varifocus op de Ondergrond naar meetbare succescriteria: De provincie Zuid-Holland staat voor de opgave om voor 2030 zo’n 235.000 woningen te bouwen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/varifocus-op-de-ondergrond/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/varifocus-op-de-ondergrond/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2023", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/varifocus-op-de-ondergrond/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "crowd-safety-manager",
@@ -1788,14 +2691,27 @@ const PROJECTS = [
     partners: ["Landelijke Eenheid van de Nationale Politie"],
     kort: "Onvoorspelbare drommen mensen die zich verplaatsen door de stad kunnen tot ongewenste en zelfs levensgevaarlijke situaties leiden. Crowd Safety Manager biedt met directe participatie van betrokkenen een digitaal instrumentarium voor de omgang met drukte en…",
     beschrijving: "Onvoorspelbare drommen mensen die zich verplaatsen door de stad kunnen tot ongewenste en zelfs levensgevaarlijke situaties leiden. Crowd Safety Manager biedt met directe participatie van betrokkenen een digitaal instrumentarium voor de omgang met drukte en de daarmee samenhangende risico’s. Data-gedreven voorspellingen over de beweging van groepen mensen gecombineerd met automatisch voorgestelde maatregelen, maken het bijvoorbeeld mogelijk mensenmassa’s eenvoudiger in goede banen te leiden, escalaties te voorkomen, sneller de-escaleren en meer gevoel van veiligheid op straat.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Den Haag als regievoerder. Partnercontext: Landelijke Eenheid van de Nationale Politie. Voor ambtenaren is dit vooral relevant bij Data, Burgergericht. Kern uit de bron: Onvoorspelbare drommen mensen die zich verplaatsen door de stad kunnen tot ongewenste en zelfs levensgevaarlijke situaties leiden.",
+    probleem: "Aanleiding: Crowd Safety Manager biedt met directe participatie van betrokkenen een digitaal instrumentarium voor de omgang met drukte en de daarmee samenhangende risico’s.",
+    doel: "Doel: Data-gedreven voorspellingen over de beweging van groepen mensen gecombineerd met automatisch voorgestelde maatregelen, maken het bijvoorbeeld mogelijk mensenmassa’s eenvoudiger in goede banen te leiden, escalaties te voorkomen, sneller de-escaleren en meer gevoel van veiligheid op straat. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Crowd Safety Manager naar meetbare succescriteria: Onvoorspelbare drommen mensen die zich verplaatsen door de stad kunnen tot ongewenste en zelfs levensgevaarlijke situaties leiden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Burgergericht"],
     contactId: "team-gemeente-den-haag",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/crowd-safety-manager/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/crowd-safety-manager/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/crowd-safety-manager/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "demodam-een-common-ground-showcase-en-lanceerbasis",
@@ -1814,14 +2730,29 @@ const PROJECTS = [
     partners: ["Dimpact"],
     kort: "Gemeenten werken met Common Ground samen met leveranciers aan open source componenten. De website voor de fictieve gemeente Demodam geeft daar informatie over. Voorbeelden laten zien hoe je componenten tot bruikbare diensten kunt samenvoegen.",
     beschrijving: "Gemeenten werken met Common Ground samen met leveranciers aan open source componenten. De website voor de fictieve gemeente Demodam geeft daar informatie over. Voorbeelden laten zien hoe je componenten tot bruikbare diensten kunt samenvoegen. Een platform waarop initiatieven, resultaten, toepassingen in schijnwerpers staan en vooral waar mensen en organisaties elkaar treffen, samenwerken en hergebruik stimuleren. Het doel is om het vliegwiel van samenwerking en hergebruik in gang te zetten. 3 hackathons helpen om samen sneller te innoveren. De aanvraag is gericht op het bestendigen van de hackathons: van het eerste resultaat naar `klaar voor breed gebruik’.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Wigo4it als regievoerder. Partnercontext: Dimpact. Voor ambtenaren is dit vooral relevant bij Open standaarden, Samenwerking. Kern uit de bron: Gemeenten werken met Common Ground samen met leveranciers aan open source componenten.",
+    probleem: "Aanleiding: Gemeenten werken met Common Ground samen met leveranciers aan open source componenten. De website voor de fictieve gemeente Demodam geeft daar informatie over.",
+    doel: "Het doel is om het vliegwiel van samenwerking en hergebruik in gang te zetten. De aanvraag is gericht op het bestendigen van de hackathons: van het eerste resultaat naar `klaar voor breed gebruik’. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Demodam: een Common Ground showcase en lanceerbasis naar meetbare succescriteria: Gemeenten werken met Common Ground samen met leveranciers aan open source componenten.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden", "Common Ground"],
     labels: ["Open standaarden", "Samenwerking"],
     contactId: "team-wigo4it",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/demodam-een-common-ground-showcase-en-lanceerbasis/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/demodam-een-common-ground-showcase-en-lanceerbasis/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/demodam-een-common-ground-showcase-en-lanceerbasis/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "duurzaam-hergebruik-van-ruimtelijke-data",
@@ -1840,14 +2771,28 @@ const PROJECTS = [
     partners: ["Waterlands Archief, Stadsarchief Amsterdam, Technische Universiteit Eindhoven, RWTH Aachen University, Universiteit van Amsterdam, Waternet, Picturae, Bvolve en GOBAR"],
     kort: "Burgers en ondernemers kunnen bouwaanvragen en ruimtelijke plannen digitaal indienen. Steeds vaker kan dat in met bouwinformatiemodellen. Eenduidige landelijke criteria moeten zorgen dat deze modellen op lange termijn voor de hele gemeenschap bruikbaar…",
     beschrijving: "Burgers en ondernemers kunnen bouwaanvragen en ruimtelijke plannen digitaal indienen. Steeds vaker kan dat in met bouwinformatiemodellen. Eenduidige landelijke criteria moeten zorgen dat deze modellen op lange termijn voor de hele gemeenschap bruikbaar blijven. Die criteria moeten laagdrempelig toetsbaar zijn. Het kost de gemeente Amsterdam 6 miljoen per jaar om de technische staat van haar bruggen actueel gedocumenteerd te houden. Dit projectvoorstel voorziet in het besparen van maatschappelijke kosten door onnodig informatieverlies. De auteursrechten worden geborgd door de mogelijkheid om de modellen bij de bron te bewaren.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Amsterdam als regievoerder. Partnercontext: Waterlands Archief, Stadsarchief Amsterdam, Technische Universiteit Eindhoven, RWTH Aachen University, Universiteit van Amsterdam, Waternet, Picturae, Bvolve en GOBAR. Voor ambtenaren is dit vooral relevant bij Data, Open standaarden, Duurzaamheid. Kern uit de bron: Burgers en ondernemers kunnen bouwaanvragen en ruimtelijke plannen digitaal indienen.",
+    probleem: "Aanleiding: Die criteria moeten laagdrempelig toetsbaar zijn.",
+    doel: "Doel: Steeds vaker kan dat in met bouwinformatiemodellen. Eenduidige landelijke criteria moeten zorgen dat deze modellen op lange termijn voor de hele gemeenschap bruikbaar blijven. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Duurzaam Hergebruik van Ruimtelijke Data naar meetbare succescriteria: Burgers en ondernemers kunnen bouwaanvragen en ruimtelijke plannen digitaal indienen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Data", "Open standaarden", "Duurzaamheid"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/duurzaam-hergebruik-van-ruimtelijke-data/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/duurzaam-hergebruik-van-ruimtelijke-data/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/duurzaam-hergebruik-van-ruimtelijke-data/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "dynamic-digital-twin-voor-riolering",
@@ -1866,14 +2811,28 @@ const PROJECTS = [
     partners: ["Gemeenten Breda, Den Haag, Rotterdam, Stichting RIONED, Future Insight, Nelen & Schuurmans"],
     kort: "Riolering; een cruciale infrastructuur die meestal soepel werkt. Knelpunten hebben veel impact op de leefomgeving. Het ontwerp en beheer van riolering is complex; meldingen van burgers zijn een belangrijke bron aan informatie. Die meldingen kunnen nog niet…",
     beschrijving: "Riolering; een cruciale infrastructuur die meestal soepel werkt. Knelpunten hebben veel impact op de leefomgeving. Het ontwerp en beheer van riolering is complex; meldingen van burgers zijn een belangrijke bron aan informatie. Die meldingen kunnen nog niet gekoppeld worden aan actualiteiten (hoosbuien, droogte, storingen), onderhoud, prestaties, en ontwerpscenario’s. Dit maakt het proces inefficiënt en kostbaar. Een Dynamic Digital Twin brengt al die processen bij elkaar. Door het gebruik van open standaarden kunnen alle gemeenten het kunnen gebruiken. Zo wordt rioleringsbeheer efficiënter en effectiever, kan onze openbare ruimte eenvoudiger toekomstbestendig worden ingericht, en worden kennis en inbreng van burgers optimaal benut.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Groningen als regievoerder. Partnercontext: Gemeenten Breda, Den Haag, Rotterdam, Stichting RIONED, Future Insight, Nelen & Schuurmans. Voor ambtenaren is dit vooral relevant bij Data, Procesinnovatie. Kern uit de bron: Riolering; een cruciale infrastructuur die meestal soepel werkt.",
+    probleem: "Aanleiding: Knelpunten hebben veel impact op de leefomgeving. Het ontwerp en beheer van riolering is complex; meldingen van burgers zijn een belangrijke bron aan informatie. Die meldingen kunnen nog niet gekoppeld worden aan actualiteiten (hoosbuien, droogte, storingen), onderhoud, prestaties, en ontwerpscenario’s.",
+    doel: "Doel: Dit maakt het proces inefficiënt en kostbaar. Door het gebruik van open standaarden kunnen alle gemeenten het kunnen gebruiken. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Dynamic Digital Twin voor Riolering naar meetbare succescriteria: Riolering; een cruciale infrastructuur die meestal soepel werkt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: ["Open Standaarden"],
     labels: ["Data", "Procesinnovatie"],
     contactId: "team-gemeente-groningen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/dynamic-digital-twin-voor-riolering/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/dynamic-digital-twin-voor-riolering/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/dynamic-digital-twin-voor-riolering/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "integraal-klantbeeld-voor-inwoners-ondernemers-en-ambtenaren",
@@ -1892,14 +2851,29 @@ const PROJECTS = [
     partners: ["Gemeenten Amsterdam, Rotterdam, Utrecht, Tilburg, Haarlem en VNG en Dimpact"],
     kort: "Inwoners verwachten meer en meer dat dienstverlening persoonlijker, toegankelijk en op maat is. Dat vraagt aan de achterkant om een moderne informatievoorziening. Dit project bundelt de initiatieven binnen Nederland die werken aan MijnOmgevingen, naar een…",
     beschrijving: "Inwoners verwachten meer en meer dat dienstverlening persoonlijker, toegankelijk en op maat is. Dat vraagt aan de achterkant om een moderne informatievoorziening. Dit project bundelt de initiatieven binnen Nederland die werken aan MijnOmgevingen, naar een herbruikbare MijnOmgeving. Eén die de klant centraal stelt en een integraal klantbeeld biedt voor inwoners, ondernemers en ambtenaren. Deze back-end voor de MijnOmgeving is onderdeel van de doelarchitectuur van de 6 deelnemende gemeenten en van de leden van Dimpact (i4Sociaal). Bij het ontwerp wordt rekening gehouden met opschaling. Het project levert een technische referentie architectuur (TRA) op en een eerste versie van een generieke backend voor een MijnOmgeving.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Den Haag als regievoerder. Partnercontext: Gemeenten Amsterdam, Rotterdam, Utrecht, Tilburg, Haarlem en VNG en Dimpact. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Data, Gebruikerservaring. Kern uit de bron: Inwoners verwachten meer en meer dat dienstverlening persoonlijker, toegankelijk en op maat is.",
+    probleem: "Aanleiding: Inwoners verwachten meer en meer dat dienstverlening persoonlijker, toegankelijk en op maat is. Dat vraagt aan de achterkant om een moderne informatievoorziening.",
+    doel: "Doel: Deze back-end voor de MijnOmgeving is onderdeel van de doelarchitectuur van de 6 deelnemende gemeenten en van de leden van Dimpact (i4Sociaal). Bij het ontwerp wordt rekening gehouden met opschaling. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Integraal klantbeeld voor inwoners, ondernemers en ambtenaren naar meetbare succescriteria: Inwoners verwachten meer en meer dat dienstverlening persoonlijker, toegankelijk en op maat is.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Data", "Gebruikerservaring"],
     contactId: "team-gemeente-den-haag",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/integraal-klantbeeld-voor-inwoners-ondernemers-en-ambtenaren/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/integraal-klantbeeld-voor-inwoners-ondernemers-en-ambtenaren/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/integraal-klantbeeld-voor-inwoners-ondernemers-en-ambtenaren/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "NORA Online", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.noraonline.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "ketentestdorp",
@@ -1918,14 +2892,27 @@ const PROJECTS = [
     partners: ["Logius, BKWI, RvIG"],
     kort: "KetenTestDorp moet Nederlandse uitvoeringsorganisaties ondersteunt in het uitvoeren van ketentesten over organisaties heen. Bijvoorbeeld een ketentest van een nieuwe verhuisapp waarbij MijnOverheid, DigiD, Berichtenbox, gemeente, BRP, BAG, Belastingdienst…",
     beschrijving: "KetenTestDorp moet Nederlandse uitvoeringsorganisaties ondersteunt in het uitvoeren van ketentesten over organisaties heen. Bijvoorbeeld een ketentest van een nieuwe verhuisapp waarbij MijnOverheid, DigiD, Berichtenbox, gemeente, BRP, BAG, Belastingdienst Toeslagen en de woningbouwcorporatie betrokken zijn.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met RDW als regievoerder. Partnercontext: Logius, BKWI, RvIG. Voor ambtenaren is dit vooral relevant bij Ketenpartners, Samenwerking, Procesinnovatie. Kern uit de bron: KetenTestDorp moet Nederlandse uitvoeringsorganisaties ondersteunt in het uitvoeren van ketentesten over organisaties heen.",
+    probleem: "Aanleiding: KetenTestDorp moet Nederlandse uitvoeringsorganisaties ondersteunt in het uitvoeren van ketentesten over organisaties heen. Bijvoorbeeld een ketentest van een nieuwe verhuisapp waarbij MijnOverheid, DigiD, Berichtenbox, gemeente, BRP, BAG, Belastingdienst Toeslagen en de woningbouwcorporatie betrokken zijn.",
+    doel: "Doel: KetenTestDorp moet Nederlandse uitvoeringsorganisaties ondersteunt in het uitvoeren van ketentesten over organisaties heen. Bijvoorbeeld een ketentest van een nieuwe verhuisapp waarbij MijnOverheid, DigiD, Berichtenbox, gemeente, BRP, BAG, Belastingdienst Toeslagen en de woningbouwcorporatie betrokken zijn. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van KetenTestDorp naar meetbare succescriteria: KetenTestDorp moet Nederlandse uitvoeringsorganisaties ondersteunt in het uitvoeren van ketentesten over organisaties heen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak werkwijzen, componenten en ontwerpkeuzes overdraagbaar, zodat andere teams ze kunnen hergebruiken zonder opnieuw te beginnen.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: ["DigiD", "MijnOverheid", "BRP"],
     labels: ["Ketenpartners", "Samenwerking", "Procesinnovatie"],
     contactId: "team-rdw",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/ketentestdorp/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ketentestdorp/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/ketentestdorp/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale vaardigheden en vakmanschap", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-vaardigheden/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "kiss",
@@ -1944,14 +2931,29 @@ const PROJECTS = [
     partners: ["Gemeenten Enschede, Utrecht en Zwolle"],
     kort: "De ambitie van KISS is toegankelijke en persoonlijke dienstverlening aan inwoners en ondernemers. Gemeenten Deventer, Enschede, Utrecht en Zwolle willen binnen 1 jaar een open source oplossing voor klantinteractie ontwikkelen. Een klant moet naadloos…",
     beschrijving: "De ambitie van KISS is toegankelijke en persoonlijke dienstverlening aan inwoners en ondernemers. Gemeenten Deventer, Enschede, Utrecht en Zwolle willen binnen 1 jaar een open source oplossing voor klantinteractie ontwikkelen. Een klant moet naadloos kunnen switchen tussen zelfservice en een servicegesprek via verschillende kanalen. Resultaat: de klant is in beeld en gemeenten kunnen hem direct en goed verder helpen. De Common Ground principes worden gevolgd, de gemeenten zetten maximaal in op hergebruik en transparantie.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Deventer als regievoerder. Partnercontext: Gemeenten Enschede, Utrecht en Zwolle. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Burgergericht, Samenwerking. Kern uit de bron: De ambitie van KISS is toegankelijke en persoonlijke dienstverlening aan inwoners en ondernemers.",
+    probleem: "Aanleiding: De ambitie van KISS is toegankelijke en persoonlijke dienstverlening aan inwoners en ondernemers. Gemeenten Deventer, Enschede, Utrecht en Zwolle willen binnen 1 jaar een open source oplossing voor klantinteractie ontwikkelen.",
+    doel: "Doel: Gemeenten Deventer, Enschede, Utrecht en Zwolle willen binnen 1 jaar een open source oplossing voor klantinteractie ontwikkelen. Resultaat: de klant is in beeld en gemeenten kunnen hem direct en goed verder helpen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van KISS naar meetbare succescriteria: De ambitie van KISS is toegankelijke en persoonlijke dienstverlening aan inwoners en ondernemers.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Dienstverlening", "Burgergericht", "Samenwerking"],
     contactId: "team-gemeente-deventer",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/kiss/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/kiss/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/kiss/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "melding-klaar-starten-maar",
@@ -1970,14 +2972,27 @@ const PROJECTS = [
     partners: ["Gemeente Schagen, Waterschap de Dommel, SIM groep en Geodan FLO legal"],
     kort: "Meer dan 100.000 meldingen zijn van initiatiefnemers met een eenvoudig initiatief over bijzondere wetgeving (waaronder APV) en de omgevingswet. De applicatie ‘Melding klaar; starten maar’ wijst de initiatiefnemer de weg in de wet- en regelgeving van de…",
     beschrijving: "Meer dan 100.000 meldingen zijn van initiatiefnemers met een eenvoudig initiatief over bijzondere wetgeving (waaronder APV) en de omgevingswet. Een klein evenement, het aanpassen van een beschoeiing of het melden van een inrit. Zij krijgen daar direct toestemming voor. De applicatie ‘Melding klaar; starten maar’ wijst de initiatiefnemer de weg in de wet- en regelgeving van de overheid. Zij levert de melding direct af bij de betrokken overheden die deze melding afhandelen en omzetten in een toestemming.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Hoogheemraadschap Hollands Noorderkwartier als regievoerder. Partnercontext: Gemeente Schagen, Waterschap de Dommel, SIM groep en Geodan FLO legal. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Automatisering. Kern uit de bron: Meer dan 100.000 meldingen zijn van initiatiefnemers met een eenvoudig initiatief over bijzondere wetgeving (waaronder APV) en de omgevingswet.",
+    probleem: "Aanleiding: Meer dan 100.000 meldingen zijn van initiatiefnemers met een eenvoudig initiatief over bijzondere wetgeving (waaronder APV) en de omgevingswet. Een klein evenement, het aanpassen van een beschoeiing of het melden van een inrit.",
+    doel: "Doel: Een klein evenement, het aanpassen van een beschoeiing of het melden van een inrit. Zij krijgen daar direct toestemming voor. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Melding klaar, starten maar! naar meetbare succescriteria: Meer dan 100.000 meldingen zijn van initiatiefnemers met een eenvoudig initiatief over bijzondere wetgeving (waaronder APV) en de omgevingswet.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Automatisering"],
     contactId: "team-hoogheemraadschap-hollands-noorderkwarti",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/melding-klaar-starten-maar/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/melding-klaar-starten-maar/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/melding-klaar-starten-maar/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "open-data-cooperatie-landschapselementen",
@@ -1996,14 +3011,27 @@ const PROJECTS = [
     partners: ["Provincie Overijssel, gemeente Bronckhorst en Coöperatief Boomregister U.A."],
     kort: "Het unieke Nederlandse landschap staat onder druk. Dit heeft negatieve gevolgen voor cultuurwaarde, biodiversiteit en opslag van CO2. Deze pilot start een open coöperatie waar tientallen bronhouders samenwerken aan een zelflerend monitoringsysteem",
     beschrijving: "Het unieke Nederlandse landschap staat onder druk. Dit heeft negatieve gevolgen voor cultuurwaarde, biodiversiteit en opslag van CO2. Bij lopende initiatieven om het landschap te versterken, ontbreekt het aan goede informatie over de status van het landschap. Informatie is schaars en sterk versnipperd onder publieke en private organisaties. Deze pilot start een open coöperatie waar tientallen bronhouders samenwerken aan een zelflerend monitoringsysteem. De ervaring en technische kennis vanuit de bestaande coöperatie Boomregister is het startpunt. De ambitie is om door te groeien naar een landelijke open-datacoöperatie voor landschapselementen waaraan iedereen kan deelnemen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Provincie Gelderland als regievoerder. Partnercontext: Provincie Overijssel, gemeente Bronckhorst en Coöperatief Boomregister U.A.. Voor ambtenaren is dit vooral relevant bij Data, Datadeling, Duurzaamheid. Kern uit de bron: Het unieke Nederlandse landschap staat onder druk.",
+    probleem: "Aanleiding: Het unieke Nederlandse landschap staat onder druk. Bij lopende initiatieven om het landschap te versterken, ontbreekt het aan goede informatie over de status van het landschap. Informatie is schaars en sterk versnipperd onder publieke en private organisaties.",
+    doel: "Doel: Dit heeft negatieve gevolgen voor cultuurwaarde, biodiversiteit en opslag van CO2. Bij lopende initiatieven om het landschap te versterken, ontbreekt het aan goede informatie over de status van het landschap. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Open data coöperatie Landschapselementen naar meetbare succescriteria: Het unieke Nederlandse landschap staat onder druk.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Datadeling", "Duurzaamheid"],
     contactId: "team-provincie-gelderland",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/open-data-cooperatie-landschapselementen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/open-data-cooperatie-landschapselementen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/open-data-cooperatie-landschapselementen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "openbare-ruimte-beeldherkenning-service-orbs",
@@ -2022,14 +3050,29 @@ const PROJECTS = [
     partners: ["Gemeente Utrecht, VNG, Universiteit van Utrecht, Hogeschool Utrecht, SensorLab, ProAct en De Waag"],
     kort: "Kapotte stoeptegels, verkeerd geplaatst afval of scheve straatlantaarns. De burger doet jaarlijks miljoenen meldingen over de openbare ruimte. Hoe kunnen gemeenten proactief en efficiënt de openbare ruimte beheren door gebruik te maken van beelden uit de…",
     beschrijving: "Kapotte stoeptegels, verkeerd geplaatst afval of scheve straatlantaarns. De burger doet jaarlijks miljoenen meldingen over de openbare ruimte. Hoe kunnen gemeenten proactief en efficiënt de openbare ruimte beheren door gebruik te maken van beelden uit de openbare ruimte? Zonder dat de privacy van inwoners wordt geschaad? Dit project levert een duurzame schaalbare toepassing op, waarmee kunstmatige intelligentie automatisch objecten op de beelden kan herkennen. Daarbij worden persoonlijke gegevens verwijderd. Het project waarborgt de common-groundprincipes; de andere gemeenten kunnen de toepassing eenvoudig inzetten. Met het project houden gemeenten zelf de regie over hun data en borgen openheid en transparantie over de algoritmes die de data verwerken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Utrecht, VNG, Universiteit van Utrecht, Hogeschool Utrecht, SensorLab, ProAct en De Waag. Voor ambtenaren is dit vooral relevant bij AI, Algoritmes, Automatisering. Kern uit de bron: Kapotte stoeptegels, verkeerd geplaatst afval of scheve straatlantaarns.",
+    probleem: "Aanleiding: Kapotte stoeptegels, verkeerd geplaatst afval of scheve straatlantaarns. De burger doet jaarlijks miljoenen meldingen over de openbare ruimte.",
+    doel: "Doel: Het project waarborgt de common-groundprincipes; de andere gemeenten kunnen de toepassing eenvoudig inzetten. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Openbare Ruimte Beeldherkenning Service (ORBS) naar meetbare succescriteria: Kapotte stoeptegels, verkeerd geplaatst afval of scheve straatlantaarns.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Algoritmes", "Automatisering"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/openbare-ruimte-beeldherkenning-service-orbs/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/openbare-ruimte-beeldherkenning-service-orbs/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/openbare-ruimte-beeldherkenning-service-orbs/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "pilot-samenwerkingsmodel-herbruikbare-basisonderdelen-voor-overheidsbrede-dienstverlening-nlds",
@@ -2048,14 +3091,30 @@ const PROJECTS = [
     partners: ["Gemeenten Den Haag, Utrecht, Rotterdam, VNG-Realisatie, Dimpact, Wigo4it, provincie Zuid-Holland, DSO en DUO"],
     kort: "Met de pilot ‘Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening’ beproeft de community, NL Design System, de inrichting van samenwerking over overheidsorganisaties heen binnen 1 centraal systeem.",
     beschrijving: "Met de pilot ‘Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening’ beproeft de community de inrichting van samenwerking over overheidsorganisaties heen binnen 1 centraal systeem. Ze toetst het nieuwe samenwerkingsmodel en de nieuwe white-label architectuur in verschillende organisaties. Distributed ontwikkeling biedt een innovatieve manier van samenwerken. Als resultaat van de pilot ontstaat zowel inzicht in de werking van de architectuur als in de eisen en mogelijkheden van distributed ontwikkeling.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met ICTU, programma Gebruiker Centraal als regievoerder. Partnercontext: Gemeenten Den Haag, Utrecht, Rotterdam, VNG-Realisatie, Dimpact, Wigo4it, provincie Zuid-Holland, DSO en DUO. Voor ambtenaren is dit vooral relevant bij Samenwerking, Gebruikerservaring, Open standaarden. Kern uit de bron: Met de pilot ‘Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening’ beproeft de community de inrichting van samenwerking over overheidsorganisaties heen binnen 1 centraal systeem.",
+    probleem: "Aanleiding: Met de pilot ‘Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening’ beproeft de community de inrichting van samenwerking over overheidsorganisaties heen binnen 1 centraal systeem. Ze toetst het nieuwe samenwerkingsmodel en de nieuwe white-label architectuur in verschillende organisaties.",
+    doel: "Doel: Met de pilot ‘Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening’ beproeft de community de inrichting van samenwerking over overheidsorganisaties heen binnen 1 centraal systeem. Distributed ontwikkeling biedt een innovatieve manier van samenwerken. Als resultaat van de pilot ontstaat zowel inzicht in de werking van de architectuur als in de eisen en mogelijkheden van distributed ontwikkeling. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Pilot Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening (NLDS) naar meetbare succescriteria: Met de pilot ‘Samenwerkingsmodel herbruikbare basisonderdelen voor overheidsbrede dienstverlening’ beproeft de community de inrichting van samenwerking over overheidsorganisaties heen binnen 1 centraal systeem.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak werkwijzen, componenten en ontwerpkeuzes overdraagbaar, zodat andere teams ze kunnen hergebruiken zonder opnieuw te beginnen.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden", "NL Design System"],
     labels: ["Samenwerking", "Gebruikerservaring", "Open standaarden"],
     contactId: "team-ictu-programma-gebruiker-centraal",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/pilot-samenwerkingsmodel-herbruikbare-basisonderdelen-voor-overheidsbrede-dienstverlening-nlds/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/pilot-samenwerkingsmodel-herbruikbare-basisonderdelen-voor-overheidsbrede-dienstverlening-nlds/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/pilot-samenwerkingsmodel-herbruikbare-basisonderdelen-voor-overheidsbrede-dienstverlening-nlds/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale vaardigheden en vakmanschap", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-vaardigheden/" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "NL Design System", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.nldesignsystem.nl/" },
+      { naam: "NORA Online", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.noraonline.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "platform-digitale-buurtpreventie",
@@ -2074,14 +3133,27 @@ const PROJECTS = [
     partners: ["Politie, Openbaar Ministerie en de 39 gemeenten in Midden-Nederland (samenwerkend in Bureau Regionale Veiligheidsstrategie)"],
     kort: "Midden-Nederland wil de buurtpreventie een digitale component geven. Zo versterkt de regio met inwoners de weerbaarheid tegen digitale criminaliteit.",
     beschrijving: "Midden-Nederland wil de buurtpreventie een digitale component geven. Zo versterkt de regio met inwoners de weerbaarheid tegen digitale criminaliteit. In iedere gemeente wonen mensen die hun kennis en kunde graag inzetten om hun buren te adviseren over digitale weerbaarheid. De gemeenten gaan die inwoners faciliteren we met een digitaal platform en up-to-date kennis vanuit de politie (cybercrimeteam en digitale wijkagenten). Een nieuw en eigentijds hoofdstuk aan de regierol op lokale veiligheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Utrecht als regievoerder. Partnercontext: Politie, Openbaar Ministerie en de 39 gemeenten in Midden-Nederland (samenwerkend in Bureau Regionale Veiligheidsstrategie). Voor ambtenaren is dit vooral relevant bij Digitale weerbaarheid, Cybersecurity, Burgergericht. Kern uit de bron: Midden-Nederland wil de buurtpreventie een digitale component geven.",
+    probleem: "Aanleiding: Midden-Nederland wil de buurtpreventie een digitale component geven. Zo versterkt de regio met inwoners de weerbaarheid tegen digitale criminaliteit.",
+    doel: "Doel: In iedere gemeente wonen mensen die hun kennis en kunde graag inzetten om hun buren te adviseren over digitale weerbaarheid. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Platform Digitale Buurtpreventie naar meetbare succescriteria: Midden-Nederland wil de buurtpreventie een digitale component geven.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Behandel beveiliging, misbruikscenario’s, monitoring en incidentrespons als ontwerpcriteria, niet als laatste controle.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale weerbaarheid", "Cybersecurity", "Burgergericht"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/platform-digitale-buurtpreventie/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/platform-digitale-buurtpreventie/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/platform-digitale-buurtpreventie/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale weerbaarheid overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-weerbaarheid/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "proof-of-provenance-voor-communicatie-vanuit-overheden-erfgoed-en-media-instellingen",
@@ -2100,14 +3172,28 @@ const PROJECTS = [
     partners: ["Koninklijke Bibliotheek, VPRO, KRO-NCRV, Nederlands instituut voor Beeld en Geluid, Waag, stichting Privacy by Design, Radboud Universiteit, stichting Public Spaces."],
     kort: "Desinformatie bestrijden door de authenticiteit van berichtgeving te borgen met digitale certificaten. Dat is de doelstelling van dit project.",
     beschrijving: "Desinformatie bestrijden door de authenticiteit van berichtgeving te borgen met digitale certificaten. Dat is de doelstelling van dit project.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met NPO als regievoerder. Partnercontext: Koninklijke Bibliotheek, VPRO, KRO-NCRV, Nederlands instituut voor Beeld en Geluid, Waag, stichting Privacy by Design, Radboud Universiteit, stichting Public Spaces.. Voor ambtenaren is dit vooral relevant bij Digitale weerbaarheid, Transparantie, Cybersecurity. Kern uit de bron: Desinformatie bestrijden door de authenticiteit van berichtgeving te borgen met digitale certificaten.",
+    probleem: "Aanleiding: Desinformatie bestrijden door de authenticiteit van berichtgeving te borgen met digitale certificaten. Dat is de doelstelling van dit project.",
+    doel: "Doel: Dat is de doelstelling van dit project. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Proof of Provenance voor communicatie vanuit overheden, erfgoed- en media-instellingen naar meetbare succescriteria: Desinformatie bestrijden door de authenticiteit van berichtgeving te borgen met digitale certificaten.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Behandel beveiliging, misbruikscenario’s, monitoring en incidentrespons als ontwerpcriteria, niet als laatste controle.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale weerbaarheid", "Transparantie", "Cybersecurity"],
     contactId: "team-npo",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/proof-of-provenance-voor-communicatie-vanuit-overheden-erfgoed-en-media-instellingen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/proof-of-provenance-voor-communicatie-vanuit-overheden-erfgoed-en-media-instellingen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/proof-of-provenance-voor-communicatie-vanuit-overheden-erfgoed-en-media-instellingen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale weerbaarheid overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-weerbaarheid/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "regie-na-overlijden-heb-jij-het-goed-geregeld-als-het-straks-schluss-is",
@@ -2126,14 +3212,29 @@ const PROJECTS = [
     partners: ["Koninklijke Notariële Beroepsorganisatie, Stichting Ontwikkeling Schluss, De Volksbank en Coöperatie DELA"],
     kort: "De partijen werken aan een proof-of-concept van de digitale kluis. Daarmee krijgt de burger een centrale positie binnen het data-ecosysteem rond de use case ‘Overlijden en afwikkeling van nalatenschappen’. Een burger kan op een veilige manier een…",
     beschrijving: "De partijen werken aan een proof-of-concept van de digitale kluis. Daarmee krijgt de burger een centrale positie binnen het data-ecosysteem rond de use case ‘Overlijden en afwikkeling van nalatenschappen’. Een burger kan op een veilige manier een vertegenwoordiger aanwijzen die na het overlijden administratieve zaken kan regelen. Privacy by design op basis van moderne, bewezen techniek. Deze gevalideerde oplossing dient als organisatorische en technische blauwdruk voor opschaling naar andere levensgebeurtenissen op het scheidsvlak van burger, overheid en privaat.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Rijksdienst voor Identiteitsgegevens als regievoerder. Partnercontext: Koninklijke Notariële Beroepsorganisatie, Stichting Ontwikkeling Schluss, De Volksbank en Coöperatie DELA. Voor ambtenaren is dit vooral relevant bij Privacy, Digitale identiteit, Burgergericht. Kern uit de bron: De partijen werken aan een proof-of-concept van de digitale kluis.",
+    probleem: "Aanleiding: Deze gevalideerde oplossing dient als organisatorische en technische blauwdruk voor opschaling naar andere levensgebeurtenissen op het scheidsvlak van burger, overheid en privaat.",
+    doel: "Doel: Deze gevalideerde oplossing dient als organisatorische en technische blauwdruk voor opschaling naar andere levensgebeurtenissen op het scheidsvlak van burger, overheid en privaat. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Regie na overlijden: Heb jij het goed geregeld als het straks Schluss is? naar meetbare succescriteria: De partijen werken aan een proof-of-concept van de digitale kluis.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Privacy", "Digitale identiteit", "Burgergericht"],
     contactId: "team-rijksdienst-voor-identiteitsgegevens",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/regie-na-overlijden-heb-jij-het-goed-geregeld-als-het-straks-schluss-is/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/regie-na-overlijden-heb-jij-het-goed-geregeld-als-het-straks-schluss-is/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/regie-na-overlijden-heb-jij-het-goed-geregeld-als-het-straks-schluss-is/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "rita-inclusieve-toegankelijkheid-tot-rijksoverheid-dienstverlening",
@@ -2152,14 +3253,28 @@ const PROJECTS = [
     partners: ["Logius"],
     kort: "E-factureren naar de Rijksoverheid is verplicht en biedt veel voordelen. Een manier om e-facturen naar de Rijksoverheid te sturen, is via een leveranciersportaal. Er is geen extra ondersteuning voor ondernemers die moeite hebben met het lezen van de…",
     beschrijving: "E-factureren naar de Rijksoverheid is verplicht en biedt veel voordelen. Een manier om e-facturen naar de Rijksoverheid te sturen, is via een leveranciersportaal. Er is geen extra ondersteuning voor ondernemers die moeite hebben met het lezen van de aangeboden informatie en/of het registratieproces. Daar brengt dit innovatieproject verandering in, te beginnen met een prototype met en voor twee persona’s uit de ondernemersdoelgroep die extra ondersteuning nodig hebben om e-facturen te versturen. Deze persona’s gaan in gesprek met assistent RITA, die de spraak begrijpt en hierop reageert. RITA zorgt ervoor dat ondernemers niets hoeven te lezen of in te typen om te kunnen e-factureren met het Rijk.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met RVO als regievoerder. Partnercontext: Logius. Voor ambtenaren is dit vooral relevant bij Toegankelijkheid, Inclusie, Dienstverlening. Kern uit de bron: E-factureren naar de Rijksoverheid is verplicht en biedt veel voordelen.",
+    probleem: "Aanleiding: Er is geen extra ondersteuning voor ondernemers die moeite hebben met het lezen van de aangeboden informatie en/of het registratieproces.",
+    doel: "Doel: Daar brengt dit innovatieproject verandering in, te beginnen met een prototype met en voor twee persona’s uit de ondernemersdoelgroep die extra ondersteuning nodig hebben om e-facturen te versturen. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van RITA: Inclusieve toegankelijkheid tot Rijksoverheid dienstverlening naar meetbare succescriteria: E-factureren naar de Rijksoverheid is verplicht en biedt veel voordelen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Toegankelijkheid", "Inclusie", "Dienstverlening"],
     contactId: "team-rvo",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/rita-inclusieve-toegankelijkheid-tot-rijksoverheid-dienstverlening/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/rita-inclusieve-toegankelijkheid-tot-rijksoverheid-dienstverlening/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/rita-inclusieve-toegankelijkheid-tot-rijksoverheid-dienstverlening/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "via-datagedreven-burger-wetenschap-naar-duurzame-mobiliteit-en-betere-luchtkwaliteit",
@@ -2178,14 +3293,27 @@ const PROJECTS = [
     partners: ["Provincie Noord-Brabant, Radboud Universiteit Nijmegen en Universiteit Leiden."],
     kort: "Verduurzaming van mobiliteit en verbetering van luchtkwaliteit zijn belangrijke thema’s in Eindhoven, regio en provincie. Doel is om het reisgedrag blijvend te verminderen, actiever en schoner te maken. Door nauwe samenwerking tussen reizigers, overheid en…",
     beschrijving: "Verduurzaming van mobiliteit en verbetering van luchtkwaliteit zijn belangrijke thema’s in Eindhoven, regio en provincie. Doel is om het reisgedrag blijvend te verminderen, actiever en schoner te maken. Door nauwe samenwerking tussen reizigers, overheid en werkgevers wordt reisgedrag door reizigers zelf in kaart gebracht. De uitkomst worden vertaald naar de betekenis voor individu en gemeenschap. Met dit inzicht worden andere vervoerswijzen en vervoersarrangementen aangeboden, maatwerkvoorstellen gemaakt per reizigers doelgroep, ander reisgedrag voorgesteld per reiziger en de gevolgen opnieuw gemeten. Met deze ‘burgerwetenschap’ is het de bedoeling direct aan te sluiten op de leefwereld van de burger, breed draagvlak te creëren en te zorgen voor duurzamere mobiliteit en schonere lucht.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Eindhoven als regievoerder. Partnercontext: Provincie Noord-Brabant, Radboud Universiteit Nijmegen en Universiteit Leiden.. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid, Burgergericht. Kern uit de bron: Verduurzaming van mobiliteit en verbetering van luchtkwaliteit zijn belangrijke thema’s in Eindhoven, regio en provincie.",
+    probleem: "Aanleiding: Verduurzaming van mobiliteit en verbetering van luchtkwaliteit zijn belangrijke thema’s in Eindhoven, regio en provincie. Doel is om het reisgedrag blijvend te verminderen, actiever en schoner te maken.",
+    doel: "Doel: Verduurzaming van mobiliteit en verbetering van luchtkwaliteit zijn belangrijke thema’s in Eindhoven, regio en provincie. Doel is om het reisgedrag blijvend te verminderen, actiever en schoner te maken. Met dit inzicht worden andere vervoerswijzen en vervoersarrangementen aangeboden, maatwerkvoorstellen gemaakt per reizigers doelgroep, ander reisgedrag voorgesteld per reiziger en de gevolgen opnieuw gemeten. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Via Datagedreven Burger Wetenschap, naar duurzame mobiliteit en betere luchtkwaliteit naar meetbare succescriteria: Verduurzaming van mobiliteit en verbetering van luchtkwaliteit zijn belangrijke thema’s in Eindhoven, regio en provincie.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid", "Burgergericht"],
     contactId: "team-gemeente-eindhoven",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/via-datagedreven-burger-wetenschap-naar-duurzame-mobiliteit-en-betere-luchtkwaliteit/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/via-datagedreven-burger-wetenschap-naar-duurzame-mobiliteit-en-betere-luchtkwaliteit/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/via-datagedreven-burger-wetenschap-naar-duurzame-mobiliteit-en-betere-luchtkwaliteit/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "virtuele-assistent",
@@ -2204,14 +3332,28 @@ const PROJECTS = [
     partners: ["Veiligheidsregio’s Fryslan, Groningen, Noord- & Oost-Gelderland en Utrecht."],
     kort: "Er is veel informatie beschikbaar voor het bestrijden van crises en grote incidenten. Incidenten worden steeds complexer. Toch blijft de aanpak vooral gebaseerd op menselijke kennis en ervaring. Door tijdsdruk blijft een groot aantal bronnen onbenut, en…",
     beschrijving: "Er is veel informatie beschikbaar voor het bestrijden van crises en grote incidenten. Incidenten worden steeds complexer. Toch blijft de aanpak vooral gebaseerd op menselijke kennis en ervaring. Door tijdsdruk blijft een groot aantal bronnen onbenut, en kan essentiële informatie gemist worden. Na een succesvolle PoC wordt een prototype van een virtuele assistent (VA) ontwikkeld. Die combineert met AI-technieken databronnen tot een netwerkanalyse rond een incidentlocatie. Ook bouwt de VA een situatiebeeld en handelingsperspectief op gebaseerd op eerdere leerervaringen. De deelnemende veiligheidsregio’s en het IFV willen het prototype verder ontwikkelen en implementeren. Dat draagt bij aan een effectieve aanpak van crisis en grote incidenten en daarmee voor een veiliger Nederland.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Instituut Fysieke Veiligheid als regievoerder. Partnercontext: Veiligheidsregio’s Fryslan, Groningen, Noord- & Oost-Gelderland en Utrecht.. Voor ambtenaren is dit vooral relevant bij AI, Digitale weerbaarheid. Kern uit de bron: Er is veel informatie beschikbaar voor het bestrijden van crises en grote incidenten.",
+    probleem: "Aanleiding: Incidenten worden steeds complexer. Door tijdsdruk blijft een groot aantal bronnen onbenut, en kan essentiële informatie gemist worden.",
+    doel: "Doel: Er is veel informatie beschikbaar voor het bestrijden van crises en grote incidenten. Na een succesvolle PoC wordt een prototype van een virtuele assistent (VA) ontwikkeld. Die combineert met AI-technieken databronnen tot een netwerkanalyse rond een incidentlocatie. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Virtuele Assistent naar meetbare succescriteria: Er is veel informatie beschikbaar voor het bestrijden van crises en grote incidenten.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Digitale weerbaarheid"],
     contactId: "team-instituut-fysieke-veiligheid",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/virtuele-assistent/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/virtuele-assistent/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/virtuele-assistent/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "virtuele-assistent-gem",
@@ -2230,14 +3372,29 @@ const PROJECTS = [
     partners: ["Gemeente Utrecht, Dienstverlening Drechtsteden, Vereniging directeuren publiekszaken en A&O fonds gemeenten"],
     kort: "De Virtuele Assistent Gem is voor 17 miljoen inwoners aanspreekbaar, inzetbaar in alle klantcontact kanalen en 24/7 beschikbaar. De innovatie in 2021 is de ontwikkeling op het digitale ecosysteem, omnichannel, inclusieve dienstverlening en begrijpelijke en…",
     beschrijving: "De Virtuele Assistent Gem is voor 17 miljoen inwoners aanspreekbaar, inzetbaar in alle klantcontact kanalen en 24/7 beschikbaar. De innovatie in 2021 is de ontwikkeling op het digitale ecosysteem, omnichannel, inclusieve dienstverlening en begrijpelijke en toegankelijke dialogen voor alle inwoners",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Gemeente Tilburg als regievoerder. Partnercontext: Gemeente Utrecht, Dienstverlening Drechtsteden, Vereniging directeuren publiekszaken en A&O fonds gemeenten. Voor ambtenaren is dit vooral relevant bij AI, Dienstverlening. Kern uit de bron: De Virtuele Assistent Gem is voor 17 miljoen inwoners aanspreekbaar, inzetbaar in alle klantcontact kanalen en 24/7 beschikbaar.",
+    probleem: "Aanleiding: De Virtuele Assistent Gem is voor 17 miljoen inwoners aanspreekbaar, inzetbaar in alle klantcontact kanalen en 24/7 beschikbaar. De innovatie in 2021 is de ontwikkeling op het digitale ecosysteem, omnichannel, inclusieve dienstverlening en begrijpelijke en toegankelijke dialogen voor alle inwoners",
+    doel: "Doel: De Virtuele Assistent Gem is voor 17 miljoen inwoners aanspreekbaar, inzetbaar in alle klantcontact kanalen en 24/7 beschikbaar. De innovatie in 2021 is de ontwikkeling op het digitale ecosysteem, omnichannel, inclusieve dienstverlening en begrijpelijke en toegankelijke dialogen voor alle inwoners De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Virtuele assistent GEM naar meetbare succescriteria: De Virtuele Assistent Gem is voor 17 miljoen inwoners aanspreekbaar, inzetbaar in alle klantcontact kanalen en 24/7 beschikbaar.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Dienstverlening"],
     contactId: "team-gemeente-tilburg",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/virtuele-assistent-gem/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/virtuele-assistent-gem/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/virtuele-assistent-gem/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "voorspellen-veilig-zwemwater",
@@ -2256,14 +3413,27 @@ const PROJECTS = [
     partners: ["Deltares, NIOO-KNAW"],
     kort: "Het NIOO, Deltares en KNMI maken door slim combineren van bestaande weer-, water- en blauwalgmodellen een praktisch toepasbaar verwachtingsmodel: een `blauwalgdashboard’",
     beschrijving: "Door klimaatverandering stijgt de overlast door blauwalgen. Zwemlocaties zullen vaker en langer gesloten zijn. Tegelijkertijd is er meer behoefte aan verkoeling. Het bemonsteren van alle 883 aangewezen zwemwaterlocaties in Nederland is echter een bewerkelijke klus. Zelfs bij blauwalgenoverlast wordt hooguit 1x per week bemonsterd. Het NIOO, Deltares en KNMI maken door slim combineren van bestaande weer-, water- en blauwalgmodellen een praktisch toepasbaar verwachtingsmodel: een `blauwalgdashboard’. Het dashboard zorgt ervoor dat provincie en/of waterbeheerder:",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met KNMI als regievoerder. Partnercontext: Deltares, NIOO-KNAW. Voor ambtenaren is dit vooral relevant bij Data, Burgergericht. Kern uit de bron: Door klimaatverandering stijgt de overlast door blauwalgen.",
+    probleem: "Aanleiding: Door klimaatverandering stijgt de overlast door blauwalgen. Zwemlocaties zullen vaker en langer gesloten zijn.",
+    doel: "Doel: Zwemlocaties zullen vaker en langer gesloten zijn. Tegelijkertijd is er meer behoefte aan verkoeling. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Voorspellen veilig zwemwater naar meetbare succescriteria: Door klimaatverandering stijgt de overlast door blauwalgen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Burgergericht"],
     contactId: "team-knmi",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/voorspellen-veilig-zwemwater/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/voorspellen-veilig-zwemwater/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/voorspellen-veilig-zwemwater/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "waterwegwijs",
@@ -2282,14 +3452,28 @@ const PROJECTS = [
     partners: ["14 Waterschappen: DOD, Fryslan, Rijn en IJssel, HHSK, Limburg, Rijnland, Vallei en Veluwe, Waternet, Rivierenland, Zuiderzeeland, HDSR, Aa en Maas, De Dommel en De Brabantse Delta"],
     kort: "De waterschappen willen burgers informatie op maat aanbieden. Dit project wil die informatie voor burgers gaan bundelen. Op basis van iemands locatie kun je via een app en/of website gepersonaliseerde informatie aanbieden.",
     beschrijving: "De waterschappen willen burgers informatie op maat aanbieden. Interessante informatie en antwoorden op burgervragen staan vaak versnipperd of verstopt op de websites van de waterschappen en andere organisaties. Dit project wil die informatie voor burgers gaan bundelen. Op basis van iemands locatie kun je via een app en/of website gepersonaliseerde informatie aanbieden. Denk hierbij aan informatie over grondwaterstanden, waterkwaliteit van vijvers/plassen en actuele lucht- en satellietfoto’s",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2021 met Het Waterschapshuis als regievoerder. Partnercontext: 14 Waterschappen: DOD, Fryslan, Rijn en IJssel, HHSK, Limburg, Rijnland, Vallei en Veluwe, Waternet, Rivierenland, Zuiderzeeland, HDSR, Aa en Maas, De Dommel en De Brabantse Delta. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Data. Kern uit de bron: De waterschappen willen burgers informatie op maat aanbieden.",
+    probleem: "Aanleiding: Interessante informatie en antwoorden op burgervragen staan vaak versnipperd of verstopt op de websites van de waterschappen en andere organisaties.",
+    doel: "Doel: Interessante informatie en antwoorden op burgervragen staan vaak versnipperd of verstopt op de websites van de waterschappen en andere organisaties. Dit project wil die informatie voor burgers gaan bundelen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Waterwegwijs naar meetbare succescriteria: De waterschappen willen burgers informatie op maat aanbieden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Data"],
     contactId: "team-het-waterschapshuis",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/waterwegwijs/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/waterwegwijs/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2021", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/waterwegwijs/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "bouwstofwijzer",
@@ -2308,14 +3492,27 @@ const PROJECTS = [
     partners: ["Gemeenten Utrecht Dordrecht en Connected Worlds"],
     kort: "De komende jaren zal er veel overlast zijn door graaf- en bouwactiviteiten. Werkzaamheden die nodig zijn om woningen te bouwen, het elektriciteits- en datacommunicatienetwerk en infrastructuur aan te passen en het Klimaatakkoord uit te voeren.…",
     beschrijving: "De komende jaren zal er veel overlast zijn door graaf- en bouwactiviteiten. Werkzaamheden die nodig zijn om woningen te bouwen, het elektriciteits- en datacommunicatienetwerk en infrastructuur aan te passen en het Klimaatakkoord uit te voeren. Dat kan niet zonder enige mate van overlast door bouwstof. Fijnstof is ongezond. Daarom willen de partners in dit project leren hoe de blootstelling aan fijnstof/bouwstof zo laag mogelijk kan zijn. Dat doen ze door samen met omwonende, betrokken overheidsinstanties en kennispartners lokaal de luchtkwaliteit te meten, en te onderzoeken welke maatregelen tegen verspreiding van fijnstof het beste werken. Die maatregelen verwerken ze in de processen voor het voorbereiden en uitvoeren van graaf- en bouwprocessen. Dat doen ze in nauwe samenwerking met alle stakeholders binnen en buiten de overheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Rijkswaterstaat als regievoerder. Partnercontext: Gemeenten Utrecht Dordrecht en Connected Worlds. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid. Kern uit de bron: De komende jaren zal er veel overlast zijn door graaf- en bouwactiviteiten.",
+    probleem: "Aanleiding: Dat kan niet zonder enige mate van overlast door bouwstof.",
+    doel: "Doel: Werkzaamheden die nodig zijn om woningen te bouwen, het elektriciteits- en datacommunicatienetwerk en infrastructuur aan te passen en het Klimaatakkoord uit te voeren. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Bouwstofwijzer naar meetbare succescriteria: De komende jaren zal er veel overlast zijn door graaf- en bouwactiviteiten.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid"],
     contactId: "team-rijkswaterstaat",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/bouwstofwijzer/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/bouwstofwijzer/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/bouwstofwijzer/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "de-slimme-krabbelaar",
@@ -2334,14 +3531,28 @@ const PROJECTS = [
     partners: ["Gemeenten Haarlem en Lelystad, TNO, Hogeschool Utrecht, Nederlandse Vereniging van Sociale Innovatie (NVSI), Lost Lemon"],
     kort: "Een innovatieproject over toegankelijke en efficiënte digitale toegang tot de dienstverlening van het sociale domein.",
     beschrijving: "De doelgroep van de gemeentelijke sociale dienst bestaat voor een groot deel uit kwetsbare inwoners met een complexe hulpvraag. Ook zij hebben recht op een digitaal kanaal waar ze zelfstandig hun weg kunnen vinden en regie kunnen houden op hun hulpvraag. Via de Slimme Krabbelaar kan de hulpzoekende inwoner op zijn eigen manier en op een zelfgekozen moment communiceren. Met slimme technieken als kunstmatige intelligentie en goed hergebruik van bestaande gegevens structureren de partners de hulpvraag en koppelen deze direct aan de juiste dienstverleners. Cruciaal voor het succes van dit digitale kanaal is dat ze het samen met de hulpzoekenden ontwerpen én dat de hulpvragen op een laagdrempelige en efficiënte manier worden aangesloten op de gemeentelijke processen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Leeuwarden als regievoerder. Partnercontext: Gemeenten Haarlem en Lelystad, TNO, Hogeschool Utrecht, Nederlandse Vereniging van Sociale Innovatie (NVSI), Lost Lemon. Voor ambtenaren is dit vooral relevant bij Toegankelijkheid, Inclusie, Dienstverlening. Kern uit de bron: De doelgroep van de gemeentelijke sociale dienst bestaat voor een groot deel uit kwetsbare inwoners met een complexe hulpvraag.",
+    probleem: "Aanleiding: De doelgroep van de gemeentelijke sociale dienst bestaat voor een groot deel uit kwetsbare inwoners met een complexe hulpvraag. Cruciaal voor het succes van dit digitale kanaal is dat ze het samen met de hulpzoekenden ontwerpen én dat de hulpvragen op een laagdrempelige en efficiënte manier worden aangesloten op de gemeentelijke processen.",
+    doel: "Doel: De doelgroep van de gemeentelijke sociale dienst bestaat voor een groot deel uit kwetsbare inwoners met een complexe hulpvraag. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van De Slimme Krabbelaar naar meetbare succescriteria: De doelgroep van de gemeentelijke sociale dienst bestaat voor een groot deel uit kwetsbare inwoners met een complexe hulpvraag.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Toegankelijkheid", "Inclusie", "Dienstverlening"],
     contactId: "team-gemeente-leeuwarden",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/de-slimme-krabbelaar/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/de-slimme-krabbelaar/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/de-slimme-krabbelaar/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "de-stad-als-dagelijks-evenement",
@@ -2360,14 +3571,27 @@ const PROJECTS = [
     partners: ["Centraal Bureau voor de Statistiek, Movares, uCrowds, Universiteit Utrecht"],
     kort: "Innovatieproject waarin een 'druktemeter' wordt ontwikkeld om meer grip en inzicht te krijgen op drukte in de stad.",
     beschrijving: "De binnenstad (‘de huiskamer’) van Utrecht is een bruisende bestemming voor inwoners uit de stad, regio en toeristen. Naast de reguliere bezoekers bezoeken ruim 3 miljoen mensen per jaar geplande evenementen. Door de aanzienlijke groei en verdichting van de stad kan eigenlijk beter gesproken worden over ‘de stad als dagelijks evenement’. Er zijn echter ook keerzijden: de huidige corona-crisis met daaraan gekoppelde ‘Intelligente open up’, de toenemende kosten en risico’s op gebied van veiligheid en leefbaarheid, en het dichtslibben van toegangswegen. Om deze gevolgen te kunnen managen is een nieuw soort informatievoorziening nodig. De partner ontwikkelen samen met de bedrijven in de binnenstad een “Druktemonitor” om meer grip op en inzicht in drukte te krijgen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Utrecht als regievoerder. Partnercontext: Centraal Bureau voor de Statistiek, Movares, uCrowds, Universiteit Utrecht. Voor ambtenaren is dit vooral relevant bij Data, Procesinnovatie. Kern uit de bron: De binnenstad (‘de huiskamer’) van Utrecht is een bruisende bestemming voor inwoners uit de stad, regio en toeristen.",
+    probleem: "Aanleiding: Er zijn echter ook keerzijden: de huidige corona-crisis met daaraan gekoppelde ‘Intelligente open up’, de toenemende kosten en risico’s op gebied van veiligheid en leefbaarheid, en het dichtslibben van toegangswegen. De partner ontwikkelen samen met de bedrijven in de binnenstad een “Druktemonitor” om meer grip op en inzicht in drukte te krijgen.",
+    doel: "Doel: De partner ontwikkelen samen met de bedrijven in de binnenstad een “Druktemonitor” om meer grip op en inzicht in drukte te krijgen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van De Stad als Dagelijks Evenement naar meetbare succescriteria: De binnenstad (‘de huiskamer’) van Utrecht is een bruisende bestemming voor inwoners uit de stad, regio en toeristen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Procesinnovatie"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/de-stad-als-dagelijks-evenement/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/de-stad-als-dagelijks-evenement/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/de-stad-als-dagelijks-evenement/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "deliberatieve-digitale-democratie-in-nederland",
@@ -2386,14 +3610,27 @@ const PROJECTS = [
     partners: ["Gemeente Groningen, Stichting Netwerk Democratie, Democratie in Actie"],
     kort: "De gemeenten Amsterdam en Groningen, Stichting Netwerk Democratie en Democratie in Actie gaan als partners experimenteren met het deliberatieve open-source platform Polis.",
     beschrijving: "De gemeenten Amsterdam en Groningen, Stichting Netwerk Democratie en Democratie in Actie gaan als partners experimenteren met het deliberatieve open-source platform Polis. Dit platform werkt met innovatie technologie en kunstmatige intelligentie om discussies met duizenden deelnemers te begeleiden, standpunten te nuanceren en consensus naar boven te halen. Deze nieuwe e-tool voor consultaties wordt wereldwijd gebruikt, van Taiwan tot Nieuw Zeeland tot de Verenigde Staten. In Nederland wordt de tool nu als pilot ingezet in twee steden die vooruitstrevend te werk gaan om ook rond hete hangijzers genuanceerde meningen een stem te geven zonder tegenstellingen uit het debat te halen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Groningen, Stichting Netwerk Democratie, Democratie in Actie. Voor ambtenaren is dit vooral relevant bij Burgergericht, Samenwerking, Transparantie. Kern uit de bron: De gemeenten Amsterdam en Groningen, Stichting Netwerk Democratie en Democratie in Actie gaan als partners experimenteren met het deliberatieve open-source platform Polis.",
+    probleem: "Aanleiding: De gemeenten Amsterdam en Groningen, Stichting Netwerk Democratie en Democratie in Actie gaan als partners experimenteren met het deliberatieve open-source platform Polis. Dit platform werkt met innovatie technologie en kunstmatige intelligentie om discussies met duizenden deelnemers te begeleiden, standpunten te nuanceren en consensus naar boven te halen.",
+    doel: "Doel: Dit platform werkt met innovatie technologie en kunstmatige intelligentie om discussies met duizenden deelnemers te begeleiden, standpunten te nuanceren en consensus naar boven te halen. Deze nieuwe e-tool voor consultaties wordt wereldwijd gebruikt, van Taiwan tot Nieuw Zeeland tot de Verenigde Staten. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Deliberatieve Digitale Democratie in Nederland naar meetbare succescriteria: De gemeenten Amsterdam en Groningen, Stichting Netwerk Democratie en Democratie in Actie gaan als partners experimenteren met het deliberatieve open-source platform Polis.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Samenwerking", "Transparantie"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/deliberatieve-digitale-democratie-in-nederland/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/deliberatieve-digitale-democratie-in-nederland/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/deliberatieve-digitale-democratie-in-nederland/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "digitale-geboorteaangifte-2",
@@ -2412,14 +3649,27 @@ const PROJECTS = [
     partners: ["Gemeenten Tilburg, ’s-Hertogenbosch, Utrecht en Breda, VNG-Realisatie, Programma Babyconnect (ministerie VWS)"],
     kort: "Het project Digitale geboorteaangifte ontwikkelt een service waarmee kersverse ouders in een voor hen hectische tijd samen plaats- en tijdsonafhankelijk geboorteaangifte kunnen doen.",
     beschrijving: "Het project Digitale geboorteaangifte ontwikkelt een service waarmee kersverse ouders in een voor hen hectische tijd samen plaats- en tijdsonafhankelijk geboorteaangifte kunnen doen. Dit levert een grote tijdsbesparing op voor zowel de inwoner als de gemeente.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Helmond als regievoerder. Partnercontext: Gemeenten Tilburg, ’s-Hertogenbosch, Utrecht en Breda, VNG-Realisatie, Programma Babyconnect (ministerie VWS). Voor ambtenaren is dit vooral relevant bij Dienstverlening, Burgergericht, Procesinnovatie. Kern uit de bron: Het project Digitale geboorteaangifte ontwikkelt een service waarmee kersverse ouders in een voor hen hectische tijd samen plaats- en tijdsonafhankelijk geboorteaangifte kunnen doen.",
+    probleem: "Aanleiding: Het project Digitale geboorteaangifte ontwikkelt een service waarmee kersverse ouders in een voor hen hectische tijd samen plaats- en tijdsonafhankelijk geboorteaangifte kunnen doen.",
+    doel: "Doel: Het project Digitale geboorteaangifte ontwikkelt een service waarmee kersverse ouders in een voor hen hectische tijd samen plaats- en tijdsonafhankelijk geboorteaangifte kunnen doen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Digitale Geboorteaangifte naar meetbare succescriteria: Het project Digitale geboorteaangifte ontwikkelt een service waarmee kersverse ouders in een voor hen hectische tijd samen plaats- en tijdsonafhankelijk geboorteaangifte kunnen doen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Burgergericht", "Procesinnovatie"],
     contactId: "team-gemeente-helmond",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/digitale-geboorteaangifte-2/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digitale-geboorteaangifte-2/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digitale-geboorteaangifte-2/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "doorontwikkeling-nl-design-system",
@@ -2438,14 +3688,30 @@ const PROJECTS = [
     partners: ["Programma Mens Centraal, Common Ground, gemeenten Eindhoven en Den Haag"],
     kort: "Het ontwikkelen van een design system door en voor de overheid.",
     beschrijving: "De Agenda Digitale Overheid stelt dat de overheid toegankelijk en begrijpelijk moet zijn voor iedereen. Mensen kunnen makkelijker gebruik maken van diensten en websites van de overheid als deze consistent ontworpen zijn. Daarom gaan we tussen overheidsorganisaties principes, interactiepatronen, ontwerpen en code delen via een gezamenlijk design system. Het NL Design System (NLDS), door en voor de overheid. Belangrijke redenen om gebruik te maken van een gezamenlijk design systeem zijn: herkenbaarheid, kwaliteit en efficiëntie. In 2020 werkt het project op basis van een geslaagde proof of concept toe naar een doorontwikkeling van het systeem. Doel is dat het NLDS op een zodanig niveau komt dat het systeem ook echt goed bruikbaar wordt voor partijen. Dat doen we door een ‘white-label variant’ te maken, dat geschikt wordt voor de meest gangbare technische platformen. Kijk voor meer informatie op de website van het NL Design System .",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met ICTU als regievoerder. Partnercontext: Programma Mens Centraal, Common Ground, gemeenten Eindhoven en Den Haag. Voor ambtenaren is dit vooral relevant bij Open standaarden, Gebruikerservaring, Samenwerking. Kern uit de bron: De Agenda Digitale Overheid stelt dat de overheid toegankelijk en begrijpelijk moet zijn voor iedereen.",
+    probleem: "Aanleiding: De Agenda Digitale Overheid stelt dat de overheid toegankelijk en begrijpelijk moet zijn voor iedereen. Mensen kunnen makkelijker gebruik maken van diensten en websites van de overheid als deze consistent ontworpen zijn.",
+    doel: "Doel: In 2020 werkt het project op basis van een geslaagde proof of concept toe naar een doorontwikkeling van het systeem. Doel is dat het NLDS op een zodanig niveau komt dat het systeem ook echt goed bruikbaar wordt voor partijen. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Doorontwikkeling NL Design System naar meetbare succescriteria: De Agenda Digitale Overheid stelt dat de overheid toegankelijk en begrijpelijk moet zijn voor iedereen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak werkwijzen, componenten en ontwerpkeuzes overdraagbaar, zodat andere teams ze kunnen hergebruiken zonder opnieuw te beginnen.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden", "Common Ground", "NL Design System"],
     labels: ["Open standaarden", "Gebruikerservaring", "Samenwerking"],
     contactId: "team-ictu",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/doorontwikkeling-nl-design-system/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/doorontwikkeling-nl-design-system/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/doorontwikkeling-nl-design-system/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale vaardigheden en vakmanschap", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-vaardigheden/" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: website van het NL Design System", type: "link", grootte: "", datum: "web", actie: "open", url: "https://designsystem.gebruikercentraal.nl/" }
+    ]
   },
   {
     id: "eenvoudig-melden-bij-toezicht",
@@ -2464,14 +3730,27 @@ const PROJECTS = [
     partners: ["Kansspelautoriteit (KSA)"],
     kort: "De ACM en de KSA onderzoeken met dit project hoe ze het voor burgers makkelijker kunnen maken om meldingen te doen. En hoe ze beter in kunnen spelen op de verwachting van die burger en…",
     beschrijving: "De ACM en de KSA onderzoeken met dit project hoe ze het voor burgers makkelijker kunnen maken om meldingen te doen. En hoe ze beter in kunnen spelen op de verwachting van die burger en toe kunnen werken naar een meer uniform proces met een betere samenwerking tussen toezichthouders.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Autoriteit Consument en Markt (ACM) als regievoerder. Partnercontext: Kansspelautoriteit (KSA). Voor ambtenaren is dit vooral relevant bij Burgergericht, Dienstverlening, Toezicht. Kern uit de bron: De ACM en de KSA onderzoeken met dit project hoe ze het voor burgers makkelijker kunnen maken om meldingen te doen.",
+    probleem: "Aanleiding: De ACM en de KSA onderzoeken met dit project hoe ze het voor burgers makkelijker kunnen maken om meldingen te doen. En hoe ze beter in kunnen spelen op de verwachting van die burger en toe kunnen werken naar een meer uniform proces met een betere samenwerking tussen toezichthouders.",
+    doel: "Doel: En hoe ze beter in kunnen spelen op de verwachting van die burger en toe kunnen werken naar een meer uniform proces met een betere samenwerking tussen toezichthouders. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Eenvoudig melden bij toezicht naar meetbare succescriteria: De ACM en de KSA onderzoeken met dit project hoe ze het voor burgers makkelijker kunnen maken om meldingen te doen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Dienstverlening", "Toezicht"],
     contactId: "team-autoriteit-consument-en-markt-acm",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/eenvoudig-melden-bij-toezicht/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/eenvoudig-melden-bij-toezicht/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/eenvoudig-melden-bij-toezicht/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "gebruiksvriendelijk-vrijwillig-machtigen-van-familieleden-mantelzorgers-en-buddys",
@@ -2490,14 +3769,28 @@ const PROJECTS = [
     partners: ["Gemeenten Leiden en Almere"],
     kort: "Mensen die afhankelijk zijn van anderen voor het regelen van hun zaken met de overheid, zijn gebaat bij eenvoudige oplossingen om een familielid, mantelzorger of buddy vrijwillig te machtigen om namens hen te handelen.",
     beschrijving: "Mensen die afhankelijk zijn van anderen voor het regelen van hun zaken met de overheid, zijn gebaat bij eenvoudige oplossingen om een familielid, mantelzorger of buddy vrijwillig te machtigen om namens hen te handelen. Dit initiatief werkt een oplossing uit naast DigiD Machtigen. Die oplossing gaat uit van de specifieke behoefte en context van deze mensen. Deze oplossing kan daarnaast ook werken voor mensen die hun zaken wel zelf digitaal kunnen en willen regelen, maar waar de mogelijkheid om een ander digitaal te machtigen nog ontbreekt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeenten Leiden en Almere. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Toegankelijkheid, Burgergericht. Kern uit de bron: Mensen die afhankelijk zijn van anderen voor het regelen van hun zaken met de overheid, zijn gebaat bij eenvoudige oplossingen om een familielid, mantelzorger of buddy vrijwillig te machtigen om namens hen te handelen.",
+    probleem: "Aanleiding: Mensen die afhankelijk zijn van anderen voor het regelen van hun zaken met de overheid, zijn gebaat bij eenvoudige oplossingen om een familielid, mantelzorger of buddy vrijwillig te machtigen om namens hen te handelen. Deze oplossing kan daarnaast ook werken voor mensen die hun zaken wel zelf digitaal kunnen en willen regelen, maar waar de mogelijkheid om een ander digitaal te machtigen nog ontbreekt.",
+    doel: "Doel: Dit initiatief werkt een oplossing uit naast DigiD Machtigen. Die oplossing gaat uit van de specifieke behoefte en context van deze mensen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Gebruiksvriendelijk vrijwillig machtigen van familieleden, mantelzorgers en buddy’s naar meetbare succescriteria: Mensen die afhankelijk zijn van anderen voor het regelen van hun zaken met de overheid, zijn gebaat bij eenvoudige oplossingen om een familielid, mantelzorger of buddy vrijwillig te machtigen om namens hen te handelen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: ["DigiD"],
     labels: ["Digitale identiteit", "Toegankelijkheid", "Burgergericht"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/gebruiksvriendelijk-vrijwillig-machtigen-van-familieleden-mantelzorgers-en-buddys/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gebruiksvriendelijk-vrijwillig-machtigen-van-familieleden-mantelzorgers-en-buddys/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gebruiksvriendelijk-vrijwillig-machtigen-van-familieleden-mantelzorgers-en-buddys/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "gegevenswoordenboek-stedelijk-licht",
@@ -2516,14 +3809,29 @@ const PROJECTS = [
     partners: ["Gemeente Breda"],
     kort: "In dit innovatieproject wordt er gewerkt aan een hervorming van de gemeentelijke informatievoorziening door op een eenduidige manier om te gaan met gegevens. Voor het beheer van openbare verlichting wordt een nieuwe ‘universele standaard’ gemaakt.",
     beschrijving: "Op dit moment legt elke leverancier de gegevens voor de openbare verlichting (OVL) op eigen unieke wijze vast waardoor uitwisseling van informatie zeer moeizaam verloopt. Voor het beheer van de OVL is dit zeer onwenselijk en kostbaar. Op datagebied wordt steeds meer uitgegaan van digital twin en de Common-Ground-gedachte; een hervorming van de gemeentelijke informatievoorziening door op een eenduidige manier om te gaan met gegevens. In het project “Gegevens Woordenboek Stedelijk Licht” wordt voor het beheer van OVL een nieuwe ‘universele standaard’ gemaakt. Hiermee kan de gemeente voor de inwoners een betere service leveren tegen lagere kosten, beheerdata delen met andere gemeente en daardoor snellere analyses maken. Ook kan ze de sfeer van de omgeving verbeteren en de veiligheid verhogen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Roosendaal als regievoerder. Partnercontext: Gemeente Breda. Voor ambtenaren is dit vooral relevant bij Data, Open standaarden. Kern uit de bron: Op dit moment legt elke leverancier de gegevens voor de openbare verlichting (OVL) op eigen unieke wijze vast waardoor uitwisseling van informatie zeer moeizaam verloopt.",
+    probleem: "Aanleiding: Op dit moment legt elke leverancier de gegevens voor de openbare verlichting (OVL) op eigen unieke wijze vast waardoor uitwisseling van informatie zeer moeizaam verloopt. Voor het beheer van de OVL is dit zeer onwenselijk en kostbaar.",
+    doel: "Doel: In het project “Gegevens Woordenboek Stedelijk Licht” wordt voor het beheer van OVL een nieuwe ‘universele standaard’ gemaakt. Ook kan ze de sfeer van de omgeving verbeteren en de veiligheid verhogen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van GegevensWoordenboek Stedelijk Licht naar meetbare succescriteria: Op dit moment legt elke leverancier de gegevens voor de openbare verlichting (OVL) op eigen unieke wijze vast waardoor uitwisseling van informatie zeer moeizaam verloopt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Data", "Open standaarden"],
     contactId: "team-gemeente-roosendaal",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/gegevenswoordenboek-stedelijk-licht/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gegevenswoordenboek-stedelijk-licht/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/gegevenswoordenboek-stedelijk-licht/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "generieke-koppeling-data-en-kennisinstrumenten-aan-3d-omgevingen",
@@ -2542,14 +3850,27 @@ const PROJECTS = [
     partners: ["Gemeenten Amersfoort en Zwolle, provincie Utrecht, Future City Foundation, het Kadaster"],
     kort: "Voor dit project is geen uitgebreide beschrijving gepubliceerd op digitaleoverheid.nl. Raadpleeg de bronpagina voor actuele informatie.",
     beschrijving: "Voor dit project is geen uitgebreide beschrijving gepubliceerd op digitaleoverheid.nl. Raadpleeg de bronpagina voor actuele informatie.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met RIVM als regievoerder. Partnercontext: Gemeenten Amersfoort en Zwolle, provincie Utrecht, Future City Foundation, het Kadaster. Voor ambtenaren is dit vooral relevant bij Data, Interoperabiliteit. Kern uit de bron: Voor dit project is geen uitgebreide beschrijving gepubliceerd op digitaleoverheid.nl.",
+    probleem: "Aanleiding: Voor dit project is geen uitgebreide beschrijving gepubliceerd op digitaleoverheid.nl.",
+    doel: "Doel: Raadpleeg de bronpagina voor actuele informatie. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Generieke koppeling data- en kennisinstrumenten aan 3D-omgevingen naar meetbare succescriteria: Voor dit project is geen uitgebreide beschrijving gepubliceerd op digitaleoverheid.nl.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Interoperabiliteit"],
     contactId: "team-rivm",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/generieke-koppeling-data-en-kennisinstrumenten-aan-3d-omgevingen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/generieke-koppeling-data-en-kennisinstrumenten-aan-3d-omgevingen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/generieke-koppeling-data-en-kennisinstrumenten-aan-3d-omgevingen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "id-contact",
@@ -2568,14 +3889,27 @@ const PROJECTS = [
     partners: ["Gemeenten Nijmegen en de Drechtsteden, Belastingdienst Sociale Verzekeringsbank (via NOVUM), Digicampus (Logius), Hogeschool Arnhem – Nijmegen, Radboud Universiteit – iHub"],
     kort: "Met ID-Contact wordt voortgebouwd op de Proof of Concept (PoC) ID-Bellen van de gemeenten Arnhem, Nijmegen en de Drechtsteden. In de PoC is een prototype ontwikkeld om geauthentificeerd te bellen",
     beschrijving: "Met ID-Contact wordt voortgebouwd op de Proof of Concept (PoC) ID-Bellen van de gemeenten Arnhem, Nijmegen en de Drechtsteden. In de PoC is een prototype ontwikkeld om geauthentificeerd te bellen. Dit prototype is op beperkte schaal met gebruikers gevalideerd. De partners onderzoeken onder welke voorwaarden inwoners zich op een betrouwbare en inclusieve wijze kunnen authentiseren via kanalen waar dat momenteel niet of slecht mogelijk is. De doelstelling is om door verschillende iteraties de ontwikkelde authenticatiemethode door te ontwikkelen en in co-creatie met inwoners en medewerkers te testen. Dit met als resultaat een inclusievere en betrouwbaardere versie van de methode gebaseerd op openbare en herbruikbare bouwblokken. Het uiteindelijke doel is om te komen tot een authenticatiemethode die inclusief en omnichannel is die door zowel de overheid als private partijen te gebruiken is.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Arnhem als regievoerder. Partnercontext: Gemeenten Nijmegen en de Drechtsteden, Belastingdienst Sociale Verzekeringsbank (via NOVUM), Digicampus (Logius), Hogeschool Arnhem – Nijmegen, Radboud Universiteit – iHub. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Dienstverlening. Kern uit de bron: Met ID-Contact wordt voortgebouwd op de Proof of Concept (PoC) ID-Bellen van de gemeenten Arnhem, Nijmegen en de Drechtsteden.",
+    probleem: "Aanleiding: De partners onderzoeken onder welke voorwaarden inwoners zich op een betrouwbare en inclusieve wijze kunnen authentiseren via kanalen waar dat momenteel niet of slecht mogelijk is.",
+    doel: "Doel: In de PoC is een prototype ontwikkeld om geauthentificeerd te bellen. De doelstelling is om door verschillende iteraties de ontwikkelde authenticatiemethode door te ontwikkelen en in co-creatie met inwoners en medewerkers te testen. Dit met als resultaat een inclusievere en betrouwbaardere versie van de methode gebaseerd op openbare en herbruikbare bouwblokken. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van ID-Contact naar meetbare succescriteria: Met ID-Contact wordt voortgebouwd op de Proof of Concept (PoC) ID-Bellen van de gemeenten Arnhem, Nijmegen en de Drechtsteden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale identiteit", "Dienstverlening"],
     contactId: "team-gemeente-arnhem",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/id-contact/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/id-contact/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/id-contact/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "lokaal-digitaal-stemmen",
@@ -2594,14 +3928,27 @@ const PROJECTS = [
     partners: ["Gemeente Amsterdam, Radboud Universiteit Nijmegen"],
     kort: "Om overheidsparticipatie te ondersteunen hebben de gemeenten Groningen en Amsterdam een online platform ontwikkeld waar burgers initiatieven kunnen delen en kunnen stemmen. Samen met de Radboud Universiteit Nijmegen bouwen de partners een infrastructuur…",
     beschrijving: "Burgerparticipatie is trending. Burgers willen steeds vaker iets te zeggen hebben over wat er in hun leefomgeving gaat gebeuren of anders impact heeft op de leefbaarheid. Denk daarbij aan burgerinitiatieven zoals speeltuinen en groenvoorzieningen, maar ook aan burgerbegrotingen waar inwoners van een wijk zelf mogen bepalen wat er met publiek geld wordt gedaan. Om deze ontwikkeling te ondersteunen (overheidsparticipatie) hebben de gemeentes Groningen en Amsterdam inmiddels elk een online platform waar burgers initiatieven kunnen delen en kunnen stemmen. De uitdaging hierin is dat de gemeentes moeite hebben om op een gemakkelijke manier te bepalen wie er mag stemmen. Je wilt namelijk dat alleen bijvoorbeeld de wijkbewoners kunnen stemmen. Daarom gaan ze samen met de Radboud Universiteit Nijmegen (Prof. Bart Jacobs, werkzaam bij iHub) een infrastructuur ontwerpen en bouwen, zodat inwoners zich veilig en transparant digitaal kunnen identificeren op het burgerparticipatieplatform.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Groningen als regievoerder. Partnercontext: Gemeente Amsterdam, Radboud Universiteit Nijmegen. Voor ambtenaren is dit vooral relevant bij Burgergericht, Samenwerking, Inclusie. Kern uit de bron: Burgerparticipatie is trending.",
+    probleem: "Aanleiding: Burgerparticipatie is trending. Burgers willen steeds vaker iets te zeggen hebben over wat er in hun leefomgeving gaat gebeuren of anders impact heeft op de leefbaarheid.",
+    doel: "Doel: Om deze ontwikkeling te ondersteunen (overheidsparticipatie) hebben de gemeentes Groningen en Amsterdam inmiddels elk een online platform waar burgers initiatieven kunnen delen en kunnen stemmen. Bart Jacobs, werkzaam bij iHub) een infrastructuur ontwerpen en bouwen, zodat inwoners zich veilig en transparant digitaal kunnen identificeren op het burgerparticipatieplatform. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Lokaal Digitaal Stemmen naar meetbare succescriteria: Burgerparticipatie is trending.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Samenwerking", "Inclusie"],
     contactId: "team-gemeente-groningen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/lokaal-digitaal-stemmen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/lokaal-digitaal-stemmen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/lokaal-digitaal-stemmen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "mobile-mapping-uitgerold",
@@ -2620,14 +3967,28 @@ const PROJECTS = [
     partners: ["Gemeente Amsterdam en Den Haag (klankbord)."],
     kort: "Rotterdam wil door inzet van Mobile Mapping als inwintechniek haar kennis over de buitenruimte structureel verbeteren zodat nog efficiënter beheer hiervan mogelijk wordt. Daarbij wordt vanaf een rijdend voertuig een digitale 3D opname van de omgeving…",
     beschrijving: "Rotterdam wil door inzet van Mobile Mapping als inwintechniek haar kennis over de buitenruimte structureel verbeteren zodat nog efficiënter beheer hiervan mogelijk wordt. Daarbij wordt vanaf een rijdend voertuig een digitale 3D opname van de omgeving vastgelegd, dat innovatief verwerkt wordt met een algoritme. Uit de opnames worden automatisch de relevante beheerobjecten bepaald met hun actuele status. Met deze informatie wordt het beheer ingepland waar en wanneer dat de meeste meerwaarde biedt. Op projectmatige wijze wordt deze methode al toegepast. Met het innovatiebudget kunnen ze een structurele grootschalige uitrol versnellen. Een expliciet doel is om een situatie te creëren waarin verschillende partijen producten en diensten kunnen leveren met dezelfde data en er geen afhankelijkheid is van één externe partij. Ze zoeken zowel bijdragen vanuit de universitaire/onderzoekswereld als vanuit commerciële partijen. Dit brede speelveld moet uitnodigend zijn voor allerlei partijen om gelijktijdig op te acteren.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Rotterdam als regievoerder. Partnercontext: Gemeente Amsterdam en Den Haag (klankbord).. Voor ambtenaren is dit vooral relevant bij Data, Procesinnovatie. Kern uit de bron: Rotterdam wil door inzet van Mobile Mapping als inwintechniek haar kennis over de buitenruimte structureel verbeteren zodat nog efficiënter beheer hiervan mogelijk wordt.",
+    probleem: "Aanleiding: Een expliciet doel is om een situatie te creëren waarin verschillende partijen producten en diensten kunnen leveren met dezelfde data en er geen afhankelijkheid is van één externe partij.",
+    doel: "Doel: Rotterdam wil door inzet van Mobile Mapping als inwintechniek haar kennis over de buitenruimte structureel verbeteren zodat nog efficiënter beheer hiervan mogelijk wordt. Een expliciet doel is om een situatie te creëren waarin verschillende partijen producten en diensten kunnen leveren met dezelfde data en er geen afhankelijkheid is van één externe partij. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Mobile Mapping uitgerold naar meetbare succescriteria: Rotterdam wil door inzet van Mobile Mapping als inwintechniek haar kennis over de buitenruimte structureel verbeteren zodat nog efficiënter beheer hiervan mogelijk wordt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Procesinnovatie"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/mobile-mapping-uitgerold/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/mobile-mapping-uitgerold/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/mobile-mapping-uitgerold/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "open-poen",
@@ -2646,14 +4007,28 @@ const PROJECTS = [
     partners: ["Stichting Open State Foundation, gemeente Amsterdam"],
     kort: "OPEN POEN is een digitale financiële dienst voor het aanvragen, besteden en verantwoorden van (subsidie-)geld met als doel burgers in staat stellen om veel gemakkelijker over (subsidie-) budget te kunnen beschikken en eenvoudiger verantwoording te kunnen…",
     beschrijving: "OPEN POEN is een digitale financiële dienst voor het aanvragen, besteden en verantwoorden van (subsidie-)geld met als doel burgers in staat stellen om veel gemakkelijker over (subsidie-) budget te kunnen beschikken en eenvoudiger verantwoording te kunnen afleggen over de besteding ervan. Dat levert op:",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Provincie Fryslân als regievoerder. Partnercontext: Stichting Open State Foundation, gemeente Amsterdam. Voor ambtenaren is dit vooral relevant bij Transparantie, Burgergericht. Kern uit de bron: OPEN POEN is een digitale financiële dienst voor het aanvragen, besteden en verantwoorden van (subsidie-)geld met als doel burgers in staat stellen om veel gemakkelijker over (subsidie-) budget te kunnen beschikken en eenvoudiger verantwoording te kunnen.",
+    probleem: "Aanleiding: OPEN POEN is een digitale financiële dienst voor het aanvragen, besteden en verantwoorden van (subsidie-)geld met als doel burgers in staat stellen om veel gemakkelijker over (subsidie-) budget te kunnen beschikken en eenvoudiger verantwoording te kunnen afleggen over de besteding ervan. Dat levert op:",
+    doel: "Doel: OPEN POEN is een digitale financiële dienst voor het aanvragen, besteden en verantwoorden van (subsidie-)geld met als doel burgers in staat stellen om veel gemakkelijker over (subsidie-) budget te kunnen beschikken en eenvoudiger verantwoording te kunnen afleggen over de besteding ervan. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van OPEN POEN naar meetbare succescriteria: OPEN POEN is een digitale financiële dienst voor het aanvragen, besteden en verantwoorden van (subsidie-)geld met als doel burgers in staat stellen om veel gemakkelijker over (subsidie-) budget te kunnen beschikken en eenvoudiger verantwoording te kunnen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Transparantie", "Burgergericht"],
     contactId: "team-provincie-frysl-n",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/open-poen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/open-poen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/open-poen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "opschalen-huwelijksplanner",
@@ -2672,14 +4047,27 @@ const PROJECTS = [
     partners: ["Gemeenten Hoorn, Almere, Rotterdam en VNG Realisatie"],
     kort: "Het project Huwelijksplanner wordt in gebruik genomen door de gemeente Utrecht. Andere gemeenten willen ook implementeren, waardoor het project moet opschalen voor ondersteuning van deze gemeenten en de vraagstukken die naar voren komen bij beheer en…",
     beschrijving: "Het project Huwelijksplanner nadert het einde met beoogde ingebruikname bij de gemeente Utrecht. Verschillende gemeenten willen ook implementeren, waardoor het project moet opschalen voor ondersteuning van deze gemeenten en de vraagstukken die naar voren komen bij beheer en doorontwikkeling.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Utrecht als regievoerder. Partnercontext: Gemeenten Hoorn, Almere, Rotterdam en VNG Realisatie. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Procesinnovatie, Opschalen. Kern uit de bron: Het project Huwelijksplanner nadert het einde met beoogde ingebruikname bij de gemeente Utrecht.",
+    probleem: "Aanleiding: Het project Huwelijksplanner nadert het einde met beoogde ingebruikname bij de gemeente Utrecht. Verschillende gemeenten willen ook implementeren, waardoor het project moet opschalen voor ondersteuning van deze gemeenten en de vraagstukken die naar voren komen bij beheer en doorontwikkeling.",
+    doel: "Doel: Verschillende gemeenten willen ook implementeren, waardoor het project moet opschalen voor ondersteuning van deze gemeenten en de vraagstukken die naar voren komen bij beheer en doorontwikkeling. De gekozen aanpak past bij de projectfase opgeschaald: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Opschalen huwelijksplanner naar meetbare succescriteria: Het project Huwelijksplanner nadert het einde met beoogde ingebruikname bij de gemeente Utrecht.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Procesinnovatie", "Opschalen"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/opschalen-huwelijksplanner/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/opschalen-huwelijksplanner/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/opschalen-huwelijksplanner/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "opschalen-waardepapieren",
@@ -2698,14 +4086,29 @@ const PROJECTS = [
     partners: ["Samenwerking van gemeente Harderwijk, Haarlem, Schiedam, Rotterdam, Hoorn, Enschede, Bloemendaal, Heemstede, Duoplus (Diemen, Uithoorn, Ouder-Amstel) en ICTU."],
     kort: "11 Gemeenten hebben een digitale oplossing voor uittreksels uitgewerkt tot een veilig product dat gemeenten zelf kunnen implementeren.",
     beschrijving: "11 Gemeenten hebben een digitale oplossing voor uittreksels uitgewerkt tot een veilig product dat gemeenten zelf kunnen implementeren. Daarnaast is het voor gemeenten mogelijk om aan te sluiten op een landelijke voorziening. Hiermee kunnen inwoners straks online 24/7 een uittreksel aanvragen. Een bezoek aan het gemeentehuis is niet langer nodig. Inwoners kunnen voortaan zowel via de gemeentebalie als online een uittreksel krijgen in de vorm van een QR-code. De ontvangende partij (bijvoorbeeld een woningbouwcorporatie) gebruikt de QR-code om de gegevens op echtheid te controleren volgens strenge criteria. Dit levert voordelen op voor de inwoner, de ontvangende partij en de gemeente. De oplossing is ontwikkeld volgens de uitgangspunten van de Common Ground principes van VNG Realisatie. Eén keer ontwikkelen en bij 355 gemeenten hergebruiken.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Coöperatieve vereniging Dimpact als regievoerder. Partnercontext: Samenwerking van gemeente Harderwijk, Haarlem, Schiedam, Rotterdam, Hoorn, Enschede, Bloemendaal, Heemstede, Duoplus (Diemen, Uithoorn, Ouder-Amstel) en ICTU.. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Procesinnovatie, Opschalen. Kern uit de bron: 11 Gemeenten hebben een digitale oplossing voor uittreksels uitgewerkt tot een veilig product dat gemeenten zelf kunnen implementeren.",
+    probleem: "Aanleiding: Een bezoek aan het gemeentehuis is niet langer nodig.",
+    doel: "Doel: De oplossing is ontwikkeld volgens de uitgangspunten van de Common Ground principes van VNG Realisatie. Eén keer ontwikkelen en bij 355 gemeenten hergebruiken. De gekozen aanpak past bij de projectfase opgeschaald: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Opschalen Waardepapieren naar meetbare succescriteria: 11 Gemeenten hebben een digitale oplossing voor uittreksels uitgewerkt tot een veilig product dat gemeenten zelf kunnen implementeren.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Dienstverlening", "Procesinnovatie", "Opschalen"],
     contactId: "team-co-peratieve-vereniging-dimpact",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/opschalen-waardepapieren/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/opschalen-waardepapieren/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/opschalen-waardepapieren/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "overheidsbrede-open-source-componentlibrary-met-ui-laag",
@@ -2724,14 +4127,29 @@ const PROJECTS = [
     partners: ["OpenWebConcept (op dit moment 8 gemeenten, o.a. gemeente Buren), Provincie Utrecht en Gebruiker Centraal"],
     kort: "In dit innovatieproject wordt een componentlibrary voor meerder campagne-initiatieven die zijn gebouwd in WordPress, ontwikkeld.",
     beschrijving: "We organiseren ons dagelijks leven steeds meer rond internet en digitale middelen. Bewoners willen graag digitaal dingen regelen met de gemeente. Den Haag ziet wat er gebeurt als ze de kansen van een Open Source systeem benutten en inzetten voor een groter geheel. Op dit moment maakt de gemeente een begin met het maken van een componentlibrary voor meerder campagne-initiatieven die zijn gebouwd in WordPress. Zo kunnen de componenten die ontwikkeld worden schaalbaar ingezet worden voor andere online initiatieven. Met behulp van deze subsidie willen ze de componentenlibrary in een headless Cms (WordPress headless) van het Open Webconcept tot een groot schaalbaar en aantrekkelijk aan te sluiten product omzetten, waarbij elke (semi)overheidsinstantie kan aansluiten. Daarnaast versterkt het een bestaande overheidscommunity – inclusief ecosysteem – met leveranciers waarbij het uitwisselen van toepassingen makkelijker en veiliger wordt gemaakt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Den Haag als regievoerder. Partnercontext: OpenWebConcept (op dit moment 8 gemeenten, o.a. gemeente Buren), Provincie Utrecht en Gebruiker Centraal. Voor ambtenaren is dit vooral relevant bij Open standaarden, Gebruikerservaring. Kern uit de bron: We organiseren ons dagelijks leven steeds meer rond internet en digitale middelen.",
+    probleem: "Aanleiding: We organiseren ons dagelijks leven steeds meer rond internet en digitale middelen. Bewoners willen graag digitaal dingen regelen met de gemeente.",
+    doel: "Doel: Den Haag ziet wat er gebeurt als ze de kansen van een Open Source systeem benutten en inzetten voor een groter geheel. Op dit moment maakt de gemeente een begin met het maken van een componentlibrary voor meerder campagne-initiatieven die zijn gebouwd in WordPress. Zo kunnen de componenten die ontwikkeld worden schaalbaar ingezet worden voor andere online initiatieven. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Overheidsbrede Open Source componentlibrary met UI-laag naar meetbare succescriteria: We organiseren ons dagelijks leven steeds meer rond internet en digitale middelen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak werkwijzen, componenten en ontwerpkeuzes overdraagbaar, zodat andere teams ze kunnen hergebruiken zonder opnieuw te beginnen.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Open standaarden", "Gebruikerservaring"],
     contactId: "team-gemeente-den-haag",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/overheidsbrede-open-source-componentlibrary-met-ui-laag/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/overheidsbrede-open-source-componentlibrary-met-ui-laag/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/overheidsbrede-open-source-componentlibrary-met-ui-laag/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Digitale vaardigheden en vakmanschap", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/digitale-vaardigheden/" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "NL Design System", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.nldesignsystem.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "publieke-controle-op-algoritmen",
@@ -2750,14 +4168,28 @@ const PROJECTS = [
     partners: ["Gemeenten Den Haag, Utrecht, Amsterdam; provincies: Noord-Brabant, Zuid-Holland, Limburg; Politie, Rijkswaterstaat, de Unie van Waterschappen en de VNG."],
     kort: "Met het voorstel ‘Publieke controle op algoritmes’, ontwikkelen de G4, de 12 Provincies, de Politie en Rijkswaterstaat gezamenlijk beleidsinstrumenten voor algoritmes. Dat gebeurt samen met de doelgroep; dit kunnen burgers, bedrijven of ambtenaren zijn.",
     beschrijving: "Overheden worden bewust van de impact van algoritmes op publieke waarden. Met het voorstel ‘Publieke controle op algoritmes’, ontwikkelen de G4, de 12 Provincies, de Politie en Rijkswaterstaat gezamenlijk beleidsinstrumenten voor algoritmes. Dat gebeurt samen met de doelgroep; dit kunnen burgers, bedrijven of ambtenaren zijn. De ambitie is om aan het eind van dit project 5 beleidsproducten gerealiseerd te hebben die de standaard zijn binnen Nederland.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Rotterdam als regievoerder. Partnercontext: Gemeenten Den Haag, Utrecht, Amsterdam; provincies: Noord-Brabant, Zuid-Holland, Limburg; Politie, Rijkswaterstaat, de Unie van Waterschappen en de VNG.. Voor ambtenaren is dit vooral relevant bij Algoritmes, Responsible AI, Transparantie. Kern uit de bron: Overheden worden bewust van de impact van algoritmes op publieke waarden.",
+    probleem: "Aanleiding: Overheden worden bewust van de impact van algoritmes op publieke waarden. Met het voorstel ‘Publieke controle op algoritmes’, ontwikkelen de G4, de 12 Provincies, de Politie en Rijkswaterstaat gezamenlijk beleidsinstrumenten voor algoritmes.",
+    doel: "Doel: Met het voorstel ‘Publieke controle op algoritmes’, ontwikkelen de G4, de 12 Provincies, de Politie en Rijkswaterstaat gezamenlijk beleidsinstrumenten voor algoritmes. Dat gebeurt samen met de doelgroep; dit kunnen burgers, bedrijven of ambtenaren zijn. De ambitie is om aan het eind van dit project 5 beleidsproducten gerealiseerd te hebben die de standaard zijn binnen Nederland. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Publieke controle op algoritmen naar meetbare succescriteria: Overheden worden bewust van de impact van algoritmes op publieke waarden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Algoritmes", "Responsible AI", "Transparantie"],
     contactId: "team-gemeente-rotterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/publieke-controle-op-algoritmen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/publieke-controle-op-algoritmen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/publieke-controle-op-algoritmen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "sensorenregister-nl",
@@ -2776,14 +4208,29 @@ const PROJECTS = [
     partners: ["BrabantStad (samenwerkingsverband provincie Noord-Brabant met gemeenten Breda, Eindhoven, Helmond, ‘s-Hertogenbosch, Tilburg), gemeenten Apeldoorn, Nijmegen, Zwolle, Utrecht, Rotterdam, het Stedennetwerk G40 Themagroep Smart Cities, ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
     kort: "Nationaal gestandaardiseerd sensorenregister Een eenduidig en maatschappelijk goed bruikbaar landelijk gestandaardiseerd sensorenregister. Waarin sensoren (met metadata) geregistreerd kunnen worden en waar burgers en bedrijven inzicht krijgen waar de…",
     beschrijving: "Een eenduidig en maatschappelijk goed bruikbaar landelijk gestandaardiseerd sensorenregister. Waarin sensoren (met metadata) geregistreerd kunnen worden en waar burgers en bedrijven inzicht krijgen waar de sensoren zich bevinden, wat ze doen, welke data verzameld worden en wie de eigenaar is.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Het Kadaster als regievoerder. Partnercontext: BrabantStad (samenwerkingsverband provincie Noord-Brabant met gemeenten Breda, Eindhoven, Helmond, ‘s-Hertogenbosch, Tilburg), gemeenten Apeldoorn, Nijmegen, Zwolle, Utrecht, Rotterdam, het Stedennetwerk G40 Themagroep Smart Cities, ministerie van Binnenlandse Zaken en Koninkrijksrelaties.. Voor ambtenaren is dit vooral relevant bij Data, Open standaarden, Privacy. Kern uit de bron: Een eenduidig en maatschappelijk goed bruikbaar landelijk gestandaardiseerd sensorenregister.",
+    probleem: "Aanleiding: Een eenduidig en maatschappelijk goed bruikbaar landelijk gestandaardiseerd sensorenregister. Waarin sensoren (met metadata) geregistreerd kunnen worden en waar burgers en bedrijven inzicht krijgen waar de sensoren zich bevinden, wat ze doen, welke data verzameld worden en wie de eigenaar is.",
+    doel: "Doel: Een eenduidig en maatschappelijk goed bruikbaar landelijk gestandaardiseerd sensorenregister. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Sensorenregister NL naar meetbare succescriteria: Een eenduidig en maatschappelijk goed bruikbaar landelijk gestandaardiseerd sensorenregister.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Data", "Open standaarden", "Privacy"],
     contactId: "team-het-kadaster",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/sensorenregister-nl/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/sensorenregister-nl/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/sensorenregister-nl/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "solid-voor-kleine-erfgoedinstellingen",
@@ -2802,14 +4249,28 @@ const PROJECTS = [
     partners: ["Netwerk Digitaal Erfgoed, Rijksdienst voor Cultureel Erfgoed, Erfgoed Brabant"],
     kort: "Het uitvoeringsprogramma van het Netwerk Digitaal Erfgoed richt zich op het beter vindbaar, bruikbaar en houdbaar maken van de beschikbare erfgoedinformatie. Door de toepassing van de Solid technologie sluiten de kleine erfgoedinstellingen aan op de…",
     beschrijving: "De Nederlandse erfgoedinstellingen en het ministerie van Onderwijs Cultuur en Wetenschap werken in het kader van het Netwerk Digitaal Erfgoed (NDE) aan het vergroten van de maatschappelijke waarde van het Nederlands erfgoed. Het uitvoeringsprogramma van NDE richt zich op het beter vindbaar, bruikbaar en houdbaar maken van de beschikbare erfgoedinformatie. Historische verenigingen, heemkundige kringen en andere semi-professionele organisaties vormen met hun informatieaanbod een relevant onderdeel van het digitaal erfgoed domein. Maar zij zijn in het algemeen nog slecht toegerust voor het breed kunnen delen van hun informatie en blijven nog veelal onder de radar van het huidige uitvoeringsprogramma van NDE. Dit project richt zich dan ook op het beter ondersteunen van deze kleine erfgoedinstellingen door hen een eigen laagdrempelige publicatieomgeving te bieden die eigenaarschap en maximale herbruikbaarheid garandeert. Door de toepassing van de Solid technologie sluiten de kleine erfgoedinstellingen aan op de voorhoede van de webontwikkelingen waardoor ook hun informatie optimaal zichtbaar, bruikbaar en houdbaar wordt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Koninklijke Bibliotheek als regievoerder. Partnercontext: Netwerk Digitaal Erfgoed, Rijksdienst voor Cultureel Erfgoed, Erfgoed Brabant. Voor ambtenaren is dit vooral relevant bij Data, Datadeling, Open standaarden. Kern uit de bron: De Nederlandse erfgoedinstellingen en het ministerie van Onderwijs Cultuur en Wetenschap werken in het kader van het Netwerk Digitaal Erfgoed (NDE) aan het vergroten van de maatschappelijke waarde van het Nederlands erfgoed.",
+    probleem: "Aanleiding: Dit project richt zich dan ook op het beter ondersteunen van deze kleine erfgoedinstellingen door hen een eigen laagdrempelige publicatieomgeving te bieden die eigenaarschap en maximale herbruikbaarheid garandeert.",
+    doel: "Doel: Het uitvoeringsprogramma van NDE richt zich op het beter vindbaar, bruikbaar en houdbaar maken van de beschikbare erfgoedinformatie. Dit project richt zich dan ook op het beter ondersteunen van deze kleine erfgoedinstellingen door hen een eigen laagdrempelige publicatieomgeving te bieden die eigenaarschap en maximale herbruikbaarheid garandeert. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Solid voor kleine erfgoedinstellingen naar meetbare succescriteria: De Nederlandse erfgoedinstellingen en het ministerie van Onderwijs Cultuur en Wetenschap werken in het kader van het Netwerk Digitaal Erfgoed (NDE) aan het vergroten van de maatschappelijke waarde van het Nederlands erfgoed.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Data", "Datadeling", "Open standaarden"],
     contactId: "team-koninklijke-bibliotheek",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/solid-voor-kleine-erfgoedinstellingen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/solid-voor-kleine-erfgoedinstellingen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/solid-voor-kleine-erfgoedinstellingen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "track-and-trace-the-story-of-stuff",
@@ -2828,14 +4289,27 @@ const PROJECTS = [
     partners: ["Gemeente Ede"],
     kort: "In dit project worden materialen zichtbaar gemaakt via 2D- en 3D scanners. Vervolgens worden ze toegevoegd in het Gemeentelijke Beheer Informatie (GBI) systeem met de informatie die daar al in staat. Daarna kunnen met deze database materialenpaspoorten…",
     beschrijving: "De circulaire economie gaat ons allemaal aan. Veel mensen zijn er op hun eigen manier mee bezig. Het is van belang deze losse initiatieven meer te bundelen, zodat voor iedereen dezelfde informatie beschikbaar is. In de openbare ruimte zijn veel materialen beschikbaar zoals bestrating, straatmeubilair en begroeiing. Al deze materialen worden nu wel gerecycled, maar zouden veel efficiënter kunnen worden ingezet als er in een veel eerder stadium meer informatie over beschikbaar zou zijn. In dit project worden deze materialen zichtbaar gemaakt via 2D- en 3D scanners. Vervolgens voegen we ze samen in het Gemeentelijke Beheer Informatie (GBI) systeem met de informatie die daar al in staat. Vervolgens kunnen met deze database materialenpaspoorten gemaakt worden. Deze informatie wordt gedeeld via een marktplaatstool, zodat iedereen die materialen nodig heeft hier gebruik van kan maken. Het materialenpaspoort zorgt er voor dat voor iedereen inzichtelijk is welke materialen beschikbaar zijn nog voor de ontwerpfase van een project. Hiermee krijgt u inzicht in de ’the story of stuff’.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Apeldoorn als regievoerder. Partnercontext: Gemeente Ede. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid. Kern uit de bron: De circulaire economie gaat ons allemaal aan.",
+    probleem: "Aanleiding: De circulaire economie gaat ons allemaal aan. Veel mensen zijn er op hun eigen manier mee bezig.",
+    doel: "Doel: Het is van belang deze losse initiatieven meer te bundelen, zodat voor iedereen dezelfde informatie beschikbaar is. In de openbare ruimte zijn veel materialen beschikbaar zoals bestrating, straatmeubilair en begroeiing. Al deze materialen worden nu wel gerecycled, maar zouden veel efficiënter kunnen worden ingezet als er in een veel eerder stadium meer informatie over beschikbaar zou zijn. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Track and Trace – “The story of stuff” naar meetbare succescriteria: De circulaire economie gaat ons allemaal aan.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid"],
     contactId: "team-gemeente-apeldoorn",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/track-and-trace-the-story-of-stuff/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/track-and-trace-the-story-of-stuff/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/track-and-trace-the-story-of-stuff/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "vooruit-inparkeren-digitaal-scanbare-parkeervergunning-met-respect-voor-privacy-van-mensen-met-een-handicap",
@@ -2854,14 +4328,29 @@ const PROJECTS = [
     partners: ["Gemeenten Haarlem en Leiden"],
     kort: "In dit innovatieproject wordt de app GPA, waarmee mensen met kunnen een fysieke beperking kentekenparkeren doorontwikkeld zodat de privacy gewaarborgd wordt. Er wordt een prototype ontwikkeld gebaseerd op een digitaal identiteitsmiddel en dat aansluit op…",
     beschrijving: "De huidige oplossing voor parkeren voor mensen met een fysieke beperking is toe aan vernieuwing. De Europese gehandicaptenparkeerkaart (GPK) is fraudegevoelig en controle met scanauto’s en kentekenparkeren is niet mogelijk op gehandicaptenparkeerplaatsen. Bovendien vraagt de privacy van de betrokken gebruikersgroep om extra aandacht. De app GPA is een gedeeltelijke oplossing voor deze problemen: de app maakt kentekenparkeren mogelijk, maar privacy is onvoldoende geborgd en de app werkt alleen in Alphen aan de Rijn. We stellen voor om een prototype uit te werken voor een andere oplossingsrichting, gebaseerd op een digitaal identiteitsmiddel en dat aansluit op het bestaande parkeersysteem waardoor opschaling mogelijk is. We toetsen alternatieven bij de gebruikersgroep, betrokken ambtenaren en handhavers. We sorteren voor op de Wet Digitale Overheid en verkennen een oplossing die gebaseerd is op inzet van een decentrale digitale identiteitsmanager waardoor privacy van gebruiker geborgd is en een hoger betrouwbaarheidsniveau (eIDAS substantieel of hoog) mogelijk wordt.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeenten Haarlem en Leiden. Voor ambtenaren is dit vooral relevant bij Privacy, Toegankelijkheid, Inclusie. Kern uit de bron: De huidige oplossing voor parkeren voor mensen met een fysieke beperking is toe aan vernieuwing.",
+    probleem: "Aanleiding: De Europese gehandicaptenparkeerkaart (GPK) is fraudegevoelig en controle met scanauto’s en kentekenparkeren is niet mogelijk op gehandicaptenparkeerplaatsen. De app GPA is een gedeeltelijke oplossing voor deze problemen: de app maakt kentekenparkeren mogelijk, maar privacy is onvoldoende geborgd en de app werkt alleen in Alphen aan de Rijn.",
+    doel: "Doel: De app GPA is een gedeeltelijke oplossing voor deze problemen: de app maakt kentekenparkeren mogelijk, maar privacy is onvoldoende geborgd en de app werkt alleen in Alphen aan de Rijn. We stellen voor om een prototype uit te werken voor een andere oplossingsrichting, gebaseerd op een digitaal identiteitsmiddel en dat aansluit op het bestaande parkeersysteem waardoor opschaling mogelijk is. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Vooruit inparkeren – digitaal scanbare parkeervergunning met respect voor privacy van mensen met een handicap naar meetbare succescriteria: De huidige oplossing voor parkeren voor mensen met een fysieke beperking is toe aan vernieuwing.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Privacy", "Toegankelijkheid", "Inclusie"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/vooruit-inparkeren-digitaal-scanbare-parkeervergunning-met-respect-voor-privacy-van-mensen-met-een-handicap/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/vooruit-inparkeren-digitaal-scanbare-parkeervergunning-met-respect-voor-privacy-van-mensen-met-een-handicap/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/vooruit-inparkeren-digitaal-scanbare-parkeervergunning-met-respect-voor-privacy-van-mensen-met-een-handicap/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "webpublications-de-toekomst-van-digitale-archieven",
@@ -2880,14 +4369,29 @@ const PROJECTS = [
     partners: ["Nationaal Archief, Studio van Leeuwen & van Leeuwen, TU Delft, faculteit Industrieel Ontwerpen (Future Libraries Lab)"],
     kort: "Dit onderzoek richt zich op wat de gebruiker met archiefmateriaal zou willen doen, hoe nieuwe document formaten daar veel beter in kunnen voorzien, en wat er dan nodig is om bestaande archieven in zo’n vorm aan te bieden.",
     beschrijving: "Bruikbaarheid van archieven moet en kan beter. Er is door de eeuwen veel gepubliceerd en bewaard, maar dat wil nog niet zeggen dat het daarmee praktisch en efficiënt bruikbaar is. De formaten waarin publicaties zijn gedigitaliseerd, sluiten maar beperkt aan bij de wensen van de moderne digitale gebruiker. Dit onderzoek richt zich op wat de gebruiker met archiefmateriaal zou willen doen, hoe nieuwe document formaten daar veel beter in kunnen voorzien, en wat er dan nodig is om bestaande archieven in zo’n vorm aan te bieden.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Koninklijke Bibliotheek als regievoerder. Partnercontext: Nationaal Archief, Studio van Leeuwen & van Leeuwen, TU Delft, faculteit Industrieel Ontwerpen (Future Libraries Lab). Voor ambtenaren is dit vooral relevant bij Data, Open standaarden, Toegankelijkheid. Kern uit de bron: Bruikbaarheid van archieven moet en kan beter.",
+    probleem: "Aanleiding: Er is door de eeuwen veel gepubliceerd en bewaard, maar dat wil nog niet zeggen dat het daarmee praktisch en efficiënt bruikbaar is.",
+    doel: "Doel: Dit onderzoek richt zich op wat de gebruiker met archiefmateriaal zou willen doen, hoe nieuwe document formaten daar veel beter in kunnen voorzien, en wat er dan nodig is om bestaande archieven in zo’n vorm aan te bieden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Webpublications de toekomst van digitale archieven naar meetbare succescriteria: Bruikbaarheid van archieven moet en kan beter.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Open Standaarden"],
     labels: ["Data", "Open standaarden", "Toegankelijkheid"],
     contactId: "team-koninklijke-bibliotheek",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/webpublications-de-toekomst-van-digitale-archieven/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/webpublications-de-toekomst-van-digitale-archieven/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/webpublications-de-toekomst-van-digitale-archieven/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Forum Standaardisatie - open standaarden", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.forumstandaardisatie.nl/open-standaarden" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "zicht-op-de-stikstofketen-van-bron-tot-effect",
@@ -2906,14 +4410,27 @@ const PROJECTS = [
     partners: ["Provincies Groningen, Drenthe, Utrecht, Noord Brabant, BIJ12, RIVM"],
     kort: "Dit project wil met nieuwe technieken een verfijning aanbrengen in het meten van stikstof. Gebruikte modellen worden gevalideerd om te krijgen op de lange termijn effecten. Waarbij deze bepalingen voor een ieder helder, begrijpelijk en uitlegbaar zijn.",
     beschrijving: "Stikstofverbindingen zoals stikstofoxide en ammoniak zijn schadelijk voor de natuur als er teveel van in de lucht, bodem of water komt. Bepaalde planten gaan hierdoor harder groeien en verdrijven kwetsbare natuur en verstoren hierdoor biotopen voor vogels en insecten. Om deze effecten te verminderen moet de stikstofuitstoot verminderd worden. Dit heeft een behoorlijke impact op verschillende sectoren. Er bestaat onder sommige sectoren het onderbuikgevoel dat enerzijds de cijfers rond stikstofuitstoot en -depositie nooit kunnen kloppen. Omdat het berekend wordt aan de hand van een model en omdat de effecten van het verminderen van stikstof onduidelijk zijn. Dit project wil met nieuwe technieken een verfijning aanbrengen in het meten van stikstof, deze metingen gebruiken om de gebruikte modellen te valideren en zicht krijgen op de lange termijn effecten. Waarbij deze bepalingen voor een ieder helder, begrijpelijk en uitlegbaar zijn.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2020 met Provincie Fryslân als regievoerder. Partnercontext: Provincies Groningen, Drenthe, Utrecht, Noord Brabant, BIJ12, RIVM. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid. Kern uit de bron: Stikstofverbindingen zoals stikstofoxide en ammoniak zijn schadelijk voor de natuur als er teveel van in de lucht, bodem of water komt.",
+    probleem: "Aanleiding: Stikstofverbindingen zoals stikstofoxide en ammoniak zijn schadelijk voor de natuur als er teveel van in de lucht, bodem of water komt. Bepaalde planten gaan hierdoor harder groeien en verdrijven kwetsbare natuur en verstoren hierdoor biotopen voor vogels en insecten.",
+    doel: "Doel: Bepaalde planten gaan hierdoor harder groeien en verdrijven kwetsbare natuur en verstoren hierdoor biotopen voor vogels en insecten. Om deze effecten te verminderen moet de stikstofuitstoot verminderd worden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Zicht op de stikstofketen: van bron tot effect. naar meetbare succescriteria: Stikstofverbindingen zoals stikstofoxide en ammoniak zijn schadelijk voor de natuur als er teveel van in de lucht, bodem of water komt.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid"],
     contactId: "team-provincie-frysl-n",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/zicht-op-de-stikstofketen-van-bron-tot-effect/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zicht-op-de-stikstofketen-van-bron-tot-effect/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2020", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zicht-op-de-stikstofketen-van-bron-tot-effect/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "calculemus-flint",
@@ -2932,14 +4449,27 @@ const PROJECTS = [
     partners: ["ICTU, Ministerie van Justitie en Veiligheid, Ministerie van Financiën, Mens Centraal en IND"],
     kort: "Ontwikkelen van software-ondersteuning voor expliciete interpretatie van juridische bronnen waar publieke diensten op gebaseerd worden. Doel is een directe koppeling te maken tussen grondslag en dienstverlening.",
     beschrijving: "Ontwikkelen van software-ondersteuning voor expliciete interpretatie van juridische bronnen waar publieke diensten op gebaseerd worden. Doel is een directe koppeling te maken tussen grondslag en dienstverlening.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (CIO Rijk) als regievoerder. Partnercontext: ICTU, Ministerie van Justitie en Veiligheid, Ministerie van Financiën, Mens Centraal en IND. Voor ambtenaren is dit vooral relevant bij Transparantie, Compliance, Automatisering. Kern uit de bron: Ontwikkelen van software-ondersteuning voor expliciete interpretatie van juridische bronnen waar publieke diensten op gebaseerd worden.",
+    probleem: "Aanleiding: Ontwikkelen van software-ondersteuning voor expliciete interpretatie van juridische bronnen waar publieke diensten op gebaseerd worden. Doel is een directe koppeling te maken tussen grondslag en dienstverlening.",
+    doel: "Doel: Ontwikkelen van software-ondersteuning voor expliciete interpretatie van juridische bronnen waar publieke diensten op gebaseerd worden. Doel is een directe koppeling te maken tussen grondslag en dienstverlening. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Calculemus-FLINT naar meetbare succescriteria: Ontwikkelen van software-ondersteuning voor expliciete interpretatie van juridische bronnen waar publieke diensten op gebaseerd worden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Transparantie", "Compliance", "Automatisering"],
     contactId: "team-ministerie-van-binnenlandse-zaken-en-kon",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/calculemus-flint/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/calculemus-flint/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/calculemus-flint/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "chatbot-content",
@@ -2958,14 +4488,28 @@ const PROJECTS = [
     partners: ["Ministerie van Algemene Zaken en gemeente Tilburg"],
     kort: "Met een chatbot kan overheidsinformatie zo ingericht worden dat informatie voor meerdere kanalen (gemeentewebsite, chat, voice) gebruikt kan worden in de communicatie met burgers en ondernemers.",
     beschrijving: "Met een chatbot kan overheidsinformatie zo ingericht worden dat informatie voor meerdere kanalen (gemeentewebsite, chat, voice) gebruikt kan worden in de communicatie met burgers en ondernemers.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Utrecht als regievoerder. Partnercontext: Ministerie van Algemene Zaken en gemeente Tilburg. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Burgergericht, AI. Kern uit de bron: Met een chatbot kan overheidsinformatie zo ingericht worden dat informatie voor meerdere kanalen (gemeentewebsite, chat, voice) gebruikt kan worden in de communicatie met burgers en ondernemers.",
+    probleem: "Aanleiding: Met een chatbot kan overheidsinformatie zo ingericht worden dat informatie voor meerdere kanalen (gemeentewebsite, chat, voice) gebruikt kan worden in de communicatie met burgers en ondernemers.",
+    doel: "Doel: Met een chatbot kan overheidsinformatie zo ingericht worden dat informatie voor meerdere kanalen (gemeentewebsite, chat, voice) gebruikt kan worden in de communicatie met burgers en ondernemers. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Chatbot & content naar meetbare succescriteria: Met een chatbot kan overheidsinformatie zo ingericht worden dat informatie voor meerdere kanalen (gemeentewebsite, chat, voice) gebruikt kan worden in de communicatie met burgers en ondernemers.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Burgergericht", "AI"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/chatbot-content/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/chatbot-content/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/chatbot-content/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "common-ground-poc-gehandicaptenparkeerkaart",
@@ -2984,14 +4528,30 @@ const PROJECTS = [
     partners: ["VNG-realisatie en RDW"],
     kort: "Gegevens van de RDW toevoegen aan de gegevenslaag van de Common Ground architectuur. Daarmee worden de gegevens beschikbaar voor alle Nederlandse gemeenten en andere organisaties die daar recht op hebben.",
     beschrijving: "Gegevens van de RDW toevoegen aan de gegevenslaag van de Common Ground architectuur. Daarmee worden de gegevens beschikbaar voor alle Nederlandse gemeenten en andere organisaties die daar recht op hebben. Kijk voor meer informatie over dit innovatieproject op de website van Common Ground .",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Groningen als regievoerder. Partnercontext: VNG-realisatie en RDW. Voor ambtenaren is dit vooral relevant bij Datadeling, API's, Toegankelijkheid. Kern uit de bron: Gegevens van de RDW toevoegen aan de gegevenslaag van de Common Ground architectuur.",
+    probleem: "Aanleiding: Gegevens van de RDW toevoegen aan de gegevenslaag van de Common Ground architectuur. Daarmee worden de gegevens beschikbaar voor alle Nederlandse gemeenten en andere organisaties die daar recht op hebben.",
+    doel: "Doel: Daarmee worden de gegevens beschikbaar voor alle Nederlandse gemeenten en andere organisaties die daar recht op hebben. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Common Ground POC Gehandicaptenparkeerkaart naar meetbare succescriteria: Gegevens van de RDW toevoegen aan de gegevenslaag van de Common Ground architectuur.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Datadeling", "API's", "Toegankelijkheid"],
     contactId: "team-gemeente-groningen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/common-ground-poc-gehandicaptenparkeerkaart/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/common-ground-poc-gehandicaptenparkeerkaart/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/common-ground-poc-gehandicaptenparkeerkaart/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Developer.overheid.nl", type: "link", grootte: "", datum: "context", actie: "open", url: "https://developer.overheid.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: website van Common Ground", type: "link", grootte: "", datum: "web", actie: "open", url: "https://commonground.nl/groups/view/dfb167b8-eb25-417a-8bd5-c51611bbca2d/team-gehandicaptenparkeerkaart" }
+    ]
   },
   {
     id: "consulgemeenten",
@@ -3010,14 +4570,27 @@ const PROJECTS = [
     partners: ["Gemeenten Emmen, Enschede, Almelo en Midden-Groningen"],
     kort: "Samenwerking om de gebruiksvriendelijkheid van het digitaal participatieplatform Consul te verbeteren.",
     beschrijving: "Samenwerking om de gebruiksvriendelijkheid van het digitaal participatieplatform Consul te verbeteren. Kijk voor informatie over Consul op de website Lokale Democratie .",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Groningen als regievoerder. Partnercontext: Gemeenten Emmen, Enschede, Almelo en Midden-Groningen. Voor ambtenaren is dit vooral relevant bij Burgergericht, Samenwerking, Inclusie. Kern uit de bron: Samenwerking om de gebruiksvriendelijkheid van het digitaal participatieplatform Consul te verbeteren.",
+    probleem: "Aanleiding: Samenwerking om de gebruiksvriendelijkheid van het digitaal participatieplatform Consul te verbeteren. Kijk voor informatie over Consul op de website Lokale Democratie .",
+    doel: "Doel: Samenwerking om de gebruiksvriendelijkheid van het digitaal participatieplatform Consul te verbeteren. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Consulgemeenten naar meetbare succescriteria: Samenwerking om de gebruiksvriendelijkheid van het digitaal participatieplatform Consul te verbeteren.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Samenwerking", "Inclusie"],
     contactId: "team-gemeente-groningen",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/consulgemeenten/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/consulgemeenten/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/consulgemeenten/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: website Lokale Democratie", type: "link", grootte: "", datum: "web", actie: "open", url: "https://lokale-democratie.nl/blog/view/472fda0f-a4f4-47b7-a746-6415db4f8b46/consul-open-source-participatietool-met-een-actieve-community" }
+    ]
   },
   {
     id: "digital-twin-wet-en-regelgeving-bouwkavels-brainport-smart-district",
@@ -3036,14 +4609,28 @@ const PROJECTS = [
     partners: ["Provincie Noord-Brabant met Stichting Brainport Smart District, Geodan, WoonConnect en TU/e, Tilburg University, Enexis, Brabant Water, Waterschap Aa en Maas en Waterschap De Dommel"],
     kort: "Ontwikkeling van een webomgeving met een digitale versie van een toekomstige wijk in Helmond en de geldende wet- en regelgeving, waarmee toekomstige bewoners en bedrijven geholpen worden bij het realiseren hun huis of bedrijfspand.",
     beschrijving: "Ontwikkeling van een webomgeving met een digitale versie van een toekomstige wijk in Helmond en de geldende wet- en regelgeving, waarmee toekomstige bewoners en bedrijven geholpen worden bij het realiseren hun huis of bedrijfspand.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Helmond als regievoerder. Partnercontext: Provincie Noord-Brabant met Stichting Brainport Smart District, Geodan, WoonConnect en TU/e, Tilburg University, Enexis, Brabant Water, Waterschap Aa en Maas en Waterschap De Dommel. Voor ambtenaren is dit vooral relevant bij Data, Transparantie. Kern uit de bron: Ontwikkeling van een webomgeving met een digitale versie van een toekomstige wijk in Helmond en de geldende wet- en regelgeving, waarmee toekomstige bewoners en bedrijven geholpen worden bij het realiseren hun huis of bedrijfspand.",
+    probleem: "Aanleiding: Ontwikkeling van een webomgeving met een digitale versie van een toekomstige wijk in Helmond en de geldende wet- en regelgeving, waarmee toekomstige bewoners en bedrijven geholpen worden bij het realiseren hun huis of bedrijfspand.",
+    doel: "Doel: Ontwikkeling van een webomgeving met een digitale versie van een toekomstige wijk in Helmond en de geldende wet- en regelgeving, waarmee toekomstige bewoners en bedrijven geholpen worden bij het realiseren hun huis of bedrijfspand. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Digital twin wet- en regelgeving bouwkavels Brainport Smart District naar meetbare succescriteria: Ontwikkeling van een webomgeving met een digitale versie van een toekomstige wijk in Helmond en de geldende wet- en regelgeving, waarmee toekomstige bewoners en bedrijven geholpen worden bij het realiseren hun huis of bedrijfspand.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Transparantie"],
     contactId: "team-gemeente-helmond",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/digital-twin-wet-en-regelgeving-bouwkavels-brainport-smart-district/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digital-twin-wet-en-regelgeving-bouwkavels-brainport-smart-district/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digital-twin-wet-en-regelgeving-bouwkavels-brainport-smart-district/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Platform Open Overheidsinformatie", type: "link", grootte: "", datum: "context", actie: "open", url: "https://open.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "digital-twins",
@@ -3062,14 +4649,27 @@ const PROJECTS = [
     partners: ["Gemeente Zwolle"],
     kort: "Een digitale versie (digital twin) van een wijk in Zwolle maken. Daarmee samen met inwoners en anderen scenario’s verkennen om wateroverlast en hittestress te verminderen. Doel is te onderzoeken of een digital twin de juiste…",
     beschrijving: "Een digitale versie (digital twin) van een wijk in Zwolle maken. Daarmee samen met inwoners en anderen scenario’s verkennen om wateroverlast en hittestress te verminderen. Doel is te onderzoeken of een digital twin de juiste manier is om centraal en uniform geodata beschikbaar te stellen, wat daarbij komt kijken en wat dit betekent voor de Nationale Geo-Informatie Infrastructuur. Kijk voor meer informatie op de website van het Kadaster .",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met het Kadaster als regievoerder. Partnercontext: Gemeente Zwolle. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid, Burgergericht. Kern uit de bron: Een digitale versie (digital twin) van een wijk in Zwolle maken.",
+    probleem: "Aanleiding: Een digitale versie (digital twin) van een wijk in Zwolle maken. Daarmee samen met inwoners en anderen scenario’s verkennen om wateroverlast en hittestress te verminderen.",
+    doel: "Doel: Daarmee samen met inwoners en anderen scenario’s verkennen om wateroverlast en hittestress te verminderen. Doel is te onderzoeken of een digital twin de juiste manier is om centraal en uniform geodata beschikbaar te stellen, wat daarbij komt kijken en wat dit betekent voor de Nationale Geo-Informatie Infrastructuur. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Digital twins naar meetbare succescriteria: Een digitale versie (digital twin) van een wijk in Zwolle maken.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid", "Burgergericht"],
     contactId: "team-het-kadaster",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/digital-twins/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digital-twins/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digital-twins/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: website van het Kadaster", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.kadaster.nl/?gclid=CjwKCAiAhreNBhAYEiwAFGGKPH1SOAIIye6zKyNKr1XiuJc5JFXJe-9TvmTXAp0T8RrWWtXIhy69wRoCN_4QAvD_BwE" }
+    ]
   },
   {
     id: "digitale-identiteitskaarten-en-rijvaardigheidsbewijzen",
@@ -3088,14 +4688,28 @@ const PROJECTS = [
     partners: ["Gemeenten Almere, Leiden en Haarlem."],
     kort: "In dit project worden experimenten uitgevoerd rond het gebruik van digitale identiteit in de praktijk, zoals voor leeftijdscontrole bij jongeren. Doel is om inzicht te krijgen in het effect hiervan op de betrokken organisaties (zoals de politie) en de…",
     beschrijving: "In dit project worden experimenten uitgevoerd rond het gebruik van digitale identiteit in de praktijk, zoals voor leeftijdscontrole bij jongeren. Doel is om inzicht te krijgen in het effect hiervan op de betrokken organisaties (zoals de politie) en de gebruikerservaring van burgers en professionals.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeenten Almere, Leiden en Haarlem.. Voor ambtenaren is dit vooral relevant bij Digitale identiteit, Privacy. Kern uit de bron: In dit project worden experimenten uitgevoerd rond het gebruik van digitale identiteit in de praktijk, zoals voor leeftijdscontrole bij jongeren.",
+    probleem: "Aanleiding: In dit project worden experimenten uitgevoerd rond het gebruik van digitale identiteit in de praktijk, zoals voor leeftijdscontrole bij jongeren. Doel is om inzicht te krijgen in het effect hiervan op de betrokken organisaties (zoals de politie) en de gebruikerservaring van burgers en professionals.",
+    doel: "Doel is om inzicht te krijgen in het effect hiervan op de betrokken organisaties (zoals de politie) en de gebruikerservaring van burgers en professionals. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Digitale identiteitskaarten en rijvaardigheidsbewijzen naar meetbare succescriteria: In dit project worden experimenten uitgevoerd rond het gebruik van digitale identiteit in de praktijk, zoals voor leeftijdscontrole bij jongeren.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Digitale identiteit", "Privacy"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/digitale-identiteitskaarten-en-rijvaardigheidsbewijzen/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digitale-identiteitskaarten-en-rijvaardigheidsbewijzen/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digitale-identiteitskaarten-en-rijvaardigheidsbewijzen/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Privacy bij digitale overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/privacy/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "digitale-toegankelijkheidscheck-voor-pdf-documenten",
@@ -3114,14 +4728,28 @@ const PROJECTS = [
     partners: ["ICTU, Ministerie van Volksgezondheid, Welzijn en Sport (directie VGP), Nationaal Archief, Nederlandse Zorgautoriteit, Nuffic en Provincie Gelderland."],
     kort: "Ontwikkeling van software om PDF-bestanden te controleren op digitale toegankelijkheid voordat ze online gepubliceerd worden.",
     beschrijving: "Ontwikkeling van software om PDF-bestanden te controleren op digitale toegankelijkheid voordat ze online gepubliceerd worden. Kijk voor meer informatie op de website van Forum Standaardisatie .",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Forum Standaardisatie als regievoerder. Partnercontext: ICTU, Ministerie van Volksgezondheid, Welzijn en Sport (directie VGP), Nationaal Archief, Nederlandse Zorgautoriteit, Nuffic en Provincie Gelderland.. Voor ambtenaren is dit vooral relevant bij Toegankelijkheid, Inclusie, Automatisering. Kern uit de bron: Ontwikkeling van software om PDF-bestanden te controleren op digitale toegankelijkheid voordat ze online gepubliceerd worden.",
+    probleem: "Aanleiding: Ontwikkeling van software om PDF-bestanden te controleren op digitale toegankelijkheid voordat ze online gepubliceerd worden. Kijk voor meer informatie op de website van Forum Standaardisatie .",
+    doel: "Doel: Ontwikkeling van software om PDF-bestanden te controleren op digitale toegankelijkheid voordat ze online gepubliceerd worden. Kijk voor meer informatie op de website van Forum Standaardisatie . De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Digitale toegankelijkheidscheck voor PDF-documenten naar meetbare succescriteria: Ontwikkeling van software om PDF-bestanden te controleren op digitale toegankelijkheid voordat ze online gepubliceerd worden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Toegankelijkheid", "Inclusie", "Automatisering"],
     contactId: "team-forum-standaardisatie",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/digitale-toegankelijkheidscheck-voor-pdf-documenten/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digitale-toegankelijkheidscheck-voor-pdf-documenten/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/digitale-toegankelijkheidscheck-voor-pdf-documenten/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Digitoegankelijk", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitoegankelijk.nl/" },
+      { naam: "Gerelateerde webbron: website van Forum Standaardisatie", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.forumstandaardisatie.nl/" }
+    ]
   },
   {
     id: "duinen-en-kwelders",
@@ -3140,14 +4768,28 @@ const PROJECTS = [
     partners: ["Provincies Zeeland, Noord-Holland, Zuid-Holland, BIJ12 en Rijkswaterstaat."],
     kort: "Ontwikkeling van kunstmatige intelligentie die op basis van satellietbeelden informatie geeft over vegetaties en habitattypen in duinen en kwelders (begroeide stukken land die direct aan zee grenzen). Die informatie moet nu nog handmatig/te voet verzameld…",
     beschrijving: "Ontwikkeling van kunstmatige intelligentie die op basis van satellietbeelden informatie geeft over vegetaties en habitattypen in duinen en kwelders (begroeide stukken land die direct aan zee grenzen). Die informatie moet nu nog handmatig/te voet verzameld worden.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Provincie Fryslân als regievoerder. Partnercontext: Provincies Zeeland, Noord-Holland, Zuid-Holland, BIJ12 en Rijkswaterstaat.. Voor ambtenaren is dit vooral relevant bij AI, Duurzaamheid, Data. Kern uit de bron: Ontwikkeling van kunstmatige intelligentie die op basis van satellietbeelden informatie geeft over vegetaties en habitattypen in duinen en kwelders (begroeide stukken land die direct aan zee grenzen).",
+    probleem: "Aanleiding: Die informatie moet nu nog handmatig/te voet verzameld worden.",
+    doel: "Doel: Ontwikkeling van kunstmatige intelligentie die op basis van satellietbeelden informatie geeft over vegetaties en habitattypen in duinen en kwelders (begroeide stukken land die direct aan zee grenzen). De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Duinen en kwelders naar meetbare succescriteria: Ontwikkeling van kunstmatige intelligentie die op basis van satellietbeelden informatie geeft over vegetaties en habitattypen in duinen en kwelders (begroeide stukken land die direct aan zee grenzen).",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Duurzaamheid", "Data"],
     contactId: "team-provincie-frysl-n",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/duinen-en-kwelders/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/duinen-en-kwelders/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/duinen-en-kwelders/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "energy-sharing-blockchain",
@@ -3166,14 +4808,27 @@ const PROJECTS = [
     partners: ["Gemeenten Goeree Overflakkee, Hoeksche Waard en Provincie Zuid-Holland"],
     kort: "Open haalbaarheidsstudie naar een op blockchain gebaseerde oplossing voor handel in energie. Zowel tussen kleine spelers onderling en als collectief met de APX/EPEX, het nationaal handelsplatform voor in- en verkoop van energie.",
     beschrijving: "Open haalbaarheidsstudie naar een op blockchain gebaseerde oplossing voor handel in energie. Zowel tussen kleine spelers onderling en als collectief met de APX/EPEX, het nationaal handelsplatform voor in- en verkoop van energie.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Provincie Zuid-Holland als regievoerder. Partnercontext: Gemeenten Goeree Overflakkee, Hoeksche Waard en Provincie Zuid-Holland. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid. Kern uit de bron: Open haalbaarheidsstudie naar een op blockchain gebaseerde oplossing voor handel in energie.",
+    probleem: "Aanleiding: Open haalbaarheidsstudie naar een op blockchain gebaseerde oplossing voor handel in energie. Zowel tussen kleine spelers onderling en als collectief met de APX/EPEX, het nationaal handelsplatform voor in- en verkoop van energie.",
+    doel: "Doel: Zowel tussen kleine spelers onderling en als collectief met de APX/EPEX, het nationaal handelsplatform voor in- en verkoop van energie. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Energy sharing & blockchain naar meetbare succescriteria: Open haalbaarheidsstudie naar een op blockchain gebaseerde oplossing voor handel in energie.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid"],
     contactId: "team-provincie-zuid-holland",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/energy-sharing-blockchain/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/energy-sharing-blockchain/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/energy-sharing-blockchain/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "huwelijksplanner-volgens-common-ground",
@@ -3192,14 +4847,28 @@ const PROJECTS = [
     partners: ["Gemeenten Eindhoven, Rotterdam en Almere (namens de ‘convenant gemeenten’)"],
     kort: "Ontwikkeling van een dienst waarmee partners zelf digitaal hun huwelijksceremonie plannen (datum, locatie en trouwambtenaar). Dat levert grote tijds- en kostenbesparing voor zowel gemeente als burger.",
     beschrijving: "Ontwikkeling van een dienst waarmee partners zelf digitaal hun huwelijksceremonie plannen (datum, locatie en trouwambtenaar). Dat levert grote tijds- en kostenbesparing voor zowel gemeente als burger.",
-    probleem: "",
-    doel: "",
-    lessen: [],
-    gdi: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Utrecht als regievoerder. Partnercontext: Gemeenten Eindhoven, Rotterdam en Almere (namens de ‘convenant gemeenten’). Voor ambtenaren is dit vooral relevant bij Dienstverlening, Procesinnovatie. Kern uit de bron: Ontwikkeling van een dienst waarmee partners zelf digitaal hun huwelijksceremonie plannen (datum, locatie en trouwambtenaar).",
+    probleem: "Aanleiding: Ontwikkeling van een dienst waarmee partners zelf digitaal hun huwelijksceremonie plannen (datum, locatie en trouwambtenaar). Dat levert grote tijds- en kostenbesparing voor zowel gemeente als burger.",
+    doel: "Doel: Ontwikkeling van een dienst waarmee partners zelf digitaal hun huwelijksceremonie plannen (datum, locatie en trouwambtenaar). De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Huwelijksplanner volgens Common Ground naar meetbare succescriteria: Ontwikkeling van een dienst waarmee partners zelf digitaal hun huwelijksceremonie plannen (datum, locatie en trouwambtenaar).",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
+    gdi: ["Common Ground"],
     labels: ["Dienstverlening", "Procesinnovatie"],
     contactId: "team-gemeente-utrecht",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/huwelijksplanner-volgens-common-ground/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/huwelijksplanner-volgens-common-ground/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/huwelijksplanner-volgens-common-ground/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Common Ground", type: "link", grootte: "", datum: "context", actie: "open", url: "https://commonground.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "impact-met-ai",
@@ -3218,14 +4887,28 @@ const PROJECTS = [
     partners: ["CBS, VNG met Code for NL."],
     kort: "Ervaring opdoen en kennis delen over succesvolle inzet van AI door verschillende gemeenten. Op 3 projecten: ‘Eerlijke algoritmes’, ‘Doorstroming sociale huur’ en ‘Schone stad met beeldherkenning’.",
     beschrijving: "Ervaring opdoen en kennis delen over succesvolle inzet van AI door verschillende gemeenten. Op 3 projecten: ‘Eerlijke algoritmes’, ‘Doorstroming sociale huur’ en ‘Schone stad met beeldherkenning’.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Amsterdam als regievoerder. Partnercontext: CBS, VNG met Code for NL.. Voor ambtenaren is dit vooral relevant bij AI, Algoritmes, Responsible AI. Kern uit de bron: Ervaring opdoen en kennis delen over succesvolle inzet van AI door verschillende gemeenten.",
+    probleem: "Aanleiding: Ervaring opdoen en kennis delen over succesvolle inzet van AI door verschillende gemeenten. Op 3 projecten: ‘Eerlijke algoritmes’, ‘Doorstroming sociale huur’ en ‘Schone stad met beeldherkenning’.",
+    doel: "Doel: Op 3 projecten: ‘Eerlijke algoritmes’, ‘Doorstroming sociale huur’ en ‘Schone stad met beeldherkenning’. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Impact met AI naar meetbare succescriteria: Ervaring opdoen en kennis delen over succesvolle inzet van AI door verschillende gemeenten.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Borg privacy, biascontrole, uitlegbaarheid en menselijke tussenkomst al in de eerste proefopstelling; dat voorkomt herstelwerk bij opschaling.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["AI", "Algoritmes", "Responsible AI"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/impact-met-ai/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/impact-met-ai/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/impact-met-ai/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "AI en algoritmen bij de overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nieuwe-technologieen-data-en-ethiek/artificiele-intelligentie/" },
+      { naam: "Algoritmeregister", type: "link", grootte: "", datum: "context", actie: "open", url: "https://algoritmes.overheid.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "implementatie-van-assetinformatiemanagent-voor-de-openbare-ruimte-en-infrastructuur-voor-provincies",
@@ -3244,14 +4927,27 @@ const PROJECTS = [
     partners: ["De 12 provincies in samenwerking met CROW (programmamanagement)"],
     kort: "Het mogelijk maken van informatie-uitwisseling bijvoorbeeld tussen provincies en projectontwikkelaars, op basis van digitale versies (digital twins) van de openbare ruimte en infrastructuur ten behoeve van diensten aan bedrijfsleven en burgers.",
     beschrijving: "Het mogelijk maken van informatie-uitwisseling bijvoorbeeld tussen provincies en projectontwikkelaars, op basis van digitale versies (digital twins) van de openbare ruimte en infrastructuur ten behoeve van diensten aan bedrijfsleven en burgers. Horaplantsoen 18 6717 LT Ede T: 0318 – 69 53 00",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Kennisplatform CROW als regievoerder. Partnercontext: De 12 provincies in samenwerking met CROW (programmamanagement). Voor ambtenaren is dit vooral relevant bij Data, Interoperabiliteit, Ketenpartners. Kern uit de bron: Het mogelijk maken van informatie-uitwisseling bijvoorbeeld tussen provincies en projectontwikkelaars, op basis van digitale versies (digital twins) van de openbare ruimte en infrastructuur ten behoeve van diensten aan bedrijfsleven en burgers.",
+    probleem: "Aanleiding: Het mogelijk maken van informatie-uitwisseling bijvoorbeeld tussen provincies en projectontwikkelaars, op basis van digitale versies (digital twins) van de openbare ruimte en infrastructuur ten behoeve van diensten aan bedrijfsleven en burgers. Horaplantsoen 18 6717 LT Ede T: 0318 – 69 53 00",
+    doel: "Doel: Het mogelijk maken van informatie-uitwisseling bijvoorbeeld tussen provincies en projectontwikkelaars, op basis van digitale versies (digital twins) van de openbare ruimte en infrastructuur ten behoeve van diensten aan bedrijfsleven en burgers. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Implementatie van assetinformatiemanagent voor de openbare ruimte en infrastructuur voor provincies naar meetbare succescriteria: Het mogelijk maken van informatie-uitwisseling bijvoorbeeld tussen provincies en projectontwikkelaars, op basis van digitale versies (digital twins) van de openbare ruimte en infrastructuur ten behoeve van diensten aan bedrijfsleven en burgers.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Kies open standaarden en publiceer koppelvlakafspraken, voorbeeldpayloads en governance-afspraken zodat andere organisaties kunnen aansluiten.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Interoperabiliteit", "Ketenpartners"],
     contactId: "team-kennisplatform-crow",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/implementatie-van-assetinformatiemanagent-voor-de-openbare-ruimte-en-infrastructuur-voor-provincies/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/implementatie-van-assetinformatiemanagent-voor-de-openbare-ruimte-en-infrastructuur-voor-provincies/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/implementatie-van-assetinformatiemanagent-voor-de-openbare-ruimte-en-infrastructuur-voor-provincies/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "nederland-begroot",
@@ -3270,14 +4966,27 @@ const PROJECTS = [
     partners: ["Gemeente Den Haag"],
     kort: "Opschalen van een succesvolle oplossing voor e-participatie, om het voor bewoners aantrekkelijker en laagdrempeliger te maken om mee te praten met gemeenten.",
     beschrijving: "Opschalen van een succesvolle oplossing voor e-participatie, om het voor bewoners aantrekkelijker en laagdrempeliger te maken om mee te praten met gemeenten.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Amsterdam als regievoerder. Partnercontext: Gemeente Den Haag. Voor ambtenaren is dit vooral relevant bij Burgergericht, Transparantie, Opschalen. Kern uit de bron: Opschalen van een succesvolle oplossing voor e-participatie, om het voor bewoners aantrekkelijker en laagdrempeliger te maken om mee te praten met gemeenten.",
+    probleem: "Aanleiding: Opschalen van een succesvolle oplossing voor e-participatie, om het voor bewoners aantrekkelijker en laagdrempeliger te maken om mee te praten met gemeenten.",
+    doel: "Doel: Opschalen van een succesvolle oplossing voor e-participatie, om het voor bewoners aantrekkelijker en laagdrempeliger te maken om mee te praten met gemeenten. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Nederland begroot naar meetbare succescriteria: Opschalen van een succesvolle oplossing voor e-participatie, om het voor bewoners aantrekkelijker en laagdrempeliger te maken om mee te praten met gemeenten.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Werk met dataminimalisatie, DPIA/algoritmeverantwoording waar nodig en duidelijke uitleg aan betrokkenen over gebruik en bewaartermijnen.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Transparantie", "Opschalen"],
     contactId: "team-gemeente-amsterdam",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/nederland-begroot/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/nederland-begroot/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/nederland-begroot/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "perceelwijzer",
@@ -3296,14 +5005,27 @@ const PROJECTS = [
     partners: ["Waterschap De Dommel, Waterschap De Brabantse Delta, Provincie Noord-Brabant en Zuidelijke Land- en Tuinbouworganisatie."],
     kort: "Ontwikkeling van een app met informatie en interactie op perceelsniveau, voor persoonlijkere communicatie en interactie tussen agrariërs en waterschappen.",
     beschrijving: "Ontwikkeling van een app met informatie en interactie op perceelsniveau, voor persoonlijkere communicatie en interactie tussen agrariërs en waterschappen.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Waterschap Aa en Maas als regievoerder. Partnercontext: Waterschap De Dommel, Waterschap De Brabantse Delta, Provincie Noord-Brabant en Zuidelijke Land- en Tuinbouworganisatie.. Voor ambtenaren is dit vooral relevant bij Dienstverlening, Data. Kern uit de bron: Ontwikkeling van een app met informatie en interactie op perceelsniveau, voor persoonlijkere communicatie en interactie tussen agrariërs en waterschappen.",
+    probleem: "Aanleiding: Ontwikkeling van een app met informatie en interactie op perceelsniveau, voor persoonlijkere communicatie en interactie tussen agrariërs en waterschappen.",
+    doel: "Doel: Ontwikkeling van een app met informatie en interactie op perceelsniveau, voor persoonlijkere communicatie en interactie tussen agrariërs en waterschappen. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Perceelwijzer naar meetbare succescriteria: Ontwikkeling van een app met informatie en interactie op perceelsniveau, voor persoonlijkere communicatie en interactie tussen agrariërs en waterschappen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Dienstverlening", "Data"],
     contactId: "team-waterschap-aa-en-maas",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/perceelwijzer/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/perceelwijzer/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/perceelwijzer/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "prioriteit-voor-vrachtverkeer-connected-transport",
@@ -3322,14 +5044,27 @@ const PROJECTS = [
     partners: ["Gemeente Westland, Rijkswaterstaat en Metropoolregio Rotterdam | Den Haag."],
     kort: "Ontwikkeling van een systeem waarin vrachtwagens aan elkaar worden gematcht om in konvooi te rijden. Ze krijgen daarbij voorrang bij intelligente verkeerslichten. Winst wordt geboekt op brandstofgebruik, CO2-uitstoot en bereikbaarheid.",
     beschrijving: "Ontwikkeling van een systeem waarin vrachtwagens aan elkaar worden gematcht om in konvooi te rijden. Ze krijgen daarbij voorrang bij intelligente verkeerslichten. Winst wordt geboekt op brandstofgebruik, CO2-uitstoot en bereikbaarheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Provincie Zuid-Holland als regievoerder. Partnercontext: Gemeente Westland, Rijkswaterstaat en Metropoolregio Rotterdam | Den Haag.. Voor ambtenaren is dit vooral relevant bij Data, Duurzaamheid. Kern uit de bron: Ontwikkeling van een systeem waarin vrachtwagens aan elkaar worden gematcht om in konvooi te rijden.",
+    probleem: "Aanleiding: Ontwikkeling van een systeem waarin vrachtwagens aan elkaar worden gematcht om in konvooi te rijden. Ze krijgen daarbij voorrang bij intelligente verkeerslichten.",
+    doel: "Doel: Ontwikkeling van een systeem waarin vrachtwagens aan elkaar worden gematcht om in konvooi te rijden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Prioriteit voor vrachtverkeer: Connected transport naar meetbare succescriteria: Ontwikkeling van een systeem waarin vrachtwagens aan elkaar worden gematcht om in konvooi te rijden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Duurzaamheid"],
     contactId: "team-provincie-zuid-holland",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/prioriteit-voor-vrachtverkeer-connected-transport/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/prioriteit-voor-vrachtverkeer-connected-transport/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/prioriteit-voor-vrachtverkeer-connected-transport/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "van-arm-naar-beter",
@@ -3348,14 +5083,27 @@ const PROJECTS = [
     partners: ["Gemeente Groningen, Het Hogeland en Aa en Hunze in samenwerking met Stichting Leergeld Westerkwartier-Noordenveld, Jeugdfonds Sport & Cultuur, Kledingbank Maxima, Hanzehogeschool Groningen (lectoraat User-Centered Design en lectoraat Duurzaam Coöperatief Ondernemen), Biblionet Groningen, Stichting Forus en De Kracht van Groningen"],
     kort: "Een app die voor het Kindpakket (winter- en zomerkleren, zwemlessen, toegang tot lokaal openbaar vervoer) succesvol is gebleken, opschalen naar andere vormen van armoedebestrijding.",
     beschrijving: "Een app die voor het Kindpakket (winter- en zomerkleren, zwemlessen, toegang tot lokaal openbaar vervoer) succesvol is gebleken, opschalen naar andere vormen van armoedebestrijding.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Gemeente Westerkwartier als regievoerder. Partnercontext: Gemeente Groningen, Het Hogeland en Aa en Hunze in samenwerking met Stichting Leergeld Westerkwartier-Noordenveld, Jeugdfonds Sport & Cultuur, Kledingbank Maxima, Hanzehogeschool Groningen (lectoraat User-Centered Design en lectoraat Duurzaam Coöperatief Ondernemen), Biblionet Groningen, Stichting Forus en De Kracht van Groningen. Voor ambtenaren is dit vooral relevant bij Inclusie, Burgergericht, Opschalen. Kern uit de bron: Een app die voor het Kindpakket (winter- en zomerkleren, zwemlessen, toegang tot lokaal openbaar vervoer) succesvol is gebleken, opschalen naar andere vormen van armoedebestrijding.",
+    probleem: "Aanleiding: Een app die voor het Kindpakket (winter- en zomerkleren, zwemlessen, toegang tot lokaal openbaar vervoer) succesvol is gebleken, opschalen naar andere vormen van armoedebestrijding.",
+    doel: "Doel: Een app die voor het Kindpakket (winter- en zomerkleren, zwemlessen, toegang tot lokaal openbaar vervoer) succesvol is gebleken, opschalen naar andere vormen van armoedebestrijding. De gekozen aanpak past bij de projectfase implementatie: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Van Arm naar Beter naar meetbare succescriteria: Een app die voor het Kindpakket (winter- en zomerkleren, zwemlessen, toegang tot lokaal openbaar vervoer) succesvol is gebleken, opschalen naar andere vormen van armoedebestrijding.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Plan gebruikersonderzoek met mensen die de grootste drempels ervaren; hun feedback bepaalt of de oplossing werkelijk inclusief is.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Inclusie", "Burgergericht", "Opschalen"],
     contactId: "team-gemeente-westerkwartier",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/van-arm-naar-beter/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/van-arm-naar-beter/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/van-arm-naar-beter/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "verbeteren-samenwerking-tussen-overheden-voor-familiaire-bewindvoerders",
@@ -3374,14 +5122,27 @@ const PROJECTS = [
     partners: ["CJIB"],
     kort: "Ontwikkeling van een online kennisnetwerk voor mensen die bewind voeren voor familieleden. Daarin worden tools en informatie vanuit het perspectief van de burger geplaatst.",
     beschrijving: "Ontwikkeling van een online kennisnetwerk voor mensen die bewind voeren voor familieleden. Daarin worden tools en informatie vanuit het perspectief van de burger geplaatst.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Rechtspraak als regievoerder. Partnercontext: CJIB. Voor ambtenaren is dit vooral relevant bij Burgergericht, Samenwerking, Dienstverlening. Kern uit de bron: Ontwikkeling van een online kennisnetwerk voor mensen die bewind voeren voor familieleden.",
+    probleem: "Aanleiding: Ontwikkeling van een online kennisnetwerk voor mensen die bewind voeren voor familieleden. Daarin worden tools en informatie vanuit het perspectief van de burger geplaatst.",
+    doel: "Doel: Ontwikkeling van een online kennisnetwerk voor mensen die bewind voeren voor familieleden. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Verbeteren samenwerking tussen overheden voor familiaire bewindvoerders naar meetbare succescriteria: Ontwikkeling van een online kennisnetwerk voor mensen die bewind voeren voor familieleden.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Richt interbestuurlijke governance in: wie beslist, wie beheert, wie financiert doorontwikkeling en wie ondersteunt nieuwe deelnemers?",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Samenwerking", "Dienstverlening"],
     contactId: "team-rechtspraak",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/verbeteren-samenwerking-tussen-overheden-voor-familiaire-bewindvoerders/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/verbeteren-samenwerking-tussen-overheden-voor-familiaire-bewindvoerders/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/verbeteren-samenwerking-tussen-overheden-voor-familiaire-bewindvoerders/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "zicht-op-ondermijning-ondermijningsradar",
@@ -3400,14 +5161,27 @@ const PROJECTS = [
     partners: ["Gemeenten Amsterdam, Rotterdam, Den Haag, Utrecht, Tilburg (namens de B5 gemeenten), Groningen, Ministerie van Justitie en Veiligheid, Belastingdienst, Politie, OM en het CBS."],
     kort: "Slim (her)gebruik van data: meer inzicht verkrijgen in de aard, omvang en patronen van ondermijnende criminaliteit door analyse van grote hoeveelheden data van verschillende overheidsorganisaties. Dit project heeft als bijvangst dat het leidt tot best…",
     beschrijving: "Slim (her)gebruik van data: meer inzicht verkrijgen in de aard, omvang en patronen van ondermijnende criminaliteit door analyse van grote hoeveelheden data van verschillende overheidsorganisaties. Dit project heeft als bijvangst dat het leidt tot best practices voor datadeling binnen de overheid.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) als regievoerder. Partnercontext: Gemeenten Amsterdam, Rotterdam, Den Haag, Utrecht, Tilburg (namens de B5 gemeenten), Groningen, Ministerie van Justitie en Veiligheid, Belastingdienst, Politie, OM en het CBS.. Voor ambtenaren is dit vooral relevant bij Data, Datadeling, Toezicht. Kern uit de bron: Slim (her)gebruik van data: meer inzicht verkrijgen in de aard, omvang en patronen van ondermijnende criminaliteit door analyse van grote hoeveelheden data van verschillende overheidsorganisaties.",
+    probleem: "Aanleiding: Slim (her)gebruik van data: meer inzicht verkrijgen in de aard, omvang en patronen van ondermijnende criminaliteit door analyse van grote hoeveelheden data van verschillende overheidsorganisaties. Dit project heeft als bijvangst dat het leidt tot best practices voor datadeling binnen de overheid.",
+    doel: "Doel: Dit project heeft als bijvangst dat het leidt tot best practices voor datadeling binnen de overheid. De gekozen aanpak past bij de projectfase pilot: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Zicht op ondermijning: “Ondermijningsradar” naar meetbare succescriteria: Slim (her)gebruik van data: meer inzicht verkrijgen in de aard, omvang en patronen van ondermijnende criminaliteit door analyse van grote hoeveelheden data van verschillende overheidsorganisaties.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Maak datakwaliteit, definities, autorisaties, logging en eigenaarschap expliciet voordat gegevensuitwisseling wordt opgeschaald.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Data", "Datadeling", "Toezicht"],
     contactId: "team-ministerie-van-binnenlandse-zaken-en-kon",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/zicht-op-ondermijning-ondermijningsradar/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zicht-op-ondermijning-ondermijningsradar/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zicht-op-ondermijning-ondermijningsradar/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Open data en datagedreven werken", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.rijksoverheid.nl/onderwerpen/digitale-overheid/open-data" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   },
   {
     id: "zwemwater-alert",
@@ -3426,15 +5200,29 @@ const PROJECTS = [
     partners: ["Gezamenlijke provincies met regie bij provincie Gelderland"],
     kort: "Experiment met het communiceren van informatie over zwemveiligheid om ziekte en verdrinkingen te voorkomen. De effectiviteit wordt getest van informatie op welkomstschermen bij gratis WiFi voor bezoekers aan zwemlocaties.",
     beschrijving: "Experiment met het communiceren van informatie over zwemveiligheid om ziekte en verdrinkingen te voorkomen. De effectiviteit wordt getest van informatie op welkomstschermen bij gratis WiFi voor bezoekers aan zwemlocaties.",
-    probleem: "",
-    doel: "",
-    lessen: [],
+    context: "Online broncontext: dit project staat op digitaleoverheid.nl als Innovatiebudget-project 2019 met Provincie Gelderland als regievoerder. Partnercontext: Gezamenlijke provincies met regie bij provincie Gelderland. Voor ambtenaren is dit vooral relevant bij Burgergericht, Data, Dienstverlening. Kern uit de bron: Experiment met het communiceren van informatie over zwemveiligheid om ziekte en verdrinkingen te voorkomen.",
+    probleem: "Aanleiding: Experiment met het communiceren van informatie over zwemveiligheid om ziekte en verdrinkingen te voorkomen. De effectiviteit wordt getest van informatie op welkomstschermen bij gratis WiFi voor bezoekers aan zwemlocaties.",
+    doel: "Doel: Experiment met het communiceren van informatie over zwemveiligheid om ziekte en verdrinkingen te voorkomen. De effectiviteit wordt getest van informatie op welkomstschermen bij gratis WiFi voor bezoekers aan zwemlocaties. De gekozen aanpak past bij de projectfase proof of concept: klein genoeg om te leren, concreet genoeg om vervolgkeuzes te kunnen maken.",
+    lessen: [
+      "Vertaal de kern van Zwemwater-alert naar meetbare succescriteria: Experiment met het communiceren van informatie over zwemveiligheid om ziekte en verdrinkingen te voorkomen.",
+      "Leg na afronding vast welke keuzes echt werkten, welke randvoorwaarden ontbraken en welke onderdelen overdraagbaar zijn naar andere overheden.",
+      "Test met inwoners, ondernemers en uitvoerende medewerkers; begrijpelijke taal, toegankelijkheid en kanaalkeuze horen bij de kern van de oplossing.",
+      "Maak hergebruik concreet: documenteer aannames, ontwerpkeuzes, meetpunten en besluiten in de projectbibliotheek.",
+      "Maak de samenwerking operationeel: spreek met de partners af hoe kennis, bronmateriaal, standaarden en beheer na het innovatiebudget beschikbaar blijven."
+    ],
     gdi: [],
     labels: ["Burgergericht", "Data", "Dienstverlening"],
     contactId: "team-provincie-gelderland",
     bron: "https://www.digitaleoverheid.nl/innovatieproject/zwemwater-alert/",
-    files: [{ naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zwemwater-alert/" }]
+    files: [
+      { naam: "Projectpagina op digitaleoverheid.nl", type: "link", grootte: "", datum: "2019", actie: "open", url: "https://www.digitaleoverheid.nl/innovatieproject/zwemwater-alert/" },
+      { naam: "Overzicht innovatieprojecten digitale overheid", type: "link", grootte: "", datum: "bron", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/overzicht-innovatieprojecten/" },
+      { naam: "Innovatiebudget Digitale Overheid", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/" },
+      { naam: "Gebruiker Centraal", type: "link", grootte: "", datum: "context", actie: "open", url: "https://www.gebruikercentraal.nl/" },
+      { naam: "Gerelateerde webbron: This site in English", type: "link", grootte: "", datum: "web", actie: "open", url: "https://www.nldigitalgovernment.nl/" }
+    ]
   }
+
 ];
 
 /* Profiel van de ingelogde gebruiker (voorbeeld) */
