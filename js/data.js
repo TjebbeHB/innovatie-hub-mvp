@@ -5115,5 +5115,6 @@ const USER = {
   email: "gk@voorbeeld.nl",
   tel: "06 12 34 56 78",
   linkedin: "Gwenn van Kampen",
-  interesses: ["Data", "Datadeling", "Privacy", "Transparantie", "Burgergericht", "Gebruikerservaring", "Samenwerking"]
+  /* Interesses zijn Trendroos-domeinen (zie js/trends-data.js) */
+  interesses: ["Kunstmatige intelligentie", "Technologie", "Sociale cohesie", "Kansengelijkheid"]
 };

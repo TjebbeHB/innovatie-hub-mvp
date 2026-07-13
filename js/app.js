@@ -64,7 +64,10 @@
     upload: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m0 0 4 4m-4-4-4 4M4 20h16"/></svg>',
     eye: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="3"/></svg>',
     logo: '<svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 16h6M10 19h4M12 4.5a5.5 5.5 0 0 0-3.7 9.6c.6.6 1 1.3 1 2h5.4c0-.7.4-1.4 1-2A5.5 5.5 0 0 0 12 4.5z"/><path d="M17.5 3.5a5.5 5.5 0 0 1 2.8 7.7" opacity=".5"/><path d="M6.5 3.5a5.5 5.5 0 0 0-2.8 7.7" opacity=".5"/></svg>',
-    lion: '<svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.5 1.4 1.6 2.2 3 2.5-.6 1-.6 2 0 3-1.2.4-2 1.2-2.3 2.4h2.8c1.5 0 2.5 1 2.5 2.5v5.1c0 2-1.3 3.5-3.3 3.5H9.3C7.3 21 6 19.5 6 17.5v-5.1C6 10.9 7 10 8.5 10h2.8C11 8.8 10.2 8 9 7.6c.6-1 .6-2 0-3 1.4-.3 2.5-1.1 3-2.6z"/></svg>'
+    lion: '<svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.5 1.4 1.6 2.2 3 2.5-.6 1-.6 2 0 3-1.2.4-2 1.2-2.3 2.4h2.8c1.5 0 2.5 1 2.5 2.5v5.1c0 2-1.3 3.5-3.3 3.5H9.3C7.3 21 6 19.5 6 17.5v-5.1C6 10.9 7 10 8.5 10h2.8C11 8.8 10.2 8 9 7.6c.6-1 .6-2 0-3 1.4-.3 2.5-1.1 3-2.6z"/></svg>',
+    trend: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>',
+    chipIc: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10.2" y="10.2" width="3.6" height="3.6"/><path d="M10 2v3M14 2v3M10 19v3M14 19v3M2 10h3M2 14h3M19 10h3M19 14h3"/></svg>',
+    extern: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6M20 4 10 14M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"/></svg>'
   };
 
   /* Thema-iconen voor projectafbeeldingen */
@@ -96,7 +99,12 @@
     "login": renderLogin,
     "onboarding": renderOnboarding,
     "home": renderHome,
+    "trends": renderTrends,
+    "trend": renderTrendDetail,
+    "technologieen": renderTechnologieen,
+    "technologie": renderTechnologieDetail,
     "innovaties": renderInnovaties,
+    "projecten": renderInnovaties,
     "project": renderProject,
     "mijn-projecten": renderMijnProjecten,
     "nieuw-project": renderNieuwProject,
@@ -108,13 +116,15 @@
 
   function route() {
     const raw = location.hash.replace(/^#\/?/, "") || "login";
-    const [page, param] = raw.split("/");
+    const [path, queryStr] = raw.split("?");
+    const [page, param] = path.split("/");
+    const query = new URLSearchParams(queryStr || "");
     const loggedIn = sessionStorage.getItem("ihub:loggedin") === "1";
     if (!loggedIn && page !== "login") { location.hash = "#/login"; return; }
     if (loggedIn && (page === "login" || page === "")) { location.hash = "#/home"; return; }
     const fn = routes[page] || renderHome;
     window.scrollTo(0, 0);
-    fn(param);
+    fn(param, query);
   }
 
   window.addEventListener("hashchange", route);
@@ -124,7 +134,9 @@
   function shell(active, content) {
     const items = [
       ["home", I.home, "Home"],
-      ["innovaties", I.bulb, "Innovaties"],
+      ["trends", I.trend, "Trends"],
+      ["technologieen", I.chipIc, "Technologieën"],
+      ["innovaties", I.bulb, "Projecten"],
       ["mijn-projecten", I.folder, "Mijn projecten"],
       ["netwerk", I.globe, "Netwerk"]
     ];
@@ -203,11 +215,11 @@
               <a href="#/home" id="skip">Sla voor nu over</a>
             </div>
             <h1>Welkom bij de Innovatie Hub</h1>
-            <div class="auth-sub">Selecteer hier de thema's en technologieën die aansluiten bij jouw interesses</div>
+            <div class="auth-sub">Selecteer de Trendroos-domeinen die aansluiten bij jouw interesses (Rijksbrede Trendverkenning)</div>
             <div class="chip-cloud" id="chips">
-              ${INTERESSES.slice(0, 18).map(i => `<button type="button" class="chip ${sel.has(i) ? "selected" : ""}" data-i="${esc(i)}">${sel.has(i) ? "✓" : "+"} ${esc(i)}</button>`).join("")}
+              ${DOMAINS.map(i => `<button type="button" class="chip ${sel.has(i) ? "selected" : ""}" data-i="${esc(i)}">${sel.has(i) ? "✓" : "+"} ${esc(i)}</button>`).join("")}
             </div>
-            <button class="toon-meer" id="toonMeer">Toon meer</button>
+            <button class="toon-meer" id="toonMeer" style="display:none">Toon meer</button>
             <button class="btn btn-primary" id="verder">Ga verder</button>
           </div>
         </div>
@@ -218,8 +230,7 @@
     const chipsEl = document.getElementById("chips");
 
     function renderChips() {
-      const list = expanded ? INTERESSES : INTERESSES.slice(0, 18);
-      chipsEl.innerHTML = list.map(i => `<button type="button" class="chip ${sel.has(i) ? "selected" : ""}" data-i="${esc(i)}">${sel.has(i) ? "✓" : "+"} ${esc(i)}</button>`).join("");
+      chipsEl.innerHTML = DOMAINS.map(i => `<button type="button" class="chip ${sel.has(i) ? "selected" : ""}" data-i="${esc(i)}">${sel.has(i) ? "✓" : "+"} ${esc(i)}</button>`).join("");
     }
     chipsEl.addEventListener("click", e => {
       const b = e.target.closest(".chip"); if (!b) return;
@@ -271,6 +282,115 @@
     return `<svg viewBox="-140 -14 590 330" width="100%" style="max-width:560px" role="img" aria-label="Projecten per thema">${paths}${labels}</svg>`;
   }
 
+  /* ---------- Trendroos-wiel (15 sub-domeinen, 7 clusters) ---------- */
+
+  function polarPoint(cx, cy, r, deg) {
+    const rad = (deg - 90) * Math.PI / 180;
+    return [cx + r * Math.cos(rad), cy + r * Math.sin(rad)];
+  }
+  function wheelArcPath(cx, cy, rOuter, rInner, startDeg, endDeg) {
+    const [x1, y1] = polarPoint(cx, cy, rOuter, startDeg);
+    const [x2, y2] = polarPoint(cx, cy, rOuter, endDeg);
+    const [x3, y3] = polarPoint(cx, cy, rInner, endDeg);
+    const [x4, y4] = polarPoint(cx, cy, rInner, startDeg);
+    const large = endDeg - startDeg > 180 ? 1 : 0;
+    return `M${x1.toFixed(1)},${y1.toFixed(1)} A${rOuter},${rOuter} 0 ${large} 1 ${x2.toFixed(1)},${y2.toFixed(1)} L${x3.toFixed(1)},${y3.toFixed(1)} A${rInner},${rInner} 0 ${large} 0 ${x4.toFixed(1)},${y4.toFixed(1)} Z`;
+  }
+
+  function trendroosWheel(counts) {
+    // counts: { domein: aantal }
+    const cx = 170, cy = 170;
+    const rInnerOuter = 145, rInnerInner = 70;   // domeinring
+    const rOuterOuter = 163, rOuterInner = 149;  // clusterring
+    const step = 360 / DOMAINS.length;
+    let start = 0, domainSegs = "", clusterSegs = "", labels = "";
+    const clusters = [];
+    DOMAINS.forEach(d => {
+      const end = start + step;
+      const color = DOMAIN_COLORS[d];
+      const n = counts[d] || 0;
+      domainSegs += `<path d="${wheelArcPath(cx, cy, rInnerOuter, rInnerInner, start, end)}" fill="${color}" stroke="#fff" stroke-width="1.5" opacity="${n ? 1 : .35}"><title>${esc(d)}: ${n}</title></path>`;
+      if (n) {
+        const [nx, ny] = polarPoint(cx, cy, (rInnerOuter + rInnerInner) / 2, (start + end) / 2);
+        labels += `<text x="${nx.toFixed(1)}" y="${ny.toFixed(1)}" font-size="11" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="${DOMAIN_TEXT_COLORS[d]}">${n}</text>`;
+      }
+      let cl = clusters.find(c => c.name === DOMAIN_CLUSTERS[d]);
+      if (!cl) { cl = { name: DOMAIN_CLUSTERS[d], start, color }; clusters.push(cl); }
+      cl.end = end;
+      start = end;
+    });
+    clusters.forEach(cl => {
+      clusterSegs += `<path d="${wheelArcPath(cx, cy, rOuterOuter, rOuterInner, cl.start + 2, cl.end - 2)}" fill="${cl.color}" opacity="0.55"><title>${esc(cl.name)}</title></path>`;
+    });
+    return `<svg viewBox="0 0 340 340" width="100%" style="max-width:330px;display:block;margin:0 auto" aria-hidden="true">${domainSegs}${clusterSegs}${labels}</svg>`;
+  }
+
+  function domainListHtml(counts) {
+    const byCluster = {};
+    DOMAINS.forEach(d => { (byCluster[DOMAIN_CLUSTERS[d]] = byCluster[DOMAIN_CLUSTERS[d]] || []).push(d); });
+    return `<div class="domain-list">${Object.entries(byCluster).map(([cluster, domains]) => `
+      <div class="domain-cluster">
+        <div class="domain-cluster-title">${esc(cluster)}</div>
+        <div class="domain-chips">${domains.map(d => `
+          <button type="button" class="domain-chip" style="background:${DOMAIN_COLORS[d]};color:${DOMAIN_TEXT_COLORS[d]}" data-domain="${esc(d)}">${esc(d)} · ${counts[d] || 0}</button>
+        `).join("")}</div>
+      </div>`).join("")}</div>`;
+  }
+
+  /* ---------- Trends: helpers ---------- */
+
+  function trendRadar(t) {
+    // seed-radar + eigen radar-vermeldingen uit localStorage
+    const own = (store.get("trendRadar", {})[t.id]) || [];
+    return t.radar.concat(own);
+  }
+  function tijdspadBadge(t) {
+    return `<span class="pill" style="background:${TIJDSPAD_COLORS[t.tijdspad]}">${esc(t.tijdspad)}</span>`;
+  }
+  function radarBadge(positie) {
+    return `<span class="pill" style="background:${RADAR_COLORS[positie] || "#6D727A"}">${esc(positie)}</span>`;
+  }
+  function relevantieBadge(niveau) {
+    return `<span class="pill" style="background:${RELEVANTIE_COLORS[niveau] || "#6D727A"}">${esc(niveau)}</span>`;
+  }
+
+  function trendCardHtml(t) {
+    const radar = trendRadar(t);
+    const orgCount = new Set(radar.map(r => r.org)).size;
+    const delen = radar.filter(r => r.resultaat).length;
+    return `
+      <div class="card pcard" data-id="${esc(t.id)}" data-type="trend" role="link" tabindex="0" aria-label="${esc(t.naam)}">
+        <div class="thumb thumb-flat" style="background:${DOMAIN_COLORS[t.domein]}"><span class="tag tag-plain" style="color:${DOMAIN_TEXT_COLORS[t.domein]}">${esc(t.domein)}</span></div>
+        <div class="body">
+          <h3>${esc(t.naam)}</h3>
+          <div class="org">${orgCount} organisatie${orgCount === 1 ? "" : "s"} op de radar${delen ? ` · ${delen} ${delen === 1 ? "deelt" : "delen"} resultaten` : ""}</div>
+          <p>${esc(t.beschrijving)}</p>
+          <div class="labels-block">${tijdspadBadge(t)}</div>
+        </div>
+      </div>`;
+  }
+
+  /* ---------- Technologieën: helpers ---------- */
+
+  function techStats(t) {
+    const expls = EXPLORATIES.filter(e => e.technologieId === t.id);
+    return { explCount: expls.length, orgCount: new Set(expls.map(e => e.org)).size };
+  }
+
+  function technologieCardHtml(t) {
+    const stats = techStats(t);
+    return `
+      <div class="card pcard" data-id="${esc(t.id)}" data-type="tech" role="link" tabindex="0" aria-label="${esc(t.naam)}">
+        <div class="thumb thumb-flat" style="background:${DOMAIN_COLORS[t.domein]}"><span class="tag tag-plain" style="color:${DOMAIN_TEXT_COLORS[t.domein]}">${esc(t.domein)}</span></div>
+        <div class="body">
+          <h3>TRL ${t.trl} · ${esc(t.naam)}</h3>
+          <div class="org">${stats.orgCount} organisatie${stats.orgCount === 1 ? "" : "s"} onderzoekt dit</div>
+          <p>${esc(t.korteBeschrijving)}</p>
+          <div class="labels-block">${t.labels.slice(0, 4).map(l => `<span class="label-chip">${esc(l)}</span>`).join("")}</div>
+        </div>
+      </div>`;
+  }
+
   function renderHome() {
     const projs = allProjects();
     const orgs = [...new Set(projs.map(p => p.org))].sort();
@@ -278,15 +398,38 @@
     const statuses = Object.keys(STATUS_COLORS);
 
     const my = interests();
-    const rec = projs.filter(p =>
-      p.labels.some(l => my.includes(l)) || my.includes(p.theme) ||
-      (my.includes("Burgergericht") && p.theme === "Burgergericht")
-    ).slice(0, 10);
-    const recList = rec.length ? rec : projs.slice(0, 8);
+    const recTrends = TRENDS.filter(t => my.includes(t.domein));
+    const recTechs = TECHNOLOGIEEN.filter(t => my.includes(t.domein));
+    const recProjs = projs.filter(p => my.includes(THEME_TO_DOMAIN[p.theme]));
+    let recList = [
+      ...recTrends.map(trendCardHtml),
+      ...recTechs.map(technologieCardHtml),
+      ...recProjs.slice(0, 6).map(cardHtml)
+    ];
+    if (!recList.length) recList = TRENDS.slice(0, 4).map(trendCardHtml).concat(projs.slice(0, 4).map(cardHtml));
 
     shell("home", `
       <h1 class="page-title" style="margin-bottom:22px">Welkom ${esc(USER.voornaam)}</h1>
-      <div class="demo-banner">Projectdata afkomstig van digitaleoverheid.nl (Innovatiebudget Digitale Overheid). Thema, labels, status en fase zijn redactioneel afgeleid uit de projectbeschrijvingen.</div>
+      <div class="demo-banner">Projectdata afkomstig van digitaleoverheid.nl (Innovatiebudget Digitale Overheid); thema, labels, status en fase zijn redactioneel afgeleid. Technologieën en exploraties zijn representatief samengesteld op basis van publieke bronnen; trends en radar-vermeldingen zijn redactioneel/indicatief. Domeinindeling volgt de Rijksbrede Trendverkenning (mei 2026).</div>
+
+      <div class="card dash-card">
+        <div class="head">
+          <div>
+            <h2 id="trendTitle"></h2>
+            <div class="sub">De 15 sub-domeinen uit de Rijksbrede Trendverkenning, gegroepeerd in 7 clusters — klik op een domein voor de trends</div>
+          </div>
+          <a href="#/trends">Bekijk alle trends</a>
+        </div>
+        <div class="dash-body">
+          <div class="pie-wrap" id="wheel"></div>
+          <div class="dash-filters">
+            <div class="select-wrap"><select id="tTijdspad"><option value="">Filter op tijdspad</option>${TIJDSPAD_LABELS.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
+            <div class="select-wrap"><select id="tSector"><option value="">Filter op sector (relevantie)</option>${SECTOREN.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
+            <button class="reset" id="tReset">Reset filters ${I.reset}</button>
+          </div>
+        </div>
+        <div id="domainListWrap"></div>
+      </div>
 
       <div class="card dash-card">
         <div class="head">
@@ -311,9 +454,34 @@
         <h2>Gebaseerd op jouw interesses</h2>
         <a href="#/account">Wijzig interesses ${I.pencil}</a>
       </div>
-      <div class="hscroll">${recList.map(cardHtml).join("")}</div>
+      <div class="hscroll">${recList.join("")}</div>
     `);
 
+    // Trendroos-blok
+    const tTijdspad = document.getElementById("tTijdspad"), tSector = document.getElementById("tSector");
+    function trendCounts() {
+      const filtered = TRENDS.filter(t =>
+        (!tTijdspad.value || t.tijdspad === tTijdspad.value) &&
+        (!tSector.value || ["Hoog", "Gemiddeld"].includes(t.sectorRelevantie[tSector.value]))
+      );
+      const c = {};
+      filtered.forEach(t => { c[t.domein] = (c[t.domein] || 0) + 1; });
+      return { c, n: filtered.length };
+    }
+    function updateTrends() {
+      const { c, n } = trendCounts();
+      document.getElementById("trendTitle").textContent = `Trends (${n}) per Trendroos-domein`;
+      document.getElementById("wheel").innerHTML = trendroosWheel(c);
+      document.getElementById("domainListWrap").innerHTML = domainListHtml(c);
+      document.getElementById("domainListWrap").querySelectorAll(".domain-chip").forEach(btn => {
+        btn.onclick = () => { location.hash = `#/trends?domein=${encodeURIComponent(btn.dataset.domain)}`; };
+      });
+    }
+    tTijdspad.onchange = tSector.onchange = updateTrends;
+    document.getElementById("tReset").onclick = () => { tTijdspad.value = tSector.value = ""; updateTrends(); };
+    updateTrends();
+
+    // Projecten-blok
     const fOrg = document.getElementById("fOrg"), fFase = document.getElementById("fFase"), fStatus = document.getElementById("fStatus");
     fOrg.value = homeFilters.org; fFase.value = homeFilters.fase; fStatus.value = homeFilters.status;
 
@@ -334,6 +502,274 @@
     fOrg.onchange = fFase.onchange = fStatus.onchange = update;
     document.getElementById("fReset").onclick = () => { fOrg.value = fFase.value = fStatus.value = ""; update(); };
     update();
+    bindCards();
+  }
+
+  /* ---------- Trends: overzicht ---------- */
+
+  const trendState = { q: "", domein: "", tijdspad: "", sector: "", sort: "naam" };
+
+  function renderTrends(param, query) {
+    if (query && query.get("domein")) trendState.domein = query.get("domein");
+
+    shell("trends", `
+      <div class="page-head">
+        <div>
+          <h1 class="page-title">Trends</h1>
+          <div class="page-sub">Maatschappelijke en technologische trends uit de Rijksbrede Trendverkenning — wie heeft wat op de radar, en wat kwam eruit</div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="searchbox">${I.search}<input id="q" placeholder="Zoeken" value="${esc(trendState.q)}"></div>
+        <div class="select-wrap"><select id="tDomein"><option value="">Alle domeinen</option>${DOMAINS.map(d => `<option>${esc(d)}</option>`).join("")}</select></div>
+        <div class="select-wrap"><select id="tTijdspad"><option value="">Alle tijdspaden</option>${TIJDSPAD_LABELS.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
+        <div class="select-wrap"><select id="tSector"><option value="">Alle sectoren</option>${SECTOREN.map(o => `<option>${esc(o)}</option>`).join("")}</select></div>
+      </div>
+      <div class="result-bar"><span id="count"></span></div>
+      <div id="results" class="grid"></div>
+    `);
+
+    const $ = id => document.getElementById(id);
+    $("tDomein").value = trendState.domein; $("tTijdspad").value = trendState.tijdspad; $("tSector").value = trendState.sector;
+
+    function update() {
+      const list = TRENDS.filter(t => {
+        const hay = [t.naam, t.domein, t.beschrijving, ...trendRadar(t).map(r => r.org)].join(" ").toLowerCase();
+        return (!trendState.q || hay.includes(trendState.q.toLowerCase())) &&
+          (!trendState.domein || t.domein === trendState.domein) &&
+          (!trendState.tijdspad || t.tijdspad === trendState.tijdspad) &&
+          (!trendState.sector || ["Hoog", "Gemiddeld"].includes(t.sectorRelevantie[trendState.sector]));
+      }).sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+      $("count").textContent = `${list.length} ${list.length === 1 ? "trend" : "trends"}`;
+      $("results").innerHTML = list.length ? list.map(trendCardHtml).join("") : `<div class="empty">Geen trends gevonden. Pas je zoekopdracht of filters aan.</div>`;
+      bindCards();
+    }
+    $("q").oninput = e => { trendState.q = e.target.value; update(); };
+    $("tDomein").onchange = e => { trendState.domein = e.target.value; update(); };
+    $("tTijdspad").onchange = e => { trendState.tijdspad = e.target.value; update(); };
+    $("tSector").onchange = e => { trendState.sector = e.target.value; update(); };
+    update();
+  }
+
+  /* ---------- Trends: detail ---------- */
+
+  function renderTrendDetail(id) {
+    const t = TRENDS.find(x => x.id === id);
+    if (!t) { shell("trends", `<div class="empty">Trend niet gevonden. <a href="#/trends">Terug naar trends</a></div>`); return; }
+    const techs = TECHNOLOGIEEN.filter(x => t.technologieIds.includes(x.id));
+    const linkedProjects = allProjects().filter(p => (t.projectIds || []).includes(p.id));
+
+    function radarRows() {
+      const radar = trendRadar(t);
+      if (!radar.length) return `<div class="empty">Nog geen organisaties op de radar voor deze trend.</div>`;
+      return radar.map(r => `
+        <div class="card radar-row">
+          <div class="radar-head">
+            <div><strong>${esc(r.org)}</strong>${r.eigen ? ` <span class="label-chip">eigen invoer</span>` : ""}<div class="org">${esc(r.sector)} · ${esc(r.jaar)}</div></div>
+            ${radarBadge(r.positie)}
+          </div>
+          <p><strong>Waarom:</strong> ${esc(r.waarom)}</p>
+          ${r.resultaat ? `<div class="resultaat-box"><strong>Gedeeld resultaat</strong><br>${esc(r.resultaat)}</div>` : ""}
+        </div>`).join("");
+    }
+
+    const onderzoekers = trendRadar(t).filter(r => r.positie !== "Op de radar").map(r => r.org);
+    const delers = trendRadar(t).filter(r => r.resultaat).map(r => r.org);
+    const alGemeld = trendRadar(t).some(r => r.org === USER.org);
+
+    shell("trends", `
+      <a href="#/trends" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;margin-bottom:14px">${I.back} Terug naar trends</a>
+      <div class="page-head">
+        <div>
+          <h1 class="page-title">${esc(t.naam)}</h1>
+          <div class="page-sub" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px">
+            <span class="pill" style="background:${DOMAIN_COLORS[t.domein]};color:${DOMAIN_TEXT_COLORS[t.domein]}">${esc(t.domein)}</span>
+            ${tijdspadBadge(t)}
+            <span>${esc(DOMAIN_CLUSTERS[t.domein])}</span>
+          </div>
+        </div>
+      </div>
+      <p style="max-width:820px;margin-bottom:22px">${esc(t.beschrijving)}</p>
+
+      <div class="two-col" style="margin-bottom:24px">
+        <div class="card content-card">
+          <h3>Relevantie per sector</h3>
+          <div class="sector-table">
+            ${SECTOREN.map(s => `<div class="sector-row"><span>${esc(s)}</span>${relevantieBadge(t.sectorRelevantie[s] || "Beperkt")}</div>`).join("")}
+          </div>
+        </div>
+        <div class="card content-card">
+          <h3>Samen onderzoeken</h3>
+          <p>${onderzoekers.length ? `<strong>${esc([...new Set(onderzoekers)].join(", "))}</strong> ${new Set(onderzoekers).size === 1 ? "is" : "zijn"} met deze trend bezig${delers.length ? `; ${esc([...new Set(delers)].join(", "))} ${new Set(delers).size === 1 ? "deelt" : "delen"} de resultaten hieronder` : ""}.` : "Nog niemand onderzoekt deze trend actief — wees de eerste."}</p>
+          ${alGemeld
+        ? `<p style="margin-top:10px"><strong>${esc(USER.org)}</strong> staat op de radar voor deze trend. ✓</p>`
+        : `<div class="radar-form" id="radarForm">
+            <div class="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+              <div class="select-wrap"><select id="rfPositie">${RADAR_POSITIES.map(p => `<option>${esc(p)}</option>`).join("")}</select></div>
+              <div class="select-wrap"><select id="rfSector">${SECTOREN.map(s => `<option>${esc(s)}</option>`).join("")}</select></div>
+            </div>
+            <textarea id="rfWaarom" placeholder="Waarom is deze trend relevant voor jullie organisatie?" style="width:100%;margin-top:10px;border:1px solid #c9ced6;border-radius:6px;padding:9px 12px;font-family:inherit;font-size:13.5px;min-height:64px"></textarea>
+            <button class="btn btn-primary" id="rfSave" style="margin-top:10px">Zet ${esc(USER.org)} op de radar</button>
+          </div>`}
+        </div>
+      </div>
+
+      <div class="section-head"><h2>Wie heeft deze trend op de radar (${trendRadar(t).length})</h2></div>
+      <div class="radar-list" id="radarList">${radarRows()}</div>
+
+      ${techs.length ? `<div class="section-head" style="margin-top:28px"><h2>Technologieën bij deze trend</h2><a href="#/technologieen">Alle technologieën</a></div>
+      <div class="hscroll">${techs.map(technologieCardHtml).join("")}</div>` : ""}
+
+      ${linkedProjects.length ? `<div class="section-head" style="margin-top:28px"><h2>Innovatieprojecten bij deze trend</h2><a href="#/innovaties">Alle projecten</a></div>
+      <div class="hscroll">${linkedProjects.map(p => cardHtml(p, { labels: true })).join("")}</div>` : ""}
+    `);
+
+    const saveBtn = document.getElementById("rfSave");
+    if (saveBtn) saveBtn.onclick = () => {
+      const waarom = document.getElementById("rfWaarom").value.trim();
+      if (!waarom) { toast("Vul in waarom deze trend relevant is voor jullie organisatie"); return; }
+      const all = store.get("trendRadar", {});
+      (all[t.id] = all[t.id] || []).push({
+        org: USER.org, sector: document.getElementById("rfSector").value,
+        positie: document.getElementById("rfPositie").value,
+        jaar: String(new Date().getFullYear()), waarom, resultaat: "", eigen: true
+      });
+      store.set("trendRadar", all);
+      toast(`${USER.org} staat nu op de radar voor deze trend`);
+      renderTrendDetail(id);
+    };
+    bindCards();
+  }
+
+  /* ---------- Technologieën: kompas & TRL ---------- */
+
+  function kompasBadgeHtml(e) {
+    if (!e.kompas) return "";
+    const label = KOMPAS_LABELS[e.kompas.positie];
+    const isRelational = e.kompas.positie === "samen" || e.kompas.positie === "doorgaan";
+    const suffix = isRelational && e.kompas.gekoppeldeOrgs.length ? ": " + e.kompas.gekoppeldeOrgs.join(", ") : "";
+    return `<span class="pill" style="background:${KOMPAS_COLORS[e.kompas.positie]};color:${KOMPAS_TEXT_COLORS[e.kompas.positie]}">${esc(label + suffix)}</span>`;
+  }
+
+  function kompasSummaryHtml(expls) {
+    const order = ["wel", "nogniet", "pastniet", "nietrelevant", "samen", "doorgaan"];
+    const counts = {};
+    order.forEach(k => { counts[k] = 0; });
+    expls.forEach(e => { if (e.kompas) counts[e.kompas.positie]++; });
+    const used = order.filter(k => counts[k] > 0);
+    if (!used.length) return "";
+    const segments = used.map(k => `<div class="kompas-segment" style="flex:${counts[k]};background:${KOMPAS_COLORS[k]};color:${KOMPAS_TEXT_COLORS[k]}" title="${esc(KOMPAS_LABELS[k])}: ${counts[k]}">${counts[k]}</div>`).join("");
+    const legend = used.map(k => `<span><span class="kompas-dot" style="background:${KOMPAS_COLORS[k]}"></span>${esc(KOMPAS_LABELS[k])} (${counts[k]})</span>`).join("");
+    return `
+      <div class="card content-card" style="margin-bottom:20px">
+        <h3>Kompas — hoe staan organisaties hierin?</h3>
+        <div class="kompas-bar">${segments}</div>
+        <div class="kompas-legend">${legend}</div>
+      </div>`;
+  }
+
+  function trlBar(trl) {
+    return `<div class="trl-bar" title="Technology Readiness Level ${trl} van 9" aria-label="TRL ${trl} van 9">
+      ${Array.from({ length: 9 }, (_, i) => `<span class="trl-step${i < trl ? " filled" : ""}"></span>`).join("")}
+      <span class="trl-label">TRL ${trl}/9</span>
+    </div>`;
+  }
+
+  /* ---------- Technologieën: overzicht ---------- */
+
+  const techState = { q: "", domein: "", sort: "naam" };
+
+  function renderTechnologieen(param, query) {
+    if (query && query.get("domein")) techState.domein = query.get("domein");
+
+    shell("technologieen", `
+      <div class="page-head">
+        <div>
+          <h1 class="page-title">Technologieën</h1>
+          <div class="page-sub">Opkomende technologieën waar overheidsorganisaties aan werken, geclassificeerd naar Trendroos-domein en volwassenheid (TRL)</div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="searchbox">${I.search}<input id="q" placeholder="Zoeken" value="${esc(techState.q)}"></div>
+        <div class="select-wrap"><select id="tDomein"><option value="">Alle domeinen</option>${DOMAINS.map(d => `<option>${esc(d)}</option>`).join("")}</select></div>
+        <div class="select-wrap"><select id="tSort"><option value="naam">Sorteer op: naam</option><option value="trl">Sorteer op: TRL (hoog–laag)</option><option value="orgs">Sorteer op: meeste organisaties</option></select></div>
+      </div>
+      <div class="result-bar"><span id="count"></span></div>
+      <div id="results" class="grid"></div>
+    `);
+
+    const $ = id => document.getElementById(id);
+    $("tDomein").value = techState.domein; $("tSort").value = techState.sort;
+
+    function update() {
+      let list = TECHNOLOGIEEN.filter(t => {
+        const hay = [t.naam, t.domein, t.korteBeschrijving, ...t.labels].join(" ").toLowerCase();
+        return (!techState.q || hay.includes(techState.q.toLowerCase())) &&
+          (!techState.domein || t.domein === techState.domein);
+      });
+      if (techState.sort === "naam") list.sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+      if (techState.sort === "trl") list.sort((a, b) => b.trl - a.trl);
+      if (techState.sort === "orgs") list.sort((a, b) => techStats(b).orgCount - techStats(a).orgCount);
+      $("count").textContent = `${list.length} ${list.length === 1 ? "technologie" : "technologieën"}`;
+      $("results").innerHTML = list.length ? list.map(technologieCardHtml).join("") : `<div class="empty">Geen technologieën gevonden.</div>`;
+      bindCards();
+    }
+    $("q").oninput = e => { techState.q = e.target.value; update(); };
+    $("tDomein").onchange = e => { techState.domein = e.target.value; update(); };
+    $("tSort").onchange = e => { techState.sort = e.target.value; update(); };
+    update();
+  }
+
+  /* ---------- Technologieën: detail ---------- */
+
+  function renderTechnologieDetail(id) {
+    const t = TECHNOLOGIEEN.find(x => x.id === id);
+    if (!t) { shell("technologieen", `<div class="empty">Technologie niet gevonden. <a href="#/technologieen">Terug naar technologieën</a></div>`); return; }
+    const expls = EXPLORATIES.filter(e => e.technologieId === t.id);
+    const linkedTrends = TRENDS.filter(x => x.technologieIds.includes(t.id));
+    const similar = TECHNOLOGIEEN.filter(x => x.id !== t.id && (x.domein === t.domein || x.labels.some(l => t.labels.includes(l)))).slice(0, 6);
+
+    shell("technologieen", `
+      <a href="#/technologieen" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;margin-bottom:14px">${I.back} Terug naar technologieën</a>
+      <div class="page-head">
+        <div>
+          <h1 class="page-title">${esc(t.naam)}</h1>
+          <div class="page-sub" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <span class="pill" style="background:${DOMAIN_COLORS[t.domein]};color:${DOMAIN_TEXT_COLORS[t.domein]}">${esc(t.domein)}</span>
+            <span>${expls.length} exploratie${expls.length === 1 ? "" : "s"} · ${techStats(t).orgCount} organisaties</span>
+          </div>
+        </div>
+      </div>
+      <p style="max-width:820px">${esc(t.korteBeschrijving)}</p>
+      <div style="margin:12px 0 6px">${trlBar(t.trl)}</div>
+      <div class="labels-block" style="margin-bottom:22px">${t.labels.map(l => `<span class="label-chip">${esc(l)}</span>`).join(" ")}</div>
+
+      ${kompasSummaryHtml(expls)}
+
+      <div class="section-head"><h2>Wie onderzoekt dit (${expls.length})</h2></div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr))">
+        ${expls.map(e => `
+          <div class="card content-card">
+            <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+              <div><h3 style="margin-bottom:2px">${esc(e.org)}</h3>
+              <div class="org">${esc(e.typeOrganisatie)} · ${esc(e.jaar)} · <strong style="color:${EXPL_STATUS_COLORS[e.status]}">${esc(e.status)}</strong></div></div>
+              ${kompasBadgeHtml(e)}
+            </div>
+            <p style="margin-top:10px">${esc(e.samenvatting)}</p>
+            ${e.uitkomst ? `<div class="resultaat-box"><strong>Uitkomst</strong><br>${esc(e.uitkomst)}</div>` : ""}
+            <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
+              <span class="org">${esc(e.team)}</span>
+              ${e.bron ? `<a href="${esc(e.bron)}" target="_blank" rel="noopener">Bron ${I.extern}</a>` : ""}
+            </div>
+          </div>`).join("")}
+      </div>
+
+      ${linkedTrends.length ? `<div class="section-head" style="margin-top:28px"><h2>Hoort bij deze trends</h2><a href="#/trends">Alle trends</a></div>
+      <div class="hscroll">${linkedTrends.map(trendCardHtml).join("")}</div>` : ""}
+
+      ${similar.length ? `<div class="section-head" style="margin-top:28px"><h2>Soortgelijke technologieën</h2></div>
+      <div class="hscroll">${similar.map(technologieCardHtml).join("")}</div>` : ""}
+    `);
     bindCards();
   }
 
@@ -360,7 +796,8 @@
 
   function bindCards() {
     document.querySelectorAll(".pcard[data-id]").forEach(el => {
-      const go = () => nav("#/project/" + el.dataset.id);
+      const base = { trend: "#/trend/", tech: "#/technologie/" }[el.dataset.type] || "#/project/";
+      const go = () => nav(base + el.dataset.id);
       el.addEventListener("click", go);
       el.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
     });
@@ -494,6 +931,14 @@
               <h3>Labels</h3>
               <div>${p.labels.map(l => `<span class="label-chip">${esc(l)}</span>`).join("")}</div>
             </div>
+            ${(TRENDS.filter(t => (t.projectIds || []).includes(p.id))).length ? `
+            <div class="card content-card">
+              <h3>Onderdeel van trends</h3>
+              ${TRENDS.filter(t => (t.projectIds || []).includes(p.id)).map(t => `
+                <a href="#/trend/${esc(t.id)}" style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:13.5px">
+                  <span class="kompas-dot" style="background:${DOMAIN_COLORS[t.domein]}"></span>${esc(t.naam)}
+                </a>`).join("")}
+            </div>` : ""}
           </div>
         </div>`,
       probleem: `
@@ -908,9 +1353,9 @@
         </div>
       </div>
       <div class="card interests-card">
-        <h3>Interesses</h3>
+        <h3>Interesses <span style="font-weight:400;font-size:12px;color:var(--text-muted)">(Trendroos-domeinen)</span></h3>
         <div class="chip-cloud" id="chips">
-          ${INTERESSES.map(i => `<button type="button" class="chip ${sel.has(i) ? "selected" : ""}" data-i="${esc(i)}">${sel.has(i) ? "✓" : "+"} ${esc(i)}</button>`).join("")}
+          ${DOMAINS.map(i => `<button type="button" class="chip ${sel.has(i) ? "selected" : ""}" data-i="${esc(i)}">${sel.has(i) ? "✓" : "+"} ${esc(i)}</button>`).join("")}
         </div>
         <div class="actions"><button class="btn btn-primary" id="save">Opslaan</button></div>
       </div>
